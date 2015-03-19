@@ -1,0 +1,740 @@
+.nabImage {
+	float: left; 
+	margin: 5px;
+	position: relative;
+}
+
+.selectedTag {
+	background: #e7e7e7;
+}
+
+.nabImage:hover {
+	opacity : 0.8;
+	cursor: pointer;
+}
+
+.networkAccts {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.stepContent {
+	min-height: 400px;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+.notificationImage {
+	width: 30px;
+	height: 30px;
+	border-radius: 36px;
+	float: left;
+}
+
+.notificationLink {
+	color: #333;
+	opacity: 1;
+}
+
+.notificationContent {
+	padding: 7px;
+	display: inline-block;
+	width: 100%;
+}
+
+.notificationLink:hover {
+	color: #333;
+	opacity: 0.8;
+}
+
+#notifications {
+	background: #f5f5f5;
+	list-style: none;
+	padding: 0px;
+	width: 250px;
+}
+
+.popover-static .popover {
+    position: relative;
+	display: block;
+}		
+
+.notificationText {
+	word-wrap: break-word;
+}
+
+.notification {
+	background: #f5f5f5;
+	width: 100%;
+}
+
+.notificationFooter {
+	height: 60px;
+	background: #f5f5f5;
+}
+
+.notification:hover {
+	background: #E2E2E2;
+	cursor: pointer;
+}
+
+.notificationsTitle {
+	background: #fff;
+}
+
+.notificationDate {
+	opacity: 0.6;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.searchNetwork {
+	cursor: pointer;
+}
+
+.inactiveSearchNetwork {
+	color: #999;
+}
+
+#search-bar {
+	height: 30px; 
+	outline: none; 
+	width: 206px; 
+	padding-left: 8px; 
+	padding-right: 8px; 
+	box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.44); 
+	border-radius: 20px; 
+	margin: 5px; 
+	background-color: #e6eef0;
+	-webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+#search-barMobile {
+	height: 30px; 
+	outline: none; 
+	width: 206px; 
+	padding-left: 8px; 
+	padding-right: 8px; 
+	box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.44); 
+	border-radius: 20px; 
+	margin: 5px; 
+	background-color: #e6eef0;
+	-webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;	
+}
+
+#search-bar:focus {
+	background-color: #fff;
+     -webkit-transition: background-color 200ms linear;
+     -moz-transition: background-color 200ms linear;
+     -o-transition: background-color 200ms linear;
+     -ms-transition: background-color 200ms linear;
+     transition: background-color 200ms linear;
+}
+
+.filled-textbox {
+    opacity: 0.5;
+}
+
+.filled-password {
+    opacity: 0.5;
+}
+
+.required {
+    color: rgb(255, 84, 84);
+}
+
+.main-body {
+	background-color: #e6eef0;
+	font-family: Helvetica Neue, arial, sans-serif;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+.headerbar {
+    background-color: rgba(26, 26, 27, 0.97);
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.25);
+	box-shadow: 0 5px 3px rgba(0,0,0,.35);
+	padding: 0.8em;
+	width: 100%;
+	position: fixed;
+	z-index: 3000
+}
+
+.headerItem {
+	margin-left: 10px;
+	float: left;
+	cursor: pointer;
+}
+
+.header-link {
+	font-family: Segoe UI Light, Segoe UI, Helvetica, Arial, sans-serif;
+	text-decoration: none; 
+	color: #bbb;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.header-link:hover {
+	color: #FFF;
+}
+
+.header-logo {
+	float: left; 
+	text-decoration: none; 
+	text-align: center; 
+	color: #fff; 
+	font-size: 25px; 
+	font-family: Segoe UI Light, Segoe UI;
+	font-weight: lighter;
+	margin: 6px;
+}
+
+.header-logo:hover {
+	float: left; 
+	text-decoration: none; 
+	text-align: center; 
+	color: #fff; 
+	font-size: 25px; 
+	font-family: Segoe UI Light, Segoe UI;
+	font-weight: lighter;
+	margin: 6px;
+}
+
+.headerSettings {
+	font-family: Segoe UI Light;
+	text-decoration: none; 
+	color: #bbb;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.settings-caret {
+	width: 0; 
+	height: 0; 
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 12px solid #bbb;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.settings-caret:hover {
+	border-top: 12px solid #fff;
+}
+
+.headerProfileImg {
+	width: 25px;
+	height: 25px;
+	min-width: 25px;
+	border-radius: 20px;
+	opacity: 0.8
+}
+
+.bucket-fill-option {
+	padding: 8px;
+	background: lightgray;
+	border-radius: 3px;
+}
+
+.bucket-fill-option-add {
+	padding: 1px;
+	background: lightgray;
+	border-radius: 3px;
+}
+
+.collectionTabActive {
+	background-color: #333;
+	color: #FFF; 
+}
+
+.collectionTabActive:hover {
+	background-color: #333;
+	color: #FFF; 
+}
+
+.collectionTabActive:focus {
+	background-color: #333;
+	color: #FFF; 
+}
+
+.search-results {
+	position: absolute; 
+	list-style: none; 
+	background: white; 
+	width: 300px;
+	padding: 0;
+	margin: 0;
+	border-radius: 6px;
+}
+
+.search-result {
+	padding: 7px;
+}
+
+.search-result-li {
+	height: 46px;
+}
+
+.search-result-li:hover {
+	background: #e7e7e7;
+}
+
+#searchQueryContainer:hover {
+	background: #e7e7e7;
+}
+
+#searchUsersContainer:hover {
+	background: #e7e7e7;
+}
+
+.search-result-image {
+	width: 32px;
+	height: 32px;
+	border-radius: 4px;
+}
+
+.title-text {
+	font-family: "Helvetica Neue","Hiragino Kaku Gothic Pro",arial,sans-serif;
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.user-tools {
+	position: absolute; 
+	list-style: none; 
+	background: white; 
+	padding: 0px;
+	margin: 0px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.44);
+}
+
+.user-tool {
+	margin: 4px;
+}
+
+.user-tool:hover {
+	background: #f2f2f2;
+}
+
+.feedItemActions {
+	display: none;
+}
+
+.nabButton {
+	/*border: 3px solid gray;
+	border-color: gray;
+	color: #fff;
+	text-shadow: 0 -1px 1px rgba(0,0,0,.25);
+	background-color: gray;*/
+	/*background-image: linear-gradient(#33bcef,#019ad2);*/
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	width: 45px;*/
+	position: absolute; 
+	z-index: 10;
+	right: 4px;
+	top: 0px;
+	cursor: pointer;
+	/*border-radius: 100px;
+	height: 45px;*/
+	outline: none;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.nabButton:hover {
+	/*background-image: none;
+	background-color: #fff;
+	color: gray;*/
+	opacity: 1;
+}
+
+.editFile {	
+	border: 3px solid #bbb;
+	border-color: #bbb;
+	color: #fff;
+	text-shadow: 0 -1px 1px rgba(0,0,0,.25);
+	background-color: #bbb;
+	background-image: linear-gradient(#33bcef,#019ad2);
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	width: 53px;
+	position: absolute; 
+	z-index: 10;
+	cursor: pointer;
+	border-radius: 100px;
+	height: 53px;
+	outline: none;
+	text-decoration: none;
+	top: 5px;
+	left: 5px;	
+}
+
+.editFile:hover {
+	background-image: none;
+	background-color: #fff;
+	color: gray;
+}
+
+.editCollection {
+	border: 3px solid #bbb;
+	border-color: #bbb;
+	color: #fff;
+	text-shadow: 0 -1px 1px rgba(0,0,0,.25);
+	background-color: #bbb;
+	background-image: linear-gradient(#33bcef,#019ad2);
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	width: 53px;
+	position: absolute; 
+	z-index: 10;
+	right: 14px;
+	top: 10px;
+	cursor: pointer;
+	border-radius: 100px;
+	height: 53px;
+	outline: none;
+	text-decoration: none;
+	top: 175px;
+	left: 96px;
+}
+
+.favoriteCollection {
+	position: absolute;
+	top: 175px;
+	left: 68px;
+}
+
+.collectionShared {
+	font-size: 20px;
+	margin-left: 4px;
+	color: black;
+	cursor: pointer;
+}
+
+.editCollection:hover {
+	background-image: none;
+	background-color: #fff;
+	color: gray;
+}
+
+
+/* data grid styles */
+#wrapper
+{
+    margin: 0 auto;
+}
+
+.5cols {
+	width: 1263px;
+}
+
+.4cols {
+	width: 1011px;
+}
+
+.3cols {
+	width: 758px;
+}
+
+.gridContainer {
+  margin-bottom: 20px;
+  /*min-height: 327px;*/
+  
+          /*width: 103.125%; /* 990px */
+        /*overflow: hidden;*/
+        /*margin-left: -1.562%; /* 15px */
+        margin-bottom: -1.875em; /* 30px */
+}
+
+.item {
+	width: 236px;
+	overflow: hidden;
+    float: left;
+    margin: 5px 5px 5px 5px;
+  	background: #ffffff;
+  	-webkit-box-shadow: 0 0 0 4px rgba(0,0,0,0.03) inset,0 0 0 1px rgba(0,0,0,0.15);
+ 	box-shadow: 0 0 0 4px rgba(0,0,0,0.03) inset,0 0 0 1px rgba(0,0,0,0.15);
+}
+
+.followItem {
+	border-radius: 5px;
+	width: 225px;
+	height: 273px;
+    float: left;
+    margin: 10px;
+  	background: #ffffff;
+  	-webkit-box-shadow: 0 0 0 4px rgba(0,0,0,0.03) inset,0 0 0 1px rgba(0,0,0,0.15);
+ 	box-shadow: 0 0 0 4px rgba(0,0,0,0.03) inset,0 0 0 1px rgba(0,0,0,0.15);
+	text-align:center;	
+}
+
+.followItemImage {
+	border-radius: 140px;
+	width: 150px;
+	height: 150px;
+}
+
+.followItemTitle {
+	margin: 9px;
+	height: 45px;
+}
+
+.nabCollectionCover {
+	width: 30px;
+	height: 30px;
+	border-radius: 20px;
+	margin-right: 4px;
+	float: left;
+}
+
+.nabCollectionInfo {
+	display: inline-block;
+	margin-left: 14px;
+	margin-right: 14px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.nabCollectionInfoWrapper:hover {
+	background-color: #eee;
+	opacity: 0.8;	
+}
+
+
+.nabCollectionName {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.followButton {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.unfollowButton {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.collectionItem {
+            float: left;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-top: 10px;
+			margin-bottom: 35px;
+}
+
+.collection {
+  border-radius: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 245px;
+  height: 245px;
+  float: left;
+  background-position: center 30%;
+  border: 10px solid rgb(32, 32, 32);
+  box-shadow: 0 0 5px 5px #888;
+  cursor: pointer;
+}
+
+.nabPreview {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  float: left;
+  background-position: center 30%;
+  margin-left: 26px;
+  box-shadow: 0 0 2px 2px #888;
+  border-radius: 4px
+}
+
+.collectionName {
+	text-align: center; 
+	font-family: Segoe UI Light, Segoe UI, Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	color: black;
+	font-size: 26px;
+	word-wrap: break-word;
+	width: 245px;
+}
+
+.collectionName:hover {
+	opacity: 0.8;
+}
+
+.addCollection {
+	width: 245px;
+	height: 245px;
+	border: 10px solid #bbb;
+  	box-shadow: 0 0 5px 5px #888;
+    border-radius: 300px;
+	background-image: url('/images/addButton.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #FFF;
+}
+
+.item.square {
+	height: 19%;
+}
+
+
+.item.w2 { width: 300px; }
+.item.w3 { width: 400px; }
+
+.item.h2 { height: auto; }
+.item.h3 { height: 460px; }
+.item.h4 { height: 560px; }
+.item.h5 { height: 660px; }
+
+.itemImg {
+	z-index: 1; 
+	width: 100%;
+}
+
+.itemImg.square {
+	height: 100%;
+}
+.play-button {
+	left: 0px; 
+	z-index: 10;
+	width: 100%;
+	position: absolute;
+}
+
+
+.itemDisplay {
+	position: relative; 
+	display: inline-block;
+	cursor: pointer;
+	width: 100%;
+}
+
+.collectionItemDisplay {
+	position: relative; 
+	display: inline-block;
+	cursor: pointer;
+	width: 100%;	
+}
+
+.itemProfileImg {
+	width: 30px;
+	float: left;
+}
+
+.itemUserLink {
+	font-family: "Helvetica Neue","Hiragino Kaku Gothic Pro",arial,sans-serif;
+	word-wrap: break-word;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+ 	font-size: 12px;
+}
+
+.itemUserLink:hover {
+	text-decoration: underline;
+}
+
+.itemData {
+	font-family: "Helvetica Neue","Hiragino Kaku Gothic Pro",arial,sans-serif;
+	font-size: 13px;
+	padding: 6px 14px 7px;
+	word-wrap: break-word;
+}
+
+.itemText {
+	display: none;
+}
+
+.itemTextHTML {
+	display: none;
+}
+
+.playerHTML {
+	display: none;
+}
+
+.itemData.sub {
+    font-weight: bold;
+ 	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+.feedColumn {
+	float: left;
+}
+
+.dropdown-carrot {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	
+	border-bottom: 5px solid white;
+}
+
+.popupFooter {
+	background: #bbb;
+}
+
+.collectionSync {
+	background: #e7e7e7;
+	display: inline-block;
+	padding: 4px;
+	border-radius: 3px;
+	margin: 4px;
+}
+
+.collectionShare {
+	background: #e7e7e7;
+	display: inline-block;
+	padding: 4px;
+	border-radius: 3px;
+	margin: 4px;
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	
+	border-bottom: 7px solid white;
+	margin-left: 18px;
+}
