@@ -13,6 +13,11 @@ comics_association_table = Table('association',Base.metadata,
 		Column('Comics_id', Integer, ForeignKey('Comics.id'))
 	)
 
+tvshows_association_table = Table('association',Base.metadata,
+		Column('Character_id', Integer, ForeignKey('Characters.id')),
+		Column('TvShows_id', Integer, ForeignKey('TvShows.id'))
+	)
+
 class Characters(db.Model):
 	__tablename__ = "Characters"
 
@@ -27,6 +32,8 @@ class Characters(db.Model):
 	picture = db.Column(db.String(100)) #Location?
 	comics = relationship("Comics", secondary = comics_association_table
 									backref= "Characters")
+	tvshows = relationship("TvShows", secondary = tvshows_association_table
+									backref= "TvShows")
 
 	def __init__(self, name, unvierse,aliases,alignment,gender,powers, description, picture):
 		self.name = name
