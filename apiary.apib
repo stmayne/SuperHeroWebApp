@@ -1,0 +1,88 @@
+FORMAT: 1A
+
+# Superheroes
+Superheroes API is a way to access information about Marvel superheroes and villains, including characters,
+comic books, and TV shows.
+
+# Group Characters
+Character related resources of the **Superheroes API**
+
+##Character Collection [/characters.json]
+A list of all characters in the database.
+### List all Characters [GET]
++ Response 200 (application/json)
+
+        [{
+          "id": 1, "placeholder info 1"
+        }, {
+          "id": 2, "placeholder info 2"
+        }]
+
+##Character [/characters/{id}.json]
+Info on a given character in the Marvel universe.
+
++ Parameters
+    + id (required, number, `1`) ... Unique integer ID for the character.
+
+### Retrieve a character [GET]
++ Response 200 (application/json)
+
+        [{
+          "id": 1, "placeholder info 1"
+        }]
+
+
+# Group Comic Books
+Comic book related resources of the **Superheroes API**
+
+##Comic Book Collection [/comics.json]
+A list of all comic books in the database.
+### List all Comic Books [GET]
++ Response 200 (application/json)
+
+        [{
+          "id": 1, "placeholder info 1"
+        }, {
+          "id": 2, "placeholder info 2"
+        }]
+
+##Comic Book [/comics/{id}.json]
+Info on a given Marvel comic book.
+
++ Parameters
+    + id (required, number, `1`) ... Unique integer ID for the comic book.
+
+### Retrieve a comic book [GET]
++ Response 200 (application/json)
+
+        [{
+          "id": 1, "placeholder info 1"
+        }]
+        
+        
+# Group TV Shows
+TV Show related resources of the **Superheroes API**
+
+##TV Show Collection [/tv_show.json]
+A list of all TV shows in the database.
+### List all TV Shows [GET]
++ Response 200 (application/json)
+
+        [{
+          "id": 1, "placeholder info 1"
+        }, {
+          "id": 2, "placeholder info 2"
+        }]
+
+##TV show [/tv_show/{id}.json]
+Info on a given Marvel TV show.
+
++ Parameters
+    + id (required, number, `1`) ... Unique integer ID for the TV show.
+
+### Retrieve a TV show [GET]
++ Response 200 (application/json)
+
+        [{
+          "id": 1, "placeholder info 1"
+        }]
