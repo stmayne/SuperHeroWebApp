@@ -8,6 +8,11 @@ app = Flask(__name__)
 #db = SQLAlchemy(app)
 #db.create_all()
 
+comics_association_table = Table('association',Base.metadata,
+		Column('Character_id', Integer, ForeignKey('Characters.id')),
+		Column('Comics_id', Integer, ForeignKey('Comics.id'))
+	)
+
 class Characters(db.Model):
 	__tablename__ = "Characters"
 
@@ -20,6 +25,8 @@ class Characters(db.Model):
 	powers = db.Column(db.String(200))
 	description = db.Column(db.String(500))
 	picture = db.Column(db.String(100)) #Location?
+	comics = relationship("Comics", secondary = comics_association_table
+									backref= "Characters")
 
 	def __init__(self, name, unvierse,aliases,alignment,gender,powers, description, picture):
 		self.name = name
