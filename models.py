@@ -30,9 +30,9 @@ class Characters(db.Model):
 	powers = db.Column(db.String(200))
 	description = db.Column(db.String(500))
 	picture = db.Column(db.String(100)) #Location?
-	comics = relationship("Comics", secondary = comics_association_table
+	comics = relationship("Comics", secondary = comics_association_table,
 									backref= "Characters")
-	tvshows = relationship("TvShows", secondary = tvshows_association_table
+	tvshows = relationship("TvShows", secondary = tvshows_association_table,
 									backref= "TvShows")
 
 	def __init__(self, name, unvierse,aliases,alignment,gender,powers, description, picture):
@@ -75,7 +75,7 @@ class TvShows(db.Model):
 	id = db.Column(db.Integer,primary_key = True)
 	name = db.Column(db.String(80), unique=True)
 	date = db.Column(db.String(100))
-	universe = db.Column(db.String(30)))
+	universe = db.Column(db.String(30))
 	description = db.Column(db.String(500))
 	nuseasons = db.Column(db.Integer)
 	nuepisodes = db.Column(db.Integer)
