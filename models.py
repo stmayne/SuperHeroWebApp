@@ -19,6 +19,9 @@ tvshows_association_table = Table('association',Base.metadata,
 	)
 
 class Characters(db.Model):
+	"""
+	A model representing a superhero, villain, or other character
+	"""
 	__tablename__ = "Characters"
 
 	id = db.Column(db.Integer,primary_key = True)
@@ -36,6 +39,17 @@ class Characters(db.Model):
 									backref= "TvShows")
 
 	def __init__(self, name, unvierse,aliases,alignment,gender,powers, description, picture):
+		"""
+		Initializes a character model with the following arguments
+		name the name of the character
+		universe the universe the character exist in
+		aliases any other names the character goes by
+		alignment what side the character is on
+		gender the gender of the character
+		powers what special powers the character has
+		description a description of the character
+		picture a URL to the characters picture
+		"""
 		self.name = name
 		self.universe = universe
 		self.aliases = aliases
@@ -45,9 +59,15 @@ class Characters(db.Model):
 		self.description = description
 		self.picture = picture
 	def __repr__(self):
+		"""
+		returns a string containing a printable representation of the character (i.e. it's name)
+		"""
 		return '<user %r>' % self.name
 
 class Comics(db.Model):
+	"""
+	A model representing a comic
+	"""
 	__tablename__ = "Comics"
 
 	id = db.Column(db.Integer,primary_key = True)
@@ -60,6 +80,15 @@ class Comics(db.Model):
 	
 
 	def __init__(self, name, volume,pubdate,universe,description,nuissues):
+		"""
+		Initializes a comic model with the following arguments
+		name the name of the comic
+		volume the comic's volume number
+		pubdate the date the comic was published
+		universe the universe the comic takes place in
+		description a description of the comic
+		nuissues the number of issues
+		"""
 		self.name = name
 		self.volume = volume
 		self.pubdate = pubdate
@@ -67,9 +96,15 @@ class Comics(db.Model):
 		self.description = description
 		self.nuisses = nuisses
 	def __repr__(self):
+		"""
+		returns a string containing a printable representation of the comic (i.e. it's name)
+		"""
 		return '<user %r>' % self.name
 
 class TvShows(db.Model):
+	"""
+	A model representing a TV show
+	"""
 	__tablename__ = "TvShows"
 
 	id = db.Column(db.Integer,primary_key = True)
@@ -83,6 +118,16 @@ class TvShows(db.Model):
 	
 
 	def __init__(self, name, date, universe, description, nuseasons, nuepisodes, broadcast):
+		"""
+		Initializes a TV show model with the following arguments
+		name the name of the show
+		date when the show aired
+		universe the universe the show takes place in
+		description a description of the show
+		nuseasons the number of seasons of the show
+		nuepisodes the number of episodes of the show
+		broadcast when the show was broadcast
+		"""
 		self.name = name
 		self.date = date
 		self.universe = universe
@@ -92,4 +137,7 @@ class TvShows(db.Model):
 		self.broadcast = broadcast
 		
 	def __repr__(self):
+		"""
+		returns a string containing a printable representation of the show (i.e. it's name)
+		"""
 		return '<user %r>' % self.name
