@@ -13,6 +13,10 @@ from models import TvShows
 def get():
     return render_template('index.html')
 
+@app.route('/directory/')
+def getDirectory():
+	return render_template('directory.html')
+
 @app.route('/comic/<comic_id>')
 def getComic(comic_id):
     return render_template('comic.html', comic_id=comic_id)
