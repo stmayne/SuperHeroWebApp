@@ -10,7 +10,7 @@
 			"gender" : "Male",
 			"powers" : ["Superhuman", "Boxing", "Judo"],
 			"description" : "In World War II patriotic solider Steve Rogers recipient of the \"Super Soldier Serum\" became the living symbol of freedom, Captain America. Left for dead while frozen in ice, the star-spangled hero with an indestructible shield awoke years later to continue his never-ending battle for liberty.",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/hPsu2lH.png"
 		},
 		"1" :
 		{
@@ -21,7 +21,7 @@
 			"gender" : "Male",
 			"powers" : ["Superhuman strength and agility", "Can generate spiderwebs"],
 			"description" : "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.",
-			"picture" : ""
+			"picture" : "http://imgur.com/NxgbFoy"
 		},
 		"2" :
 		{
@@ -32,7 +32,7 @@
 			"gender" : "Male",
 			"powers" : ["Godlike strength", "Endurance and resistence", "Mjolnir"],
 			"description" : "As the Norse God of thunder and lightning, Thor wields one of the greatest weapons ever made, the enchanted hammer Mjolnir. While others have described Thor as an over-muscled, oafish imbecile, he's quite smart and compassionate. He's self-assured, and he would never, ever stop fighting for a worthwhile cause",
-			"picture" : ""
+			"picture" : "http://imgur.com/puCYfva"
 		},
 		"3" :
 		{
@@ -43,7 +43,7 @@
 			"gender" : "Female",
 			"powers" : ["Weather control"],
 			"description" : "Ororo Monroe is the descendant of an ancient line of African priestesses, all of whom have white hair, blue eyes, and the potential to wield magic",
-			"picture" : ""
+			"picture" : "http://imgur.com/gzrSfTW"
 		},
 		"4" :
 		{
@@ -53,8 +53,8 @@
 			"alignment" : "Good",
 			"gender" : "Female",
 			"powers" : ["Invisibility"],
-			"description" : "",
-			"picture" : ""
+			"description" : "Like the other founding members of the Fantastic Four, Sue received her powers after being exposed to a cosmic storm. Her primary power deals with light waves, allowing her to render herself and others invisible.",
+			"picture" : "http://i.imgur.com/0olL3t5.jpg"
 		},
 		"5" :
 		{
@@ -65,7 +65,7 @@
 			"gender" : "Male",
 			"powers" : ["Superhuman srength", "Flight", "Various weapons depending on design"],
 			"description" : "Arguably the greatest and certainly the most horrific creation of scientific genius Dr. Henry Pym, Ultron is a criminally insane rogue sentient robot dedicated to conquest and the extermination of humanity.",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/4rqEVFR.jpg"
 		},
 		"6" :
 		{
@@ -76,7 +76,7 @@
 			"gender" : "Male",
 			"powers" : ["Superhuman Strength", "Superhuman Durability", "Superhuman Stamina", "Superhuman Longevity", "Sorcery", "Psionics"],
 			"description" : "The son of Laufey, deceased monarch of the Frost Giants of Jotunheim, the ancient enemies of the Asgardians, Loki utilized time-traveling magics to play a hand in his own origin. Years ago, while Bor, ruler of Asgard, battled Frost Giants, he followed a wounded one to a powerful sorcerer awaiting him.",
-			"picture" : ""
+			"picture" : "http://imgur.com/KctBMo2"
 		},
 		"7" :
 		{
@@ -86,8 +86,8 @@
 			"alignment" : "Evil",
 			"gender" : "Male",
 			"powers" : ["Mangetokenesis", "Telephatic Resistance", "Astral Projection"],
-			"description" : "",
-			"picture" : ""
+			"description" : "Magneto is a fictional supervillain appearing in comic books published by Marvel Comics, most commonly in association with the X-Men. He has been the primary villain in the X-Men comics, although, he has been an occasional ally and even a member of the X-Men at times.",
+			"picture" : "http://i.imgur.com/ZrSGiGi.jpg"
 		},
 		"8" :
 		{
@@ -98,7 +98,7 @@
 			"gender" : "Female",
 			"powers" : ["Metamorph"],
 			"description" : "Little was known about Mystique's past due to the fact that she could eliminate the outward signs of aging with her shapeshifing; it was not known exactly how old she was. She apparently learned to use her powers at a very early age which made her family fear her, for there is no evidence known to the public or the government that Raven Darkholme ever looked like anything but a normal human being.",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/zt2x9Bj.jpg"
 		},
 		"9" :
 		{
@@ -109,7 +109,7 @@
 			"gender" : "Male",
 			"powers" : ["Kree Physiology"],
 			"description" : "Upon the completion of his formal education, Ronan was enrolled in the Kree Public Accuser Corps, the main law enforcement body for the empire. Ronan did well and was steadily promoted. In a border incident, he stopped a fleet of Skrull ships from enteringKree space. As a result, he was made Supreme Accuser of the Kree Empire, making him responsible for enforcing the laws and decrees of the Kree, and second only to the Supreme Intelligence, and the Imperial Minister. As a proud member of the Kree aristocracy (blue-skinned Kree), he was not happy taking orders from the Supreme Intelligence. His attempt to cause a civil war was quickly halted, and he quickly returned to service.",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/W3XES6k.jpg"
 		}
 	},
 	"Shows":
