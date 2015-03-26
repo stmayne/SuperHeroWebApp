@@ -17,9 +17,9 @@ def get():
 def getComic(comic_id):
     return render_template('comic.html', comic_id=comic_id)
 
-@app.route('/tv_show/<tv_show_id>')
-def getTVShow(tv_show_id):
-    return render_template('tv_show.html', tv_show_id=tv_show_id)
+@app.route('/show/<show_id>')
+def getShow(show_id):
+    return render_template('show.html', show_id=show_id)
 
 @app.route('/character/<character_id>')
 def getCharacter(character_id):
