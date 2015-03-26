@@ -1,46 +1,170 @@
 FORMAT: 1A
+HOST: http://www.superheroes-idb.tk/
 
-# Notes API
-Notes API is a *short texts saving* service similar to its physical paper presence on your table.
+# Superheroes
+Superheroes API is a way to access information about Marvel superheroes and villains, including characters,
+comic books, and TV shows.
 
-# Group Notes
-Notes related resources of the **Notes API**
+# Group Characters
+Character related resources of the **Superheroes API**
 
-## Notes Collection [/notes]
-### List all Notes [GET]
+##Character Collection [/characters.json]
+A list of all characters in the database.
+### List all Characters [GET]
 + Response 200 (application/json)
-
-        [{
-          "id": 1, "title": "Jogging in park"
-        }, {
-          "id": 2, "title": "Pick-up posters from post-office"
-        }]
-
-### Create a Note [POST]
-+ Request (application/json)
-
-        { "title": "Buy cheese and bread for breakfast." }
-
-+ Response 201 (application/json)
-
-        { "id": 3, "title": "Buy cheese and bread for breakfast." }
-
-## Note [/notes/{id}]
-A single Note object with all its details
-
-+ Parameters
-    + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
-
-### Retrieve a Note [GET]
-+ Response 200 (application/json)
-
-    + Header
-
-            X-My-Header: The Value
 
     + Body
 
-            { "id": 2, "title": "Pick-up posters from post-office" }
+                {
+                    "0" :
+                    {
+                        "name" : "Captain America",
+                        "universe" : "Earth-616",
+                        "aliases" : ["Steven Grant Rodgers","Winghead", "Shield-Slinger", "The First Avenger", "Sentinel of Liberty", "The Living Legend", "Star-Spangled Avenger"],
+                        "alignment" : "Good",
+                        "gender" : "Male",
+                        "powers" : ["Superhuman", "Boxing", "Judo"],
+                        "description" : "In World War II patriotic solider Steve Rogers recipient of the \"Super Soldier Serum\" became the living symbol of freedom, Captain America. Left for dead while frozen in ice, the star-spangled hero with an indestructible shield awoke years later to continue his never-ending battle for liberty.",
+                        "picture" : ""
+                    },
+                    "1" :
+                    {
+                        "name" : "Spider Man",
+                        "universe" : "Earth-616",
+                        "aliases" : ["Peter Benjamin Parker"],
+                        "alignment" : "Good",
+                        "gender" : "Male",
+                        "powers" : ["Superhuman strength and agility", "Can generate spiderwebs"],
+                        "description" : "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.",
+                        "picture" : ""
+                    }
+                }
 
-### Remove a Note [DELETE]
-+ Response 204
+##Character [/characters/{id}.json]
+Info on a given character in the Marvel universe.
+
++ Parameters
+    + id (required, number, `1`) ... Unique integer ID for the character.
+
+### Retrieve a character [GET]
++ Response 200 (application/json)
+
+    + Body
+    
+                {
+                    "name" : "Spider Man",
+                    "universe" : "Earth-616",
+                    "aliases" : ["Peter Benjamin Parker"],
+                    "alignment" : "Good",
+                    "gender" : "Male",
+                    "powers" : ["Superhuman strength and agility", "Can generate spiderwebs"],
+                    "description" : "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.",
+                    "picture" : ""
+                }
+
+
+# Group Comic Books
+Comic book related resources of the **Superheroes API**
+
+##Comic Book Collection [/comics.json]
+A list of all comic books in the database.
+### List all Comic Books [GET]
++ Response 200 (application/json)
+
+    + Body
+
+                {
+                    "0" :
+                    {
+                        "name" : "Fantastic Four",
+                        "volumes" : "1",
+                        "publish_date" : "1961-1966",
+                        "universe" : "Earth-616",
+                        "description" : "",
+                        "issues" : "50"
+                    },
+                    "1" :
+                    {
+                        "name" : "Amazing Spider-Man",
+                        "volumes" : "3",
+                        "publish_date" : "2014-2015",
+                        "universe" : "Earth-616",
+                        "description" : "The Ghost has invaded Parker Industries!",
+                        "issues" : "18"
+                    }
+                }
+
+##Comic Book [/comics/{id}.json]
+Info on a given Marvel comic book.
+
++ Parameters
+    + id (required, number, `1`) ... Unique integer ID for the comic book.
+
+### Retrieve a comic book [GET]
++ Response 200 (application/json)
+
+    + Body
+    
+                {
+                    "name" : "Amazing Spider-Man",
+                    "volumes" : "3",
+                    "publish_date" : "2014-2015",
+                    "universe" : "Earth-616",
+                    "description" : "The Ghost has invaded Parker Industries!",
+                    "issues" : "18"
+                }
+        
+        
+# Group TV Shows
+TV Show related resources of the **Superheroes API**
+
+##TV Show Collection [/tv_show.json]
+A list of all TV shows in the database.
+### List all TV Shows [GET]
++ Response 200 (application/json)
+
+    + Body
+
+                {
+                    "0" :
+                    {
+                        "name" : "Agents of S.H.I.E.L.D",
+                        "date" : "9/24/2013-present",
+                        "universe" : "Earth-616",
+                        "description" : "The series revolves around the character of Phil Coulson, with Clark Gregg reprising his role from the film series, and his team of S.H.I.E.L.D. agents, who must deal with various unusual cases and enemies.",
+                        "seasons" : "2",
+                        "episodes" : "35",
+                        "broadcaster" : "ABC"
+                    },
+                    "1" :
+                    {
+                        "name" : "Ultimate Spider-Man",
+                        "date" : "4/1/2012-present",
+                        "universe" : "Earth-616",
+                        "description" : "",
+                        "seasons" : "3",
+                        "episodes" : "78",
+                        "broadcaster" : "Disney XD"
+                    }
+                }
+
+##TV show [/tv_show/{id}.json]
+Info on a given Marvel TV show.
+
++ Parameters
+    + id (required, number, `1`) ... Unique integer ID for the TV show.
+
+### Retrieve a TV show [GET]
++ Response 200 (application/json)
+
+    + Body
+    
+                {
+                    "name" : "Ultimate Spider-Man",
+                    "date" : "4/1/2012-present",
+                    "universe" : "Earth-616",
+                    "description" : "",
+                    "seasons" : "3",
+                    "episodes" : "78",
+                    "broadcaster" : "Disney XD"
+                }
