@@ -1,0 +1,283 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module models</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>models</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/user/cs373-idb/models.py">/home/user/cs373-idb/models.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial">flask_sqlalchemy.Model(<a href="flask_sqlalchemy.html#Model">flask_sqlalchemy.Model</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="models.html#Characters">Characters</a>
+</font></dt><dt><font face="helvetica, arial"><a href="models.html#Comics">Comics</a>
+</font></dt><dt><font face="helvetica, arial"><a href="models.html#TvShows">TvShows</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Characters">class <strong>Characters</strong></a>(flask_sqlalchemy.Model)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;model&nbsp;representing&nbsp;a&nbsp;superhero,&nbsp;villain,&nbsp;or&nbsp;other&nbsp;character<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#Characters">Characters</a></dd>
+<dd>flask_sqlalchemy.Model</dd>
+<dd><a href="flask_sqlalchemy.html#Model">flask_sqlalchemy.Model</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Characters-__init__"><strong>__init__</strong></a>(self, name, universe, aliases, alignment, gender, powers, description, picture)</dt><dd><tt>Initializes&nbsp;a&nbsp;character&nbsp;model&nbsp;with&nbsp;the&nbsp;following&nbsp;arguments<br>
+name&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;character<br>
+universe&nbsp;the&nbsp;universe&nbsp;the&nbsp;character&nbsp;exist&nbsp;in<br>
+aliases&nbsp;any&nbsp;other&nbsp;names&nbsp;the&nbsp;character&nbsp;goes&nbsp;by<br>
+alignment&nbsp;what&nbsp;side&nbsp;the&nbsp;character&nbsp;is&nbsp;on<br>
+gender&nbsp;the&nbsp;gender&nbsp;of&nbsp;the&nbsp;character<br>
+powers&nbsp;what&nbsp;special&nbsp;powers&nbsp;the&nbsp;character&nbsp;has<br>
+description&nbsp;a&nbsp;description&nbsp;of&nbsp;the&nbsp;character<br>
+picture&nbsp;a&nbsp;URL&nbsp;to&nbsp;the&nbsp;characters&nbsp;picture</tt></dd></dl>
+
+<dl><dt><a name="Characters-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>returns&nbsp;a&nbsp;string&nbsp;containing&nbsp;a&nbsp;printable&nbsp;representation&nbsp;of&nbsp;the&nbsp;character&nbsp;(i.e.&nbsp;it's&nbsp;name)</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>aliases</strong></dt>
+</dl>
+<dl><dt><strong>alignment</strong></dt>
+</dl>
+<dl><dt><strong>comics</strong></dt>
+</dl>
+<dl><dt><strong>description</strong></dt>
+</dl>
+<dl><dt><strong>gender</strong></dt>
+</dl>
+<dl><dt><strong>id</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+</dl>
+<dl><dt><strong>picture</strong></dt>
+</dl>
+<dl><dt><strong>powers</strong></dt>
+</dl>
+<dl><dt><strong>tvshows</strong></dt>
+</dl>
+<dl><dt><strong>universe</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x7fc4a861d110; Characters&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('Characters', MetaData(bind=None), Column(...ng(length=100), table=&lt;Characters&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'Characters'</dl>
+
+<hr>
+Methods inherited from flask_sqlalchemy.Model:<br>
+<strong>query</strong> = &lt;flask_sqlalchemy.BaseQuery object&gt;
+<hr>
+Data and other attributes inherited from flask_sqlalchemy.Model:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+<hr>
+Data descriptors inherited from <a href="flask_sqlalchemy.html#Model">flask_sqlalchemy.Model</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="flask_sqlalchemy.html#Model">flask_sqlalchemy.Model</a>:<br>
+<dl><dt><strong>query_class</strong> = &lt;class 'flask_sqlalchemy.BaseQuery'&gt;<dd><tt>The&nbsp;default&nbsp;query&nbsp;object&nbsp;used&nbsp;for&nbsp;models,&nbsp;and&nbsp;exposed&nbsp;as<br>
+:attr:`~SQLAlchemy.Query`.&nbsp;This&nbsp;can&nbsp;be&nbsp;subclassed&nbsp;and<br>
+replaced&nbsp;for&nbsp;individual&nbsp;models&nbsp;by&nbsp;setting&nbsp;the&nbsp;:attr:`~Model.query_class`<br>
+attribute.&nbsp;&nbsp;This&nbsp;is&nbsp;a&nbsp;subclass&nbsp;of&nbsp;a&nbsp;standard&nbsp;SQLAlchemy<br>
+:class:`~sqlalchemy.orm.query.Query`&nbsp;class&nbsp;and&nbsp;has&nbsp;all&nbsp;the&nbsp;methods&nbsp;of&nbsp;a<br>
+standard&nbsp;query&nbsp;as&nbsp;well.</tt></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Comics">class <strong>Comics</strong></a>(flask_sqlalchemy.Model)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;model&nbsp;representing&nbsp;a&nbsp;comic<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#Comics">Comics</a></dd>
+<dd>flask_sqlalchemy.Model</dd>
+<dd><a href="flask_sqlalchemy.html#Model">flask_sqlalchemy.Model</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Comics-__init__"><strong>__init__</strong></a>(self, name, volume, pubdate, universe, description, nuissues)</dt><dd><tt>Initializes&nbsp;a&nbsp;comic&nbsp;model&nbsp;with&nbsp;the&nbsp;following&nbsp;arguments<br>
+name&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;comic<br>
+volume&nbsp;the&nbsp;comic's&nbsp;volume&nbsp;number<br>
+pubdate&nbsp;the&nbsp;date&nbsp;the&nbsp;comic&nbsp;was&nbsp;published<br>
+universe&nbsp;the&nbsp;universe&nbsp;the&nbsp;comic&nbsp;takes&nbsp;place&nbsp;in<br>
+description&nbsp;a&nbsp;description&nbsp;of&nbsp;the&nbsp;comic<br>
+nuissues&nbsp;the&nbsp;number&nbsp;of&nbsp;issues</tt></dd></dl>
+
+<dl><dt><a name="Comics-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>returns&nbsp;a&nbsp;string&nbsp;containing&nbsp;a&nbsp;printable&nbsp;representation&nbsp;of&nbsp;the&nbsp;comic&nbsp;(i.e.&nbsp;it's&nbsp;name)</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>Characters</strong></dt>
+</dl>
+<dl><dt><strong>description</strong></dt>
+</dl>
+<dl><dt><strong>id</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+</dl>
+<dl><dt><strong>nuissues</strong></dt>
+</dl>
+<dl><dt><strong>pubdate</strong></dt>
+</dl>
+<dl><dt><strong>universe</strong></dt>
+</dl>
+<dl><dt><strong>volume</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x7fc4a85af790; Comics&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('Comics', MetaData(bind=None), Column('id'...issues', Integer(), table=&lt;Comics&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'Comics'</dl>
+
+<hr>
+Methods inherited from flask_sqlalchemy.Model:<br>
+<strong>query</strong> = &lt;flask_sqlalchemy.BaseQuery object&gt;
+<hr>
+Data and other attributes inherited from flask_sqlalchemy.Model:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+<hr>
+Data descriptors inherited from <a href="flask_sqlalchemy.html#Model">flask_sqlalchemy.Model</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="flask_sqlalchemy.html#Model">flask_sqlalchemy.Model</a>:<br>
+<dl><dt><strong>query_class</strong> = &lt;class 'flask_sqlalchemy.BaseQuery'&gt;<dd><tt>The&nbsp;default&nbsp;query&nbsp;object&nbsp;used&nbsp;for&nbsp;models,&nbsp;and&nbsp;exposed&nbsp;as<br>
+:attr:`~SQLAlchemy.Query`.&nbsp;This&nbsp;can&nbsp;be&nbsp;subclassed&nbsp;and<br>
+replaced&nbsp;for&nbsp;individual&nbsp;models&nbsp;by&nbsp;setting&nbsp;the&nbsp;:attr:`~Model.query_class`<br>
+attribute.&nbsp;&nbsp;This&nbsp;is&nbsp;a&nbsp;subclass&nbsp;of&nbsp;a&nbsp;standard&nbsp;SQLAlchemy<br>
+:class:`~sqlalchemy.orm.query.Query`&nbsp;class&nbsp;and&nbsp;has&nbsp;all&nbsp;the&nbsp;methods&nbsp;of&nbsp;a<br>
+standard&nbsp;query&nbsp;as&nbsp;well.</tt></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TvShows">class <strong>TvShows</strong></a>(flask_sqlalchemy.Model)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;model&nbsp;representing&nbsp;a&nbsp;TV&nbsp;show<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#TvShows">TvShows</a></dd>
+<dd>flask_sqlalchemy.Model</dd>
+<dd><a href="flask_sqlalchemy.html#Model">flask_sqlalchemy.Model</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TvShows-__init__"><strong>__init__</strong></a>(self, name, date, universe, description, nuseasons, nuepisodes, broadcast)</dt><dd><tt>Initializes&nbsp;a&nbsp;TV&nbsp;show&nbsp;model&nbsp;with&nbsp;the&nbsp;following&nbsp;arguments<br>
+name&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;show<br>
+date&nbsp;when&nbsp;the&nbsp;show&nbsp;aired<br>
+universe&nbsp;the&nbsp;universe&nbsp;the&nbsp;show&nbsp;takes&nbsp;place&nbsp;in<br>
+description&nbsp;a&nbsp;description&nbsp;of&nbsp;the&nbsp;show<br>
+nuseasons&nbsp;the&nbsp;number&nbsp;of&nbsp;seasons&nbsp;of&nbsp;the&nbsp;show<br>
+nuepisodes&nbsp;the&nbsp;number&nbsp;of&nbsp;episodes&nbsp;of&nbsp;the&nbsp;show<br>
+broadcast&nbsp;when&nbsp;the&nbsp;show&nbsp;was&nbsp;broadcast</tt></dd></dl>
+
+<dl><dt><a name="TvShows-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>returns&nbsp;a&nbsp;string&nbsp;containing&nbsp;a&nbsp;printable&nbsp;representation&nbsp;of&nbsp;the&nbsp;show&nbsp;(i.e.&nbsp;it's&nbsp;name)</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>Characters</strong></dt>
+</dl>
+<dl><dt><strong>broadcast</strong></dt>
+</dl>
+<dl><dt><strong>date</strong></dt>
+</dl>
+<dl><dt><strong>description</strong></dt>
+</dl>
+<dl><dt><strong>id</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+</dl>
+<dl><dt><strong>nuepisodes</strong></dt>
+</dl>
+<dl><dt><strong>nuseasons</strong></dt>
+</dl>
+<dl><dt><strong>universe</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x7fc4a85b8a90; TvShows&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('TvShows', MetaData(bind=None), Column('id...String(length=40), table=&lt;TvShows&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'TvShows'</dl>
+
+<hr>
+Methods inherited from flask_sqlalchemy.Model:<br>
+<strong>query</strong> = &lt;flask_sqlalchemy.BaseQuery object&gt;
+<hr>
+Data and other attributes inherited from flask_sqlalchemy.Model:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+<hr>
+Data descriptors inherited from <a href="flask_sqlalchemy.html#Model">flask_sqlalchemy.Model</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="flask_sqlalchemy.html#Model">flask_sqlalchemy.Model</a>:<br>
+<dl><dt><strong>query_class</strong> = &lt;class 'flask_sqlalchemy.BaseQuery'&gt;<dd><tt>The&nbsp;default&nbsp;query&nbsp;object&nbsp;used&nbsp;for&nbsp;models,&nbsp;and&nbsp;exposed&nbsp;as<br>
+:attr:`~SQLAlchemy.Query`.&nbsp;This&nbsp;can&nbsp;be&nbsp;subclassed&nbsp;and<br>
+replaced&nbsp;for&nbsp;individual&nbsp;models&nbsp;by&nbsp;setting&nbsp;the&nbsp;:attr:`~Model.query_class`<br>
+attribute.&nbsp;&nbsp;This&nbsp;is&nbsp;a&nbsp;subclass&nbsp;of&nbsp;a&nbsp;standard&nbsp;SQLAlchemy<br>
+:class:`~sqlalchemy.orm.query.Query`&nbsp;class&nbsp;and&nbsp;has&nbsp;all&nbsp;the&nbsp;methods&nbsp;of&nbsp;a<br>
+standard&nbsp;query&nbsp;as&nbsp;well.</tt></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>comics_association_table</strong> = Table('comics_association', MetaData(bind=None),...s.id'), table=&lt;comics_association&gt;), schema=None)<br>
+<strong>db</strong> = &lt;SQLAlchemy engine='sqlite://'&gt;<br>
+<strong>tvshows_association_table</strong> = Table('tvshows_association', MetaData(bind=None)....id'), table=&lt;tvshows_association&gt;), schema=None)</td></tr></table>
+</body></html>
