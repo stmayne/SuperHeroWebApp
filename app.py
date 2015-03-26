@@ -25,6 +25,10 @@ def getShow(show_id):
 def getCharacter(character_id):
     return render_template('character.html', character_id=character_id)
 
+@app.route('/directory')
+def get():
+	return render_template('directory.html')
+
 #run Flask open to all IPs on port 80(requires root access)
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
