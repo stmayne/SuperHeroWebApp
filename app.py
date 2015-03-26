@@ -20,14 +20,18 @@ def get():
 
 @app.route('/directory/')
 def getDirectory():
-	return render_template('directory.html')
+	return render_template('directory.html', **data)
 
 @app.route('/comic/<comic_id>')
 def getComic(comic_id):
+	if data['Comics'][str(comic_id)]['picture'] == "" :
+		data['Comics'][str(comic_id)]['picture'] = imageNotFound
 	return render_template('comic.html', **data['Comics'][str(comic_id)])
 
 @app.route('/show/<show_id>')
 def getShow(show_id):
+	if data['Shows'][str(show_id)]['picture'] == "" :
+		data['Shows'][str(show_id)]['picture'] = imageNotFound
 	return render_template('show.html', **data['Shows'][str(show_id)])
 
 @app.route('/character/<character_id>')

@@ -122,7 +122,8 @@
 			"description" : "The series revolves around the character of Phil Coulson, with Clark Gregg reprising his role from the film series, and his team of S.H.I.E.L.D. agents, who must deal with various unusual cases and enemies.",
 			"seasons" : "2",
 			"episodes" : "35",
-			"broadcaster" : "ABC"
+			"broadcaster" : "ABC",
+			"picture" : ""
 		},
 		"1" :
 		{
@@ -132,7 +133,8 @@
 			"description" : "",
 			"seasons" : "3",
 			"episodes" : "78",
-			"broadcaster" : "Disney XD"
+			"broadcaster" : "Disney XD",
+			"picture" : ""
 		},
 		"2" :
 		{
@@ -142,7 +144,8 @@
 			"description" : "",
 			"seasons" : "3",
 			"episodes" : "66",
-			"broadcaster" : "Syndicated"
+			"broadcaster" : "Syndicated",
+			"picture" : ""
 		},
 		"3" :
 		{
@@ -152,7 +155,8 @@
 			"description" : "",
 			"seasons" : "2",
 			"episodes" : "26",
-			"broadcaster" : "Syndicated"
+			"broadcaster" : "Syndicated",
+			"picture" : ""
 		},
 		"4" :
 		{
@@ -162,7 +166,8 @@
 			"description" : "",
 			"seasons" : "2",
 			"episodes" : "26",
-			"broadcaster" : "Syndicated"
+			"broadcaster" : "Syndicated",
+			"picture" : ""
 		},
 		"5" :
 		{
@@ -172,7 +177,8 @@
 			"description" : "",
 			"seasons" : "2",
 			"episodes" : "21",
-			"broadcaster" : "UPN"
+			"broadcaster" : "UPN",
+			"picture" : ""
 		},
 		"6" :
 		{
@@ -182,7 +188,8 @@
 			"description" : "",
 			"seasons" : "1",
 			"episodes" : "13",
-			"broadcaster" : "Fox Kids"
+			"broadcaster" : "Fox Kids",
+			"picture" : ""
 		},
 		"7" :
 		{
@@ -192,7 +199,8 @@
 			"description" : "",
 			"seasons" : "1",
 			"episodes" : "6",
-			"broadcaster" : "BET"
+			"broadcaster" : "BET",
+			"picture" : ""
 		},
 		"8" :
 		{
@@ -202,7 +210,8 @@
 			"description" : "",
 			"seasons" : "5",
 			"episodes" : "76",
-			"broadcaster" : "Fox Kids"
+			"broadcaster" : "Fox Kids",
+			"picture" : ""
 		},
 		"9" :
 		{
@@ -212,7 +221,8 @@
 			"description" : "",
 			"seasons" : "4",
 			"episodes" : "52",
-			"broadcaster" : "Kids WB"
+			"broadcaster" : "Kids WB",
+			"picture" : ""
 		}
 	},
 	"Comics":
@@ -224,7 +234,8 @@
 			"publish_date" : "1961-1966",
 			"universe" : "Earth-616",
 			"description" : "",
-			"issues" : "50"
+			"issues" : "50",
+			"picture" : ""
 		},
 		"1" :
 		{
@@ -233,7 +244,8 @@
 			"publish_date" : "2014-2015",
 			"universe" : "Earth-616",
 			"description" : "The Ghost has invaded Parker Industries!",
-			"issues" : "18"
+			"issues" : "18",
+			"picture" : ""
 		},
 		"2" :
 		{
@@ -242,7 +254,8 @@
 			"publish_date" : "2013-2015",
 			"universe" : "Earth-616",
 			"description" : "",
-			"issues" : "44"
+			"issues" : "44",
+			"picture" : ""
 		},
 		"3" :
 		{
@@ -251,7 +264,8 @@
 			"publish_date" : "2008-2010",
 			"universe" : "Earth-616",
 			"description" : "Dave Lizewski, regular high school kid being raised by a widower father, takes it upon himself to become a real life superhero. After getting together a suit and doing some training he confronts his first criminals, which doesn't go well for him",
-			"issues" : "8"
+			"issues" : "8",
+			"picture" : ""
 		},
 		"4" :
 		{
@@ -260,7 +274,8 @@
 			"publish_date" : "1962-2011",
 			"universe" : "Earth-616",
 			"description" : "",
-			"issues" : "635"
+			"issues" : "635",
+			"picture" : ""
 		},
 		"5" :
 		{
@@ -269,7 +284,8 @@
 			"publish_date" : "2010-2011",
 			"universe" : "Earth-616",
 			"description" : "",
-			"issues" : "6"
+			"issues" : "6",
+			"picture" : ""
 		},
 		"6" :
 		{
@@ -278,7 +294,8 @@
 			"publish_date" : "1964-2011",
 			"universe" : "Earth-616",
 			"description" : "",
-			"issues" : "512"
+			"issues" : "512",
+			"picture" : ""
 		},
 		"7" :
 		{
@@ -287,7 +304,8 @@
 			"publish_date" : "2014-2015",
 			"universe" : "Earth-616",
 			"description" : "",
-			"issues" : "12"
+			"issues" : "12",
+			"picture" : ""
 		},
 		"8" :
 		{
@@ -296,7 +314,8 @@
 			"publish_date" : "1981-1981",
 			"universe" : "Earth-616",
 			"description" : "",
-			"issues" : "3"
+			"issues" : "3",
+			"picture" : ""
 		},
 		"9" :
 		{
@@ -305,7 +324,8 @@
 			"publish_date" : "1992-1992",
 			"universe" : "Earth-616",
 			"description" : "",
-			"issues" : "12"
+			"issues" : "12",
+			"picture" : ""
 		}
 	}
 }
