@@ -1,88 +1,46 @@
 FORMAT: 1A
 
-# Superheroes
-Superheroes API is a way to access information about Marvel superheroes and villains, including characters,
-comic books, and TV shows.
+# Notes API
+Notes API is a *short texts saving* service similar to its physical paper presence on your table.
 
-# Group Characters
-Character related resources of the **Superheroes API**
+# Group Notes
+Notes related resources of the **Notes API**
 
-##Character Collection [/characters.json]
-A list of all characters in the database.
-### List all Characters [GET]
+## Notes Collection [/notes]
+### List all Notes [GET]
 + Response 200 (application/json)
 
         [{
-          "id": 1, "placeholder info 1"
+          "id": 1, "title": "Jogging in park"
         }, {
-          "id": 2, "placeholder info 2"
+          "id": 2, "title": "Pick-up posters from post-office"
         }]
 
-##Character [/characters/{id}.json]
-Info on a given character in the Marvel universe.
+### Create a Note [POST]
++ Request (application/json)
+
+        { "title": "Buy cheese and bread for breakfast." }
+
++ Response 201 (application/json)
+
+        { "id": 3, "title": "Buy cheese and bread for breakfast." }
+
+## Note [/notes/{id}]
+A single Note object with all its details
 
 + Parameters
-    + id (required, number, `1`) ... Unique integer ID for the character.
+    + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
 
-### Retrieve a character [GET]
+### Retrieve a Note [GET]
 + Response 200 (application/json)
 
-        [{
-          "id": 1, "placeholder info 1"
-        }]
+    + Header
 
+            X-My-Header: The Value
 
-# Group Comic Books
-Comic book related resources of the **Superheroes API**
+    + Body
 
-##Comic Book Collection [/comics.json]
-A list of all comic books in the database.
-### List all Comic Books [GET]
-+ Response 200 (application/json)
+            { "id": 2, "title": "Pick-up posters from post-office" }
 
-        [{
-          "id": 1, "placeholder info 1"
-        }, {
-          "id": 2, "placeholder info 2"
-        }]
-
-##Comic Book [/comics/{id}.json]
-Info on a given Marvel comic book.
-
-+ Parameters
-    + id (required, number, `1`) ... Unique integer ID for the comic book.
-
-### Retrieve a comic book [GET]
-+ Response 200 (application/json)
-
-        [{
-          "id": 1, "placeholder info 1"
-        }]
-        
-        
-# Group TV Shows
-TV Show related resources of the **Superheroes API**
-
-##TV Show Collection [/tv_show.json]
-A list of all TV shows in the database.
-### List all TV Shows [GET]
-+ Response 200 (application/json)
-
-        [{
-          "id": 1, "placeholder info 1"
-        }, {
-          "id": 2, "placeholder info 2"
-        }]
-
-##TV show [/tv_show/{id}.json]
-Info on a given Marvel TV show.
-
-+ Parameters
-    + id (required, number, `1`) ... Unique integer ID for the TV show.
-
-### Retrieve a TV show [GET]
-+ Response 200 (application/json)
-
-        [{
-          "id": 1, "placeholder info 1"
-        }]
+### Remove a Note [DELETE]
++ Response 204
