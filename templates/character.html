@@ -263,13 +263,12 @@ p.copyright {
 		<span style="float: left; margin-left: 5px;">{{ universe }}</span>
 		<br><strong style="float: left;">Gender:</strong>
 		<span style="float: left; margin-left: 5px;">{{ gender }}</span>
-		<br><strong style="float: left;">Aliases:</strong>
-		{% for item in aliases %}
-			<span style="float: left; margin-left: 5px;">{{ item }}</span>
-		{% endfor %}
+		<br><strong style="float: left;">Aliases: </strong>
+		<span style="float: left; text-align: left;">{{ ", ".join(aliases) }}</span>
 		<br><strong style="float: left;">Powers:</strong>
 		<span style="float: left; margin-left: 5px;">
 		{{ ", ".join(powers) }}
+		</span>
 	</div>
 	</div>
   </div>
