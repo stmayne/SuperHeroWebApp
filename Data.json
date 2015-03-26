@@ -233,9 +233,9 @@
 			"volumes" : "1",
 			"publish_date" : "1961-1966",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "The Fantastic Four is a fictional superhero team appearing in comic books published by Marvel Comics. The group debuted in The Fantastic Four #1 (cover dated Nov. 1961), which helped to usher in a new level of realism in the medium.",
 			"issues" : "50",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/psn8PsY.jpg"
 		},
 		"1" :
 		{
@@ -245,7 +245,7 @@
 			"universe" : "Earth-616",
 			"description" : "The Ghost has invaded Parker Industries!",
 			"issues" : "18",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/0sguyB6.jpg"
 		},
 		"2" :
 		{
@@ -253,9 +253,9 @@
 			"volumes" : "5",
 			"publish_date" : "2013-2015",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "A long time ago, there was nothing. Then there was everything. Many bits of creation swirled around the stars - planets that support life. And then one group of heroes raced into the light - the Avengers. ",
 			"issues" : "44",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/hN08Ill.jpg"
 		},
 		"3" :
 		{
@@ -265,7 +265,7 @@
 			"universe" : "Earth-616",
 			"description" : "Dave Lizewski, regular high school kid being raised by a widower father, takes it upon himself to become a real life superhero. After getting together a suit and doing some training he confronts his first criminals, which doesn't go well for him",
 			"issues" : "8",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/vJLUpRf.jpg"
 		},
 		"4" :
 		{
@@ -273,9 +273,9 @@
 			"volumes" : "1",
 			"publish_date" : "1962-2011",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "The Hulk is a fictional superhero that appears in comic books published by Marvel Comics. The character was created by Stan Lee and Jack Kirby, and first appeared in The Incredible Hulk #1 (May 1962). Throughout his comic book appearances, the Hulk is portrayed as a large green humanoid that possesses near limitless superhuman strength and great invulnerability, attributes that grow more potent the angrier he becomes.",
 			"issues" : "635",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/nxIzS3T.jpg"
 		},
 		"5" :
 		{
@@ -283,9 +283,9 @@
 			"volumes" : "1",
 			"publish_date" : "2010-2011",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "One of the most complex and ambitious series ever published, S.H.I.E.L.D. explores the secret history of the world's premiere peacekeeping organization, featuring classic Marvel characters as well as real world figures like Leonardo da Vinci and Isaac Newton. It's like nothing you've ever seen!",
 			"issues" : "6",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/shU1qfW.jpg"
 		},
 		"6" :
 		{
@@ -293,9 +293,9 @@
 			"volumes" : "1",
 			"publish_date" : "1964-2011",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "Daredevil is a fictional superhero that appears in American comic books published by Marvel Comics. The character was created by writer-editor Stan Lee and artist Bill Everett, with an unspecified amount of input from Jack Kirby,[1] and first appeared in Daredevil #1 (April 1964).",
 			"issues" : "512",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/qhmvcW6.jpg"
 		},
 		"7" :
 		{
@@ -303,9 +303,9 @@
 			"volumes" : "1",
 			"publish_date" : "2014-2015",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "From the pages of GUARDIANS OF THE GALAXY! A brand new series from SAM HUMPHRIES and PACO MEDINA! In this exciting first issue, Peter Quill battles the Badoon, fights to save an orphanage, and still finds time for some flirting with Kitty Pryde--but it’s all in a day’s work for the STAR-LORD! ",
 			"issues" : "12",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/46C9gGI.jpg"
 		},
 		"8" :
 		{
@@ -313,9 +313,9 @@
 			"volumes" : "1",
 			"publish_date" : "1981-1981",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "The Raiders of the Lost Ark comic adaptation was published by Marvel Comics from September through November 1981.",
 			"issues" : "3",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/ye1f2Ku.jpg"
 		},
 		"9" :
 		{
@@ -323,9 +323,9 @@
 			"volumes" : "1",
 			"publish_date" : "1992-1992",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "James Bond Jr. had a limited 12 issue run with Marvel Comics spanning from January 1992 to December 1992. The first five stories were lifted directly from the TV series, but the other seven were original stories. The writers were Cal Hamilton and Dan Abnett, and the artists were Mario Capaldi, Colin Fawcett, Adolfo Buylla, and Bambos Georgioli.",
 			"issues" : "12",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/41sI7O3.jpg"
 		}
 	}
 }
