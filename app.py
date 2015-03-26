@@ -10,11 +10,13 @@ import models
 import json
 
 with open('Data.json') as json_data:
-    data = json.load(json_data)
+	data = json.load(json_data)
+
+imageNotFound = "https://browshot.com/static/images/not-found.png"
 
 @app.route('/')
 def get():
-    return render_template('index.html')
+	return render_template('index.html')
 
 @app.route('/directory/')
 def getDirectory():
@@ -22,16 +24,18 @@ def getDirectory():
 
 @app.route('/comic/<comic_id>')
 def getComic(comic_id):
-    return render_template('comic.html', **data['Comics'][str(comic_id)])
+	return render_template('comic.html', **data['Comics'][str(comic_id)])
 
 @app.route('/show/<show_id>')
 def getShow(show_id):
-    return render_template('show.html', **data['Shows'][str(show_id)])
+	return render_template('show.html', **data['Shows'][str(show_id)])
 
 @app.route('/character/<character_id>')
 def getCharacter(character_id):
-    return render_template('character.html', **data['Characters'][str(character_id)])
+	if data['Characters'][str(character_id)]['picture'] == "" :
+		data['Characters'][str(character_id)]['picture'] = imageNotFound
+	return render_template('character.html', **data['Characters'][str(character_id)])
 
 #run Flask open to all IPs on port 80(requires root access)
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80, debug=True)
+	app.run(host='0.0.0.0', port=80, debug=True)
