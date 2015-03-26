@@ -22,15 +22,15 @@ def getDirectory():
 
 @app.route('/comic/<comic_id>')
 def getComic(comic_id):
-    return render_template('comic.html', **data['Comics'][comic_id])
+    return render_template('comic.html', **data['Comics'][str(comic_id)])
 
 @app.route('/show/<show_id>')
 def getShow(show_id):
-    return render_template('show.html', **data['Shows'][show_id])
+    return render_template('show.html', **data['Shows'][str(show_id)])
 
 @app.route('/character/<character_id>')
 def getCharacter(character_id):
-    return render_template('character.html', **data['Characters'][character_id])
+    return render_template('character.html', **data['Characters'][str(character_id)])
 
 #run Flask open to all IPs on port 80(requires root access)
 if __name__ == '__main__':
