@@ -2,7 +2,12 @@ from flask import Flask
 from flask import render_template
 from flask import request
 import traceback
-app = Flask(__name__)
+
+from config import app
+
+from models import Characters
+from models import Comics
+from models import TvShows
 
 @app.route('/')
 def get():

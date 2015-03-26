@@ -12,19 +12,11 @@ A list of all characters in the database.
 ### List all Characters [GET]
 + Response 200 (application/json)
 
-    + Body
-
-                {
-                    "id": 1,
-                    "name": "Spiderman",
-                    "picture": "URL?"
-                }
-                {
-                    "id": 2,
-                    "name": "Iron Man",
-                    "picture": "URL?"
-                }
-                ...
+        [{
+          "id": 1, "placeholder info 1"
+        }, {
+          "id": 2, "placeholder info 2"
+        }]
 
 ##Character [/characters/{id}.json]
 Info on a given character in the Marvel universe.
@@ -35,21 +27,9 @@ Info on a given character in the Marvel universe.
 ### Retrieve a character [GET]
 + Response 200 (application/json)
 
-    + Body
-    
-                {
-                    "id": 1,
-                    "name": "Spiderman",
-                    "universe": "?",
-                    "aliases": "?",
-                    "alignment": "Good",
-                    "gender": "Male",
-                    "powers": "Spidey Senses, Sarcasm",
-                    "description": "lots of words",
-                    "picture": "URL?",
-                    "comics": [],
-                    "tvshows": []
-                }
+        [{
+          "id": 1, "placeholder info 1"
+        }]
 
 
 # Group Comic Books
@@ -60,19 +40,11 @@ A list of all comic books in the database.
 ### List all Comic Books [GET]
 + Response 200 (application/json)
 
-    + Body
-
-                {
-                    "id": 1,
-                    "name": "World War Hulk",
-                    "picture": "URL?"
-                }
-                {
-                    "id": 2,
-                    "name": "Age of Ultron",
-                    "picture": "URL?"
-                }
-                ...
+        [{
+          "id": 1, "placeholder info 1"
+        }, {
+          "id": 2, "placeholder info 2"
+        }]
 
 ##Comic Book [/comics/{id}.json]
 Info on a given Marvel comic book.
@@ -83,17 +55,9 @@ Info on a given Marvel comic book.
 ### Retrieve a comic book [GET]
 + Response 200 (application/json)
 
-    + Body
-    
-                {
-                    "id": 1,
-                    "name": "World War Hulk",
-                    "volume": 1,
-                    "pubdate": "?",
-                    "universe": "?",
-                    "description": "?",
-                    "nuissues": 6
-                }
+        [{
+          "id": 1, "placeholder info 1"
+        }]
         
         
 # Group TV Shows
@@ -104,19 +68,11 @@ A list of all TV shows in the database.
 ### List all TV Shows [GET]
 + Response 200 (application/json)
 
-    + Body
-
-                {
-                    "id": 1,
-                    "name": "The Marvel Super Heroes",
-                    "picture": "URL?"
-                }
-                {
-                    "id": 2,
-                    "name": "Fantastic Four",
-                    "picture": "URL?"
-                }
-                ...
+        [{
+          "id": 1, "placeholder info 1"
+        }, {
+          "id": 2, "placeholder info 2"
+        }]
 
 ##TV show [/tv_show/{id}.json]
 Info on a given Marvel TV show.
@@ -127,16 +83,6 @@ Info on a given Marvel TV show.
 ### Retrieve a TV show [GET]
 + Response 200 (application/json)
 
-    + Body
-    
-                {
-                    "id": 1,
-                    "name": "The Marvel Super Heroes",
-                    "date": "?",
-                    "universe": "?",
-                    "description": "?",
-                    "nuseasons": 6,
-                    "nuepisodes": 6,
-                    "broadcast": "?",
-                    
-                }
+        [{
+          "id": 1, "placeholder info 1"
+        }]

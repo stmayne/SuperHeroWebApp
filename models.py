@@ -1,21 +1,13 @@
-from flask import Flask
-from flask.ext.sqlalchemy import SQLAlchemy
-from database import db_session
+from config import db
 
-app = Flask(__name__)
-#app.config['SQLACLHEMY_DATABASE_URI'] = 'postgresql://localhost/test'
-#app.config['SQLALCHEMY_ECHO'] = True
-#db = SQLAlchemy(app)
-#db.create_all()
-
-comics_association_table = Table('association',Base.metadata,
-		Column('Character_id', Integer, ForeignKey('Characters.id')),
-		Column('Comics_id', Integer, ForeignKey('Comics.id'))
+comics_association_table = db.Table('comics_association',
+		db.Column('Character_id', db.Integer, db.ForeignKey('Characters.id')),
+		db.Column('Comics_id', db.Integer, db.ForeignKey('Comics.id'))
 	)
 
-tvshows_association_table = Table('association',Base.metadata,
-		Column('Character_id', Integer, ForeignKey('Characters.id')),
-		Column('TvShows_id', Integer, ForeignKey('TvShows.id'))
+tvshows_association_table = db.Table('tvshows_association',
+		db.Column('Character_id', db.Integer, db.ForeignKey('Characters.id')),
+		db.Column('TvShows_id', db.Integer, db.ForeignKey('TvShows.id'))
 	)
 
 class Characters(db.Model):
@@ -33,12 +25,12 @@ class Characters(db.Model):
 	powers = db.Column(db.String(200))
 	description = db.Column(db.String(500))
 	picture = db.Column(db.String(100)) #Location?
-	comics = relationship("Comics", secondary = comics_association_table,
-									backref= "Characters")
-	tvshows = relationship("TvShows", secondary = tvshows_association_table,
-									backref= "TvShows")
+	comics = db.relationship("Comics", secondary = comics_association_table,
+									backref= db.backref("Characters"))
+	tvshows = db.relationship("TvShows", secondary = tvshows_association_table,
+									backref= db.backref("Characters"))
 
-	def __init__(self, name, unvierse,aliases,alignment,gender,powers, description, picture):
+	def __init__(self, name, universe, aliases, alignment, gender, powers, description, picture):
 		"""
 		Initializes a character model with the following arguments
 		name the name of the character
@@ -79,7 +71,7 @@ class Comics(db.Model):
 	nuissues = db.Column(db.Integer)
 	
 
-	def __init__(self, name, volume,pubdate,universe,description,nuissues):
+	def __init__(self, name, volume, pubdate, universe, description, nuissues):
 		"""
 		Initializes a comic model with the following arguments
 		name the name of the comic
@@ -94,7 +86,7 @@ class Comics(db.Model):
 		self.pubdate = pubdate
 		self.universe = universe
 		self.description = description
-		self.nuisses = nuisses
+		self.nuissues = nuissues
 	def __repr__(self):
 		"""
 		returns a string containing a printable representation of the comic (i.e. it's name)

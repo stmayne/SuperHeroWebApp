@@ -1,0 +1,16 @@
+{
+	"Characters":
+	[ 
+		{
+			"id" : 1000,
+			"name" :  "name of character",
+			"universe" : "universe name",
+			"aliases" : ["alias1", "alias2"],
+			"alignment" : "neutral",
+			"gender" : "m",
+			"powers" : ["power1", "power2"],
+			"description" : "description of character",
+			"picture" : "http://linktopicture.com"
+		}
+	]
+}
