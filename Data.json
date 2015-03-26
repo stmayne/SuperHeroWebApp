@@ -123,106 +123,106 @@
 			"seasons" : "2",
 			"episodes" : "35",
 			"broadcaster" : "ABC",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/NCP2DvC.jpg"
 		},
 		"1" :
 		{
 			"name" : "Ultimate Spider-Man",
 			"date" : "4/1/2012-present",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "The show is an American animated television series based on the Spider-Man comics published by Marvel Comics, including some elements of Marvel's Ultimate line of books.",
 			"seasons" : "3",
 			"episodes" : "78",
 			"broadcaster" : "Disney XD",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/g2BtBDi.png"
 		},
 		"2" :
 		{
 			"name" : "Mutant X",
 			"date" : "10/6/2001-5/17/2004",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "Mutant X is a science fiction television series that debuted on October 6, 2001. The show was created by Avi Arad, and it centers on Mutant X, a team of New Mutants who possess extraordinary powers as a result of genetic engineering.",
 			"seasons" : "3",
 			"episodes" : "66",
 			"broadcaster" : "Syndicated",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/v8bj5PX.png"
 		},
 		"3" :
 		{
 			"name" : "Fantastic Four",
 			"date" : "9/24/1994-2/24/1996",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "Fantastic Four, also known as Fantastic Four: The Animated Series, is the third animated television series based on Marvel's comic book series of the same name.[2] Airing began on September 24, 1994, until ending on February 24, 1996. ",
 			"seasons" : "2",
 			"episodes" : "26",
 			"broadcaster" : "Syndicated",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/qC5tHin.jpg"
 		},
 		"4" :
 		{
 			"name" : "Iron Man",
 			"date" : "9/24/1994-2/24/1996",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "Iron Man, also known as Iron Man: The Animated Series, is an American animated television series based on Marvel Comics' superhero Iron Man.",
 			"seasons" : "2",
 			"episodes" : "26",
 			"broadcaster" : "Syndicated",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/FDPvLPL.jpg"
 		},
 		"5" :
 		{
 			"name" : "The Incredible Hulk",
 			"date" : "9/8/1996-11/23/1991",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "The Incredible Hulk is an American animated television series starring the Marvel Comics character the Hulk. It ran two seasons, for 21 episodes, on the television network UPN from 1996 to 1997. Lou Ferrigno, who portrayed Universal's version of the Hulk on the live-action TV series from 1978 to 1982, provided the Hulk's voice for the true version from Marvel.",
 			"seasons" : "2",
 			"episodes" : "21",
 			"broadcaster" : "UPN",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/yEe3eCm.jpg"
 		},
 		"6" :
 		{
 			"name" : "Silver Surfer",
 			"date" : "2/7/1998-5/16/1998",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "Silver Surfer, also known as Silver Surfer: The Animated Series, is an animated television series based on the Marvel Comics superhero created by Jack Kirby. The series aired for one season on the Fox Kids Network in 1998.",
 			"seasons" : "1",
 			"episodes" : "13",
 			"broadcaster" : "Fox Kids",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/LX3M7xR.jpg"
 		},
 		"7" :
 		{
 			"name" : "Black Panther",
 			"date" : "1/16/2010-1/30/2010",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "Black Panther is an American cartoon series by Marvel Knights Animation, Titmouse, inc. in partnership with Hudlin Entertainment and BET, based on the popular Marvel Comics superhero of the same name.",
 			"seasons" : "1",
 			"episodes" : "6",
 			"broadcaster" : "BET",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/pAI3rx0.jpg"
 		},
 		"8" :
 		{
 			"name" : "X-Men",
 			"date" : "10/31/1992-9/20/1997",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "X-Men, also known as X-Men: The Animated Series, is an American-Canadian animated television series which debuted on October 31, 1992 in the United States on the Fox Network as part of its Fox Kids Saturday morning lineup.",
 			"seasons" : "5",
 			"episodes" : "76",
 			"broadcaster" : "Fox Kids",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/Kuoj37b.jpg"
 		},
 		"9" :
 		{
 			"name" : "X-Men: Evolution",
 			"date" : "11/4/2000 - 10/25/2003 ",
 			"universe" : "Earth-616",
-			"description" : "",
+			"description" : "X-Men: Evolution is a Canadian-American animated television series about the Marvel Comics superhero team X-Men.[1] In this incarnation, many of the characters are teenagers rather than adults.",
 			"seasons" : "4",
 			"episodes" : "52",
 			"broadcaster" : "Kids WB",
-			"picture" : ""
+			"picture" : "http://i.imgur.com/GJWqRX6.jpg"
 		}
 	},
 	"Comics":
