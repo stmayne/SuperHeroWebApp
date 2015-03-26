@@ -241,13 +241,14 @@ p.copyright {
 
 <div id="wrapper" style="font-weight: normal; max-width: 800px; margin: 0 auto; padding: 10px;background: white;border-radius: 10px;margin-top: 100px;/* border: 1px solid black; */box-shadow: 0 0 5px 5px #888;min-height: 510px;">
   <div style="display: inline-block; width: 100%; color: #333;">
-	<img src="http://blogs.peru21.pe/comics21/AmazingSpider-Man520.jpg" style="width: 250px; float: left;">
+	{% block content %}
+	<img src="{{ picture }}" style="width: 250px; float: left;">
 	<div>
 	<h1 style="
     color: #333;
     float: left;
     margin-left: 20px;
-	">Amazing Spider-Man <span style="font-size: 14px;">Comic</span></h1>
+	">{{ name }} <span style="font-size: 14px;">Comic</span></h1>
 	<p style="
     color: #333;
     text-align: left;
@@ -255,20 +256,22 @@ p.copyright {
     float: left;
     max-width: 490px;
 	width: 100%;
-	">The Ghost has invaded Parker Industries!
+	">{{ description }}
 	</p>
 	<div class="profileMetaData" style="float: left; margin-left: 20px; max-width: 490px;">
 		<strong style="float: left;">Universe:</strong>
-		<span style="float: left; margin-left: 5px;">Earth-616</span>
+		<span style="float: left; margin-left: 5px;">{{ universe }}</span>
 		<br><strong style="float: left;">Pub Date:</strong>
-		<span style="float: left; margin-left: 5px;">2014-2015</span>
+		<span style="float: left; margin-left: 5px;">{{ publish_date }}</span>
 		<br><strong style="float: left;">Volumes:</strong>
-		<span style="float: left; margin-left: 5px;">3</span>
+		<span style="float: left; margin-left: 5px;">{{ volumes }}</span>
 		<br><strong style="float: left;">No. of Issues:</strong>
-		<span style="float: left; margin-left: 5px;">18</span>	
+		<span style="float: left; margin-left: 5px;">{{ issues }}</span>	
 	</div>
 	</div>
   </div>
+  
+   {% endblock %} 
   <br>
 		
 	</div>

@@ -241,13 +241,14 @@ p.copyright {
 
 <div id="wrapper" style="font-weight: normal; max-width: 800px; margin: 0 auto; padding: 10px;background: white;border-radius: 10px;margin-top: 100px;/* border: 1px solid black; */box-shadow: 0 0 5px 5px #888;min-height: 510px;">
   <div style="display: inline-block; width: 100%; color: #333;">
-	<img src="http://blogs-images.forbes.com/davegonzales/files/2014/09/shield.jpg" style="width: 250px; float: left;">
+	{% block content %}
+	<img src="{{ picture }}" style="width: 250px; float: left;">
 	<div>
 	<h1 style="
     color: #333;
     float: left;
     margin-left: 20px;
-	">Agents of S.H.I.E.L.D <span style="font-size: 14px;">TV Show</span></h1>
+	">{{ name }} <span style="font-size: 14px;">TV Show</span></h1>
 	<p style="
     color: #333;
     text-align: left;
@@ -255,22 +256,24 @@ p.copyright {
     float: left;
     max-width: 490px;
 	width: 100%;
-	">The series revolves around the character of Phil Coulson, with Clark Gregg reprising his role from the film series, and his team of S.H.I.E.L.D. agents, who must deal with various unusual cases and enemies.
+	">{{ description }}
 	</p>
 	<div class="profileMetaData" style="float: left; margin-left: 20px; max-width: 490px;">
 		<strong style="float: left;">Universe:</strong>
-		<span style="float: left; margin-left: 5px;">Earth-616</span>
+		<span style="float: left; margin-left: 5px;">{{ universe }}</span>
 		<br><strong style="float: left;">Date:</strong>
-		<span style="float: left; margin-left: 5px;">9/24/2013-present</span>
+		<span style="float: left; margin-left: 5px;">{{ date }}</span>
 		<br><strong style="float: left;">No. of Seasons:</strong>
-		<span style="float: left; margin-left: 5px;">3</span>
+		<span style="float: left; margin-left: 5px;">{{ seasons }}</span>
 		<br><strong style="float: left;">Episodes:</strong>
-		<span style="float: left; margin-left: 5px;">35</span>
+		<span style="float: left; margin-left: 5px;">{{ episodes }}</span>
 		<br><strong style="float: left;">Broadcaster:</strong>
-		<span style="float: left; margin-left: 5px;">ABC</span>		
+		<span style="float: left; margin-left: 5px;">{{ broadcaster }}</span>		
 	</div>
 	</div>
   </div>
+ {% endblock %} 
+  
   <br>
 		
 	</div>
