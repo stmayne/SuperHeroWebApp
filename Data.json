@@ -21,7 +21,7 @@
 			"gender" : "Male",
 			"powers" : ["Superhuman strength and agility", "Can generate spiderwebs"],
 			"description" : "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.",
-			"picture" : "http://imgur.com/NxgbFoy"
+			"picture" : "http://i.imgur.com/NxgbFoy.jpg"
 		},
 		"2" :
 		{
@@ -32,7 +32,7 @@
 			"gender" : "Male",
 			"powers" : ["Godlike strength", "Endurance and resistence", "Mjolnir"],
 			"description" : "As the Norse God of thunder and lightning, Thor wields one of the greatest weapons ever made, the enchanted hammer Mjolnir. While others have described Thor as an over-muscled, oafish imbecile, he's quite smart and compassionate. He's self-assured, and he would never, ever stop fighting for a worthwhile cause",
-			"picture" : "http://imgur.com/puCYfva"
+			"picture" : "http://i.imgur.com/puCYfva.jpg"
 		},
 		"3" :
 		{
@@ -43,7 +43,7 @@
 			"gender" : "Female",
 			"powers" : ["Weather control"],
 			"description" : "Ororo Monroe is the descendant of an ancient line of African priestesses, all of whom have white hair, blue eyes, and the potential to wield magic",
-			"picture" : "http://imgur.com/gzrSfTW"
+			"picture" : "http://i.imgur.com/gzrSfTW.jpg"
 		},
 		"4" :
 		{
@@ -76,7 +76,7 @@
 			"gender" : "Male",
 			"powers" : ["Superhuman Strength", "Superhuman Durability", "Superhuman Stamina", "Superhuman Longevity", "Sorcery", "Psionics"],
 			"description" : "The son of Laufey, deceased monarch of the Frost Giants of Jotunheim, the ancient enemies of the Asgardians, Loki utilized time-traveling magics to play a hand in his own origin. Years ago, while Bor, ruler of Asgard, battled Frost Giants, he followed a wounded one to a powerful sorcerer awaiting him.",
-			"picture" : "http://imgur.com/KctBMo2"
+			"picture" : "http://i.imgur.com/KctBMo2.jpg"
 		},
 		"7" :
 		{
