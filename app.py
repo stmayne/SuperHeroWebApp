@@ -22,6 +22,10 @@ def get():
 def getDirectory():
 	return render_template('directory.html', **data)
 
+@app.route('/about/')
+def getAbout():
+	return render_template('about.html')
+
 @app.route('/comic/<comic_id>')
 def getComic(comic_id):
 	if data['Comics'][str(comic_id)]['picture'] == "" :
