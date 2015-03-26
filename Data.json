@@ -1,0 +1,311 @@
+{
+	"Characters":
+	{
+		"0" :
+		{
+			"name" : "Captain America",
+			"universe" : "Earth-616",
+			"aliases" : ["Steven Grant Rodgers","Winghead", "Shield-Slinger", "The First Avenger", "Sentinel of Liberty", "The Living Legend", "Star-Spangled Avenger"],
+			"alignment" : "Good",
+			"gender" : "Male",
+			"powers" : ["Superhuman", "Boxing", "Judo"],
+			"description" : "In World War II patriotic solider Steve Rogers recipient of the \"Super Soldier Serum\" became the living symbol of freedom, Captain America. Left for dead while frozen in ice, the star-spangled hero with an indestructible shield awoke years later to continue his never-ending battle for liberty.",
+			"picture" : ""
+		},
+		"1" :
+		{
+			"name" : "Spider Man",
+			"universe" : "Earth-616",
+			"aliases" : ["Peter Benjamin Parker"],
+			"alignment" : "Good",
+			"gender" : "Male",
+			"powers" : ["Superhuman strength and agility", "Can generate spiderwebs"],
+			"description" : "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.",
+			"picture" : ""
+		},
+		"2" :
+		{
+			"name" : "Thor",
+			"universe" : "Earth-616",
+			"aliases" : ["Thor Odinson"],
+			"alignment" : "Good",
+			"gender" : "Male",
+			"powers" : ["Godlike strength", "Endurance and resistence", "Mjolnir"],
+			"description" : "As the Norse God of thunder and lightning, Thor wields one of the greatest weapons ever made, the enchanted hammer Mjolnir. While others have described Thor as an over-muscled, oafish imbecile, he's quite smart and compassionate. He's self-assured, and he would never, ever stop fighting for a worthwhile cause",
+			"picture" : ""
+		},
+		"3" :
+		{
+			"name" : "Storm",
+			"universe" : "Earth-616",
+			"aliases" : ["Ororo Munroe"],
+			"alignment" : "Good",
+			"gender" : "Female",
+			"powers" : ["Weather control"],
+			"description" : "Ororo Monroe is the descendant of an ancient line of African priestesses, all of whom have white hair, blue eyes, and the potential to wield magic",
+			"picture" : ""
+		},
+		"4" :
+		{
+			"name" : "Invisible Woman",
+			"universe" : "Earth-616",
+			"aliases" : ["Susan Storm Richards"],
+			"alignment" : "Good",
+			"gender" : "Female",
+			"powers" : ["Invisibility"],
+			"description" : "",
+			"picture" : ""
+		},
+		"5" :
+		{
+			"name" : "Ultron",
+			"universe" : "Earth-616",
+			"aliases" : [],
+			"alignment" : "Evil",
+			"gender" : "Male",
+			"powers" : ["Superhuman srength", "Flight", "Various weapons depending on design"],
+			"description" : "Arguably the greatest and certainly the most horrific creation of scientific genius Dr. Henry Pym, Ultron is a criminally insane rogue sentient robot dedicated to conquest and the extermination of humanity.",
+			"picture" : ""
+		},
+		"6" :
+		{
+			"name" : "Loki",
+			"universe" : "Earth-616",
+			"aliases" : ["Loki Laufeyson"],
+			"alignment" : "Evil",
+			"gender" : "Male",
+			"powers" : ["Superhuman Strength", "Superhuman Durability", "Superhuman Stamina", "Superhuman Longevity", "Sorcery", "Psionics"],
+			"description" : "The son of Laufey, deceased monarch of the Frost Giants of Jotunheim, the ancient enemies of the Asgardians, Loki utilized time-traveling magics to play a hand in his own origin. Years ago, while Bor, ruler of Asgard, battled Frost Giants, he followed a wounded one to a powerful sorcerer awaiting him.",
+			"picture" : ""
+		},
+		"7" :
+		{
+			"name" : "Magneto",
+			"universe" : "Earth-616",
+			"aliases" : ["Magnus", "Erik Magnus", "Lehnsherr", "Max Eisenhardt"],
+			"alignment" : "Evil",
+			"gender" : "Male",
+			"powers" : ["Mangetokenesis", "Telephatic Resistance", "Astral Projection"],
+			"description" : "",
+			"picture" : ""
+		},
+		"8" :
+		{
+			"name" : "Mangetokenesis, Telephatic Resistance, Astral Projection",
+			"universe" : "Earth-616",
+			"aliases" : ["Raven Darkholme"],
+			"alignment" : "Evil",
+			"gender" : "Female",
+			"powers" : ["Metamorph"],
+			"description" : "Little was known about Mystique's past due to the fact that she could eliminate the outward signs of aging with her shapeshifing; it was not known exactly how old she was. She apparently learned to use her powers at a very early age which made her family fear her, for there is no evidence known to the public or the government that Raven Darkholme ever looked like anything but a normal human being.",
+			"picture" : ""
+		},
+		"9" :
+		{
+			"name" : "Ronan",
+			"universe" : "Earth-616",
+			"aliases" : ["Ronan the Accuser"],
+			"alignment" : "Evil",
+			"gender" : "Male",
+			"powers" : ["Kree Physiology"],
+			"description" : "Upon the completion of his formal education, Ronan was enrolled in the Kree Public Accuser Corps, the main law enforcement body for the empire. Ronan did well and was steadily promoted. In a border incident, he stopped a fleet of Skrull ships from enteringKree space. As a result, he was made Supreme Accuser of the Kree Empire, making him responsible for enforcing the laws and decrees of the Kree, and second only to the Supreme Intelligence, and the Imperial Minister. As a proud member of the Kree aristocracy (blue-skinned Kree), he was not happy taking orders from the Supreme Intelligence. His attempt to cause a civil war was quickly halted, and he quickly returned to service.",
+			"picture" : ""
+		}
+	},
+	"Shows":
+	{
+		"0" :
+		{
+			"name" : "Agents of S.H.I.E.L.D",
+			"date" : "9/24/2013-present",
+			"universe" : "Earth-616",
+			"description" : "The series revolves around the character of Phil Coulson, with Clark Gregg reprising his role from the film series, and his team of S.H.I.E.L.D. agents, who must deal with various unusual cases and enemies.",
+			"seasons" : "2",
+			"episodes" : "35",
+			"broadcaster" : "ABC"
+		},
+		"1" :
+		{
+			"name" : "Ultimate Spider-Man",
+			"date" : "4/1/2012-present",
+			"universe" : "Earth-616",
+			"description" : "",
+			"seasons" : "3",
+			"episodes" : "78",
+			"broadcaster" : "Disney XD"
+		},
+		"2" :
+		{
+			"name" : "Mutant X",
+			"date" : "10/6/2001-5/17/2004",
+			"universe" : "Earth-616",
+			"description" : "",
+			"seasons" : "3",
+			"episodes" : "66",
+			"broadcaster" : "Syndicated"
+		},
+		"3" :
+		{
+			"name" : "Fantastic Four",
+			"date" : "9/24/1994-2/24/1996",
+			"universe" : "Earth-616",
+			"description" : "",
+			"seasons" : "2",
+			"episodes" : "26",
+			"broadcaster" : "Syndicated"
+		},
+		"4" :
+		{
+			"name" : "Iron Man",
+			"date" : "9/24/1994-2/24/1996",
+			"universe" : "Earth-616",
+			"description" : "",
+			"seasons" : "2",
+			"episodes" : "26",
+			"broadcaster" : "Syndicated"
+		},
+		"5" :
+		{
+			"name" : "The Incredible Hulk",
+			"date" : "9/8/1996-11/23/1991",
+			"universe" : "Earth-616",
+			"description" : "",
+			"seasons" : "2",
+			"episodes" : "21",
+			"broadcaster" : "UPN"
+		},
+		"6" :
+		{
+			"name" : "Silver Surfer",
+			"date" : "2/7/1998-5/16/1998",
+			"universe" : "Earth-616",
+			"description" : "",
+			"seasons" : "1",
+			"episodes" : "13",
+			"broadcaster" : "Fox Kids"
+		},
+		"7" :
+		{
+			"name" : "Black Panther",
+			"date" : "1/16/2010-1/30/2010",
+			"universe" : "Earth-616",
+			"description" : "",
+			"seasons" : "1",
+			"episodes" : "6",
+			"broadcaster" : "BET"
+		},
+		"8" :
+		{
+			"name" : "X-Men",
+			"date" : "10/31/1992-9/20/1997",
+			"universe" : "Earth-616",
+			"description" : "",
+			"seasons" : "5",
+			"episodes" : "76",
+			"broadcaster" : "Fox Kids"
+		},
+		"9" :
+		{
+			"name" : "X-Men: Evolution",
+			"date" : "11/4/2000 - 10/25/2003 ",
+			"universe" : "Earth-616",
+			"description" : "",
+			"seasons" : "4",
+			"episodes" : "52",
+			"broadcaster" : "Kids WB"
+		}
+	},
+	"Comics":
+	{
+		"0" :
+		{
+			"name" : "Fantastic Four",
+			"volumes" : "1",
+			"publish_date" : "1961-1966",
+			"universe" : "Earth-616",
+			"description" : "",
+			"issues" : "50"
+		},
+		"1" :
+		{
+			"name" : "Amazing Spider-Man",
+			"volumes" : "3",
+			"publish_date" : "2014-2015",
+			"universe" : "Earth-616",
+			"description" : "The Ghost has invaded Parker Industries!",
+			"issues" : "18"
+		},
+		"2" :
+		{
+			"name" : "Avengers",
+			"volumes" : "5",
+			"publish_date" : "2013-2015",
+			"universe" : "Earth-616",
+			"description" : "",
+			"issues" : "44"
+		},
+		"3" :
+		{
+			"name" : "Kick-Ass",
+			"volumes" : "1",
+			"publish_date" : "2008-2010",
+			"universe" : "Earth-616",
+			"description" : "Dave Lizewski, regular high school kid being raised by a widower father, takes it upon himself to become a real life superhero. After getting together a suit and doing some training he confronts his first criminals, which doesn't go well for him",
+			"issues" : "8"
+		},
+		"4" :
+		{
+			"name" : "Incredible Hulk",
+			"volumes" : "1",
+			"publish_date" : "1962-2011",
+			"universe" : "Earth-616",
+			"description" : "",
+			"issues" : "635"
+		},
+		"5" :
+		{
+			"name" : "S.H.I.E.L.D",
+			"volumes" : "1",
+			"publish_date" : "2010-2011",
+			"universe" : "Earth-616",
+			"description" : "",
+			"issues" : "6"
+		},
+		"6" :
+		{
+			"name" : "Daredevil",
+			"volumes" : "1",
+			"publish_date" : "1964-2011",
+			"universe" : "Earth-616",
+			"description" : "",
+			"issues" : "512"
+		},
+		"7" :
+		{
+			"name" : "Legendary Star-Lord",
+			"volumes" : "1",
+			"publish_date" : "2014-2015",
+			"universe" : "Earth-616",
+			"description" : "",
+			"issues" : "12"
+		},
+		"8" :
+		{
+			"name" : "Raiders of the Lost Ark",
+			"volumes" : "1",
+			"publish_date" : "1981-1981",
+			"universe" : "Earth-616",
+			"description" : "",
+			"issues" : "3"
+		},
+		"9" :
+		{
+			"name" : "James Bond, Jr",
+			"volumes" : "1",
+			"publish_date" : "1992-1992",
+			"universe" : "Earth-616",
+			"description" : "",
+			"issues" : "12"
+		}
+	}
+}
