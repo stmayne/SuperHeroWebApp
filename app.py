@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template
 from flask import request
+from flask import jsonify
 import traceback
 
 from config import app
@@ -14,6 +15,7 @@ with open('Data.json') as json_data:
 
 imageNotFound = "https://browshot.com/static/images/not-found.png"
 
+#html
 @app.route('/')
 def get():
 	return render_template('index.html')
@@ -43,6 +45,37 @@ def getCharacter(character_id):
 	if data['Characters'][str(character_id)]['picture'] == "" :
 		data['Characters'][str(character_id)]['picture'] = imageNotFound
 	return render_template('character.html', **data['Characters'][str(character_id)])
+
+#json
+@app.route('/comics/')
+@app.route('/comics/<comic_id>')
+def getComicData(comic_id=None):
+	if comic_id == None :
+		return jsonify(**data['Comics'])
+	elif comic_id in data['Comics'] :
+		return jsonify(**data['Comics'][comic_id])
+	else :
+		return ""
+
+@app.route('/shows/')
+@app.route('/shows/<show_id>')
+def getShowData(show_id=None):
+	if show_id == None :
+		return jsonify(**data['Shows'])
+	elif show_id in data['Shows'] :
+		return jsonify(**data['Shows'][show_id])
+	else :
+		return ""
+
+@app.route('/characters/')
+@app.route('/characters/<character_id>')
+def getCharacterData(character_id=None):
+	if character_id == None :
+		return jsonify(**data['Characters'])
+	elif character_id in data['Characters'] :
+		return jsonify(**data['Characters'][character_id])
+	else :
+		return ""
 
 #run Flask open to all IPs on port 80(requires root access)
 if __name__ == '__main__':
