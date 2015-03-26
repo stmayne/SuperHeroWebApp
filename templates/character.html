@@ -265,13 +265,11 @@ p.copyright {
 		<span style="float: left; margin-left: 5px;">{{ gender }}</span>
 		<br><strong style="float: left;">Aliases:</strong>
 		{% for item in aliases %}
-			<span style="float: left; margin-left: 5px;">{% block loop_item %}{{ item }}{% endblock %}</span>
+			<span style="float: left; margin-left: 5px;">{{ item }}</span>
 		{% endfor %}
 		<br><strong style="float: left;">Powers:</strong>
 		<span style="float: left; margin-left: 5px;">
-		{% for item in powers %}
-			{% block loop_item2 %}{{ item }}{% endblock %}<span>, </span>
-		{% endfor %}
+		{{ ", ".join(powers) }}
 	</div>
 	</div>
   </div>
