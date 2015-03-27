@@ -10,7 +10,8 @@
 			"gender" : "Male",
 			"powers" : ["Superhuman", "Boxing", "Judo"],
 			"description" : "In World War II patriotic solider Steve Rogers recipient of the \"Super Soldier Serum\" became the living symbol of freedom, Captain America. Left for dead while frozen in ice, the star-spangled hero with an indestructible shield awoke years later to continue his never-ending battle for liberty.",
-			"picture" : "http://i.imgur.com/hPsu2lH.png"
+			"picture" : "http://i.imgur.com/hPsu2lH.png",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}]
 		},
 		"1" :
 		{
@@ -21,7 +22,8 @@
 			"gender" : "Male",
 			"powers" : ["Superhuman strength and agility", "Can generate spiderwebs"],
 			"description" : "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.",
-			"picture" : "http://i.imgur.com/NxgbFoy.jpg"
+			"picture" : "http://i.imgur.com/NxgbFoy.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}]
 		},
 		"2" :
 		{
@@ -32,7 +34,8 @@
 			"gender" : "Male",
 			"powers" : ["Godlike strength", "Endurance and resistence", "Mjolnir"],
 			"description" : "As the Norse God of thunder and lightning, Thor wields one of the greatest weapons ever made, the enchanted hammer Mjolnir. While others have described Thor as an over-muscled, oafish imbecile, he's quite smart and compassionate. He's self-assured, and he would never, ever stop fighting for a worthwhile cause",
-			"picture" : "http://i.imgur.com/puCYfva.jpg"
+			"picture" : "http://i.imgur.com/puCYfva.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}]
 		},
 		"3" :
 		{
@@ -43,7 +46,8 @@
 			"gender" : "Female",
 			"powers" : ["Weather control"],
 			"description" : "Ororo Monroe is the descendant of an ancient line of African priestesses, all of whom have white hair, blue eyes, and the potential to wield magic",
-			"picture" : "http://i.imgur.com/gzrSfTW.jpg"
+			"picture" : "http://i.imgur.com/gzrSfTW.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}]
 		},
 		"4" :
 		{
@@ -54,7 +58,8 @@
 			"gender" : "Female",
 			"powers" : ["Invisibility"],
 			"description" : "Like the other founding members of the Fantastic Four, Sue received her powers after being exposed to a cosmic storm. Her primary power deals with light waves, allowing her to render herself and others invisible.",
-			"picture" : "http://i.imgur.com/0olL3t5.jpg"
+			"picture" : "http://i.imgur.com/0olL3t5.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}]
 		},
 		"5" :
 		{
@@ -65,7 +70,8 @@
 			"gender" : "Male",
 			"powers" : ["Superhuman srength", "Flight", "Various weapons depending on design"],
 			"description" : "Arguably the greatest and certainly the most horrific creation of scientific genius Dr. Henry Pym, Ultron is a criminally insane rogue sentient robot dedicated to conquest and the extermination of humanity.",
-			"picture" : "http://i.imgur.com/4rqEVFR.jpg"
+			"picture" : "http://i.imgur.com/4rqEVFR.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}]
 		},
 		"6" :
 		{
@@ -76,7 +82,8 @@
 			"gender" : "Male",
 			"powers" : ["Superhuman Strength", "Superhuman Durability", "Superhuman Stamina", "Superhuman Longevity", "Sorcery", "Psionics"],
 			"description" : "The son of Laufey, deceased monarch of the Frost Giants of Jotunheim, the ancient enemies of the Asgardians, Loki utilized time-traveling magics to play a hand in his own origin. Years ago, while Bor, ruler of Asgard, battled Frost Giants, he followed a wounded one to a powerful sorcerer awaiting him.",
-			"picture" : "http://i.imgur.com/KctBMo2.jpg"
+			"picture" : "http://i.imgur.com/KctBMo2.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}]
 		},
 		"7" :
 		{
@@ -87,7 +94,8 @@
 			"gender" : "Male",
 			"powers" : ["Mangetokenesis", "Telephatic Resistance", "Astral Projection"],
 			"description" : "Magneto is a fictional supervillain appearing in comic books published by Marvel Comics, most commonly in association with the X-Men. He has been the primary villain in the X-Men comics, although, he has been an occasional ally and even a member of the X-Men at times.",
-			"picture" : "http://i.imgur.com/ZrSGiGi.jpg"
+			"picture" : "http://i.imgur.com/ZrSGiGi.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}]
 		},
 		"8" :
 		{
@@ -98,7 +106,8 @@
 			"gender" : "Female",
 			"powers" : ["Metamorph"],
 			"description" : "Little was known about Mystique's past due to the fact that she could eliminate the outward signs of aging with her shapeshifing; it was not known exactly how old she was. She apparently learned to use her powers at a very early age which made her family fear her, for there is no evidence known to the public or the government that Raven Darkholme ever looked like anything but a normal human being.",
-			"picture" : "http://i.imgur.com/zt2x9Bj.jpg"
+			"picture" : "http://i.imgur.com/zt2x9Bj.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}]
 		},
 		"9" :
 		{
@@ -109,7 +118,8 @@
 			"gender" : "Male",
 			"powers" : ["Kree Physiology"],
 			"description" : "Upon the completion of his formal education, Ronan was enrolled in the Kree Public Accuser Corps, the main law enforcement body for the empire. Ronan did well and was steadily promoted. In a border incident, he stopped a fleet of Skrull ships from enteringKree space. As a result, he was made Supreme Accuser of the Kree Empire, making him responsible for enforcing the laws and decrees of the Kree, and second only to the Supreme Intelligence, and the Imperial Minister. As a proud member of the Kree aristocracy (blue-skinned Kree), he was not happy taking orders from the Supreme Intelligence. His attempt to cause a civil war was quickly halted, and he quickly returned to service.",
-			"picture" : "http://i.imgur.com/W3XES6k.jpg"
+			"picture" : "http://i.imgur.com/W3XES6k.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}]
 		}
 	},
 	"Shows":
@@ -123,7 +133,8 @@
 			"seasons" : "2",
 			"episodes" : "35",
 			"broadcaster" : "ABC",
-			"picture" : "http://i.imgur.com/NCP2DvC.jpg"
+			"picture" : "http://i.imgur.com/NCP2DvC.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"1" :
 		{
@@ -134,7 +145,8 @@
 			"seasons" : "3",
 			"episodes" : "78",
 			"broadcaster" : "Disney XD",
-			"picture" : "http://i.imgur.com/g2BtBDi.png"
+			"picture" : "http://i.imgur.com/g2BtBDi.png",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"2" :
 		{
@@ -145,7 +157,8 @@
 			"seasons" : "3",
 			"episodes" : "66",
 			"broadcaster" : "Syndicated",
-			"picture" : "http://i.imgur.com/v8bj5PX.png"
+			"picture" : "http://i.imgur.com/v8bj5PX.png",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"3" :
 		{
@@ -156,7 +169,8 @@
 			"seasons" : "2",
 			"episodes" : "26",
 			"broadcaster" : "Syndicated",
-			"picture" : "http://i.imgur.com/qC5tHin.jpg"
+			"picture" : "http://i.imgur.com/qC5tHin.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"4" :
 		{
@@ -167,7 +181,8 @@
 			"seasons" : "2",
 			"episodes" : "26",
 			"broadcaster" : "Syndicated",
-			"picture" : "http://i.imgur.com/FDPvLPL.jpg"
+			"picture" : "http://i.imgur.com/FDPvLPL.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"5" :
 		{
@@ -178,7 +193,8 @@
 			"seasons" : "2",
 			"episodes" : "21",
 			"broadcaster" : "UPN",
-			"picture" : "http://i.imgur.com/yEe3eCm.jpg"
+			"picture" : "http://i.imgur.com/yEe3eCm.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"6" :
 		{
@@ -189,7 +205,8 @@
 			"seasons" : "1",
 			"episodes" : "13",
 			"broadcaster" : "Fox Kids",
-			"picture" : "http://i.imgur.com/LX3M7xR.jpg"
+			"picture" : "http://i.imgur.com/LX3M7xR.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"7" :
 		{
@@ -200,7 +217,8 @@
 			"seasons" : "1",
 			"episodes" : "6",
 			"broadcaster" : "BET",
-			"picture" : "http://i.imgur.com/pAI3rx0.jpg"
+			"picture" : "http://i.imgur.com/pAI3rx0.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"8" :
 		{
@@ -211,7 +229,8 @@
 			"seasons" : "5",
 			"episodes" : "76",
 			"broadcaster" : "Fox Kids",
-			"picture" : "http://i.imgur.com/Kuoj37b.jpg"
+			"picture" : "http://i.imgur.com/Kuoj37b.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"9" :
 		{
@@ -222,7 +241,8 @@
 			"seasons" : "4",
 			"episodes" : "52",
 			"broadcaster" : "Kids WB",
-			"picture" : "http://i.imgur.com/GJWqRX6.jpg"
+			"picture" : "http://i.imgur.com/GJWqRX6.jpg",
+			"relations" : [{"type":"comic", "id":"0", "name":"Fantastic Four"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		}
 	},
 	"Comics":
@@ -235,7 +255,8 @@
 			"universe" : "Earth-616",
 			"description" : "The Fantastic Four is a fictional superhero team appearing in comic books published by Marvel Comics. The group debuted in The Fantastic Four #1 (cover dated Nov. 1961), which helped to usher in a new level of realism in the medium.",
 			"issues" : "50",
-			"picture" : "http://i.imgur.com/psn8PsY.jpg"
+			"picture" : "http://i.imgur.com/psn8PsY.jpg",
+			"relations" : [{"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"1" :
 		{
@@ -245,7 +266,8 @@
 			"universe" : "Earth-616",
 			"description" : "The Ghost has invaded Parker Industries!",
 			"issues" : "18",
-			"picture" : "http://i.imgur.com/0sguyB6.jpg"
+			"picture" : "http://i.imgur.com/0sguyB6.jpg",
+			"relations" : [{"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"2" :
 		{
@@ -255,7 +277,8 @@
 			"universe" : "Earth-616",
 			"description" : "A long time ago, there was nothing. Then there was everything. Many bits of creation swirled around the stars - planets that support life. And then one group of heroes raced into the light - the Avengers. ",
 			"issues" : "44",
-			"picture" : "http://i.imgur.com/hN08Ill.jpg"
+			"picture" : "http://i.imgur.com/hN08Ill.jpg",
+			"relations" : [{"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"3" :
 		{
@@ -265,7 +288,8 @@
 			"universe" : "Earth-616",
 			"description" : "Dave Lizewski, regular high school kid being raised by a widower father, takes it upon himself to become a real life superhero. After getting together a suit and doing some training he confronts his first criminals, which doesn't go well for him",
 			"issues" : "8",
-			"picture" : "http://i.imgur.com/vJLUpRf.jpg"
+			"picture" : "http://i.imgur.com/vJLUpRf.jpg",
+			"relations" : [{"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"4" :
 		{
@@ -275,7 +299,8 @@
 			"universe" : "Earth-616",
 			"description" : "The Hulk is a fictional superhero that appears in comic books published by Marvel Comics. The character was created by Stan Lee and Jack Kirby, and first appeared in The Incredible Hulk #1 (May 1962). Throughout his comic book appearances, the Hulk is portrayed as a large green humanoid that possesses near limitless superhuman strength and great invulnerability, attributes that grow more potent the angrier he becomes.",
 			"issues" : "635",
-			"picture" : "http://i.imgur.com/nxIzS3T.jpg"
+			"picture" : "http://i.imgur.com/nxIzS3T.jpg",
+			"relations" : [{"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"5" :
 		{
@@ -285,7 +310,8 @@
 			"universe" : "Earth-616",
 			"description" : "One of the most complex and ambitious series ever published, S.H.I.E.L.D. explores the secret history of the world's premiere peacekeeping organization, featuring classic Marvel characters as well as real world figures like Leonardo da Vinci and Isaac Newton. It's like nothing you've ever seen!",
 			"issues" : "6",
-			"picture" : "http://i.imgur.com/shU1qfW.jpg"
+			"picture" : "http://i.imgur.com/shU1qfW.jpg",
+			"relations" : [{"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"6" :
 		{
@@ -295,7 +321,8 @@
 			"universe" : "Earth-616",
 			"description" : "Daredevil is a fictional superhero that appears in American comic books published by Marvel Comics. The character was created by writer-editor Stan Lee and artist Bill Everett, with an unspecified amount of input from Jack Kirby,[1] and first appeared in Daredevil #1 (April 1964).",
 			"issues" : "512",
-			"picture" : "http://i.imgur.com/qhmvcW6.jpg"
+			"picture" : "http://i.imgur.com/qhmvcW6.jpg",
+			"relations" : [{"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"7" :
 		{
@@ -305,7 +332,8 @@
 			"universe" : "Earth-616",
 			"description" : "From the pages of GUARDIANS OF THE GALAXY! A brand new series from SAM HUMPHRIES and PACO MEDINA! In this exciting first issue, Peter Quill battles the Badoon, fights to save an orphanage, and still finds time for some flirting with Kitty Pryde--but it’s all in a day’s work for the STAR-LORD! ",
 			"issues" : "12",
-			"picture" : "http://i.imgur.com/46C9gGI.jpg"
+			"picture" : "http://i.imgur.com/46C9gGI.jpg",
+			"relations" : [{"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"8" :
 		{
@@ -315,7 +343,8 @@
 			"universe" : "Earth-616",
 			"description" : "The Raiders of the Lost Ark comic adaptation was published by Marvel Comics from September through November 1981.",
 			"issues" : "3",
-			"picture" : "http://i.imgur.com/ye1f2Ku.jpg"
+			"picture" : "http://i.imgur.com/ye1f2Ku.jpg",
+			"relations" : [{"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		},
 		"9" :
 		{
@@ -325,7 +354,8 @@
 			"universe" : "Earth-616",
 			"description" : "James Bond Jr. had a limited 12 issue run with Marvel Comics spanning from January 1992 to December 1992. The first five stories were lifted directly from the TV series, but the other seven were original stories. The writers were Cal Hamilton and Dan Abnett, and the artists were Mario Capaldi, Colin Fawcett, Adolfo Buylla, and Bambos Georgioli.",
 			"issues" : "12",
-			"picture" : "http://i.imgur.com/41sI7O3.jpg"
+			"picture" : "http://i.imgur.com/41sI7O3.jpg",
+			"relations" : [{"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}, {"type":"character", "id":"0", "name":"Captain America"}]
 		}
 	}
 }
