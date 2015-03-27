@@ -4,7 +4,7 @@ from flask import request
 from flask import jsonify
 import traceback
 
-from config import app
+from config import app, db
 
 import models
 
@@ -79,4 +79,5 @@ def getCharacterData(character_id=None):
 
 #run Flask open to all IPs on port 80(requires root access)
 if __name__ == '__main__':
+	db.create_all ()
 	app.run(host='0.0.0.0', port=80, debug=True)

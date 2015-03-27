@@ -59,11 +59,11 @@ class TestCase (unittest.TestCase) :
 	# COMICS
 	##########
 	def test_Comics_1 (self) :
-		comic = Comics ("name", "volume", date (1,1,1), "universe", "description", "nuissues")
+		comic = Comics ("name", 1, date (1,1,1), "universe", "description", 10)
 		assert (type(comic) == Comics)
 
 	def test_Comics_2 (self) :
-		comic = Comics ("name", "volume", date (1,1,1), "universe", "description", "nuissues")
+		comic = Comics ("name", 1, date (1,1,1), "universe", "description", 10)
 		db.session.add (comic)
 		db.session.commit ()
 		comics = Comics.query.all ()
@@ -75,8 +75,8 @@ class TestCase (unittest.TestCase) :
 		assert (len(comics) == 0)
 
 	def test_Comics_3 (self) :
-		comic1 = Comics ("name", "volume", date (1,1,1), "universe", "description", "nuissues")
-		comic2 = Comics ("name", "volume", date (1,1,1), "universe", "description", "nuissues")
+		comic1 = Comics ("name", 1, date (1,1,1), "universe", "description", 10)
+		comic2 = Comics ("name", 1, date (1,1,1), "universe", "description", 10)
 
 		try :
 			db.session.add (comic1)
@@ -95,11 +95,11 @@ class TestCase (unittest.TestCase) :
 	# TV Shows
 	############
 	def test_TvShows_1 (self) :
-		tvShow = TvShows ("name", date (1,1,1), "universe", "description", "nuseasons", "nuepisodes", "broadcast")
+		tvShow = TvShows ("name", "start <-> end", "universe", "description", 1, 10, "broadcast")
 		assert (type(tvShow) == TvShows)
 
 	def test_TvShows_2 (self) :
-		tvShow = TvShows ("name", date (1,1,1), "universe", "description", "nuseasons", "nuepisodes", "broadcast")
+		tvShow = TvShows ("name", "start <-> end", "universe", "description", 1, 10, "broadcast")
 		db.session.add (tvShow)
 		db.session.commit ()
 		tvShows = TvShows.query.all ()
@@ -111,8 +111,8 @@ class TestCase (unittest.TestCase) :
 		assert (len(tvShows) == 0)
 
 	def test_TvShows_3 (self) :
-		tvShow1 = TvShows ("name", date (1,1,1), "universe", "description", "nuseasons", "nuepisodes", "broadcast")
-		tvShow2 = TvShows ("name", date (1,1,1), "universe", "description", "nuseasons", "nuepisodes", "broadcast")
+		tvShow1 = TvShows ("name", "start <-> end", "universe", "description", 1, 10, "broadcast")
+		tvShow2 = TvShows ("name", "start <-> end", "universe", "description", 1, 10, "broadcast")
 
 		try :
 			db.session.add (tvShow1)

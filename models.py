@@ -133,5 +133,3 @@ class TvShows(db.Model):
 		returns a string containing a printable representation of the show (i.e. it's name)
 		"""
 		return '<user %r>' % self.name
-
-db.create_all ()
