@@ -266,7 +266,11 @@ p.copyright {
 		<br><strong style="float: left;">Volumes:</strong>
 		<span style="float: left; margin-left: 5px;">{{ volumes }}</span>
 		<br><strong style="float: left;">No. of Issues:</strong>
-		<span style="float: left; margin-left: 5px;">{{ issues }}</span>	
+		<span style="float: left; margin-left: 5px;">{{ issues }}</span>
+        <br><strong style="float: left;">Related:</strong>
+        {% for item in relations %}
+            <br><a href="/{{ item['type'] }}/{{ item['id'] }}">{{ item['name'] }}</a>
+        {% endfor %}
 	</div>
 	</div>
   </div>

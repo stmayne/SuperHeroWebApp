@@ -268,7 +268,11 @@ p.copyright {
 		<br><strong style="float: left;">Episodes:</strong>
 		<span style="float: left; margin-left: 5px;">{{ episodes }}</span>
 		<br><strong style="float: left;">Broadcaster:</strong>
-		<span style="float: left; margin-left: 5px;">{{ broadcaster }}</span>		
+		<span style="float: left; margin-left: 5px;">{{ broadcaster }}</span>
+        <br><strong style="float: left;">Related:</strong>
+        {% for item in relations %}
+            <br><a href="/{{ item['type'] }}/{{ item['id'] }}">{{ item['name'] }}</a>
+        {% endfor %}
 	</div>
 	</div>
   </div>
