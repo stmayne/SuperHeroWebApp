@@ -1,0 +1,395 @@
+commit f290392e76884543eccce67dbe9bd0cf227038cd
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Thu Mar 26 21:32:59 2015 -0500
+
+    fixed some errors on my personal page
+
+commit 3cc908ce17c5a856dec4f49ae40d1f0345d671b2
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 21:27:53 2015 -0500
+
+    Remapped about link
+
+commit d41b64e9c73068cef3edd43c86d5f5acc15af52f
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Thu Mar 26 21:25:28 2015 -0500
+
+    added in information to the about us page for all group members
+
+commit 7f85815eed93767203e20539d94db18e34253e4a
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 21:16:48 2015 -0500
+
+    Reran the models pydoc
+
+commit 148acdace254034da4fb88ff9d4cd4bbd3ebd514
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 20:39:20 2015 -0500
+
+    Updated relations spacing
+
+commit 78d0082ea45553fdb4b83bebaea0bab66cf36b20
+Author: User <drconnoramerica@utexas.edu>
+Date:   Fri Mar 27 01:48:43 2015 +0000
+
+    *
+
+commit 0d47d77321efa91331bc0b2833a88688baa96b18
+Merge: 1f37f35 54c8b25
+Author: User <drconnoramerica@utexas.edu>
+Date:   Fri Mar 27 01:04:28 2015 +0000
+
+    Merge branch 'master' of https://github.com/stmayne/cs373-idb
+
+commit 1f37f35572d979c2524a98c1c9a68af975b58c8c
+Author: User <drconnoramerica@utexas.edu>
+Date:   Fri Mar 27 01:03:44 2015 +0000
+
+    fixed config
+
+commit 54c8b25ba7e5325337892193aa3f608a1f7354f6
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 19:59:44 2015 -0500
+
+    Added relations to the json file
+
+commit 7f780c3005befdb8f49f6ccdecf2c1ff14c81e5f
+Author: User <drconnoramerica@utexas.edu>
+Date:   Fri Mar 27 00:58:21 2015 +0000
+
+    fixed db issue
+
+commit cd52f4c7509ac450d310390e8ec1b0fa339db582
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 19:32:46 2015 -0500
+
+    Added relations to templates
+
+commit 542b33301f9535427475091f46c1ea9241d8140d
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 19:03:02 2015 -0500
+
+    Added a link to the about page
+
+commit 09ad1cbbb91f3abfa7c6477d0c76fac68ece72d4
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Thu Mar 26 18:47:34 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit d6163d3cf211f45a28275f9bd11466d38731cd77
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Mar 26 18:40:38 2015 -0500
+
+    Added descriptions and images to comics
+
+commit 052d537dde48ff977826ea37beeb3af17294431c
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Mar 26 18:21:53 2015 -0500
+
+    Added images and descriptions to tvshows
+
+commit a32cb7353098b52716e8d56ee2a7b58bd60da3a8
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Mar 26 18:01:06 2015 -0500
+
+    Fixed image link direction
+
+commit eea30ce0a75b17ecf3c86b8adc6831a67aa1dcfe
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Mar 26 17:56:25 2015 -0500
+
+    Added images to characters
+
+commit 0d72779a79ee737192c96c031a1043a407ea9947
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Thu Mar 26 17:54:28 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 4d0f28a4d444784e7d260a71603ee09d576fa3ac
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 17:36:13 2015 -0500
+
+    Added json requests to the API
+    
+    Also fixed an error in the json data
+
+commit 7f124a99c69fd93c52923fa46f10ab91b90c271c
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 16:47:36 2015 -0500
+
+    Added templating to the directory
+
+commit 3c4052942f56f591db51b3ff0c0152d4b3cb5b68
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Mar 26 16:10:35 2015 -0500
+
+    Injects python into comic and show pages
+    
+    Uses the templated code blocks to added passed in python variable values
+    into the comic and show page.
+
+commit ab5954651b1b3c0c15a39970d8a6cbc90952de14
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Mar 26 15:42:30 2015 -0500
+
+    Fixes to Character page
+    
+    Fixed formatting issues
+
+commit da0bde02ca5f91e08eac70add84745f9df12326b
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 15:39:49 2015 -0500
+
+    Ran pydoc on the models
+
+commit 58258000c537dd63cf9c6ccf4f5e4b582f8356b0
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 15:24:52 2015 -0500
+
+    Added about page mapping
+
+commit c0fc5c0e600cf57f0a9f7dc050d75f00f673f66e
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 15:00:44 2015 -0500
+
+    Updated templating
+
+commit c553f02ed8fed8bf8d4564337c567536e6b7ed13
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Mar 26 14:49:01 2015 -0500
+
+    Fixes description on character page
+    
+    the picture url was being used for description
+
+commit 090e24b12e7fcf30e10d7f8b72552eec82094b94
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 14:13:23 2015 -0500
+
+    Fixed list templating
+
+commit d6e9e377bfad732bca343dcc77720705bc40a515
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 14:04:36 2015 -0500
+
+    Set default image
+
+commit c1969edae41e35c8c2b32d23c3df8455684175ae
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Thu Mar 26 13:50:12 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit c5e8da7b35df37a9f258d9e0f8b72a0c7755ca59
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Thu Mar 26 13:49:32 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 3c496c30103238d105f54f1f431cad590e43480b
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 13:30:46 2015 -0500
+
+    Fixed unpacking in API
+
+commit 140022a51a9b598d0fbb2189c48facaf7a54781a
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Mar 26 13:18:49 2015 -0500
+
+    Fixed bug that defined loop_item twice
+    
+    loop_item used twice to define 2 separate loops
+
+commit 52d09c052d04930bf726fdb3cca530c3cc930a21
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 13:11:23 2015 -0500
+
+    Fixed small link issues
+
+commit 990f7d3b8b42d3fefa98e6f14eb71a9b4b2e3bd0
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 13:07:31 2015 -0500
+
+    Added json data
+    
+    Also hooked it into templating.
+
+commit ec124ba8dbe3bf43a42d3db1e4bfd6edc678fa5e
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Mar 26 13:03:45 2015 -0500
+
+    Adds python injections to character page
+    
+    using the template block content syntax. We add values from the passed
+    in dictionary to the character page.
+
+commit 162aec93d72f9e19fc412d168a3d835c4925df4b
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Thu Mar 26 11:58:03 2015 -0500
+
+    fixed directory linking
+
+commit 514e28f630ac6454cdd9139bd28da373d2606b5f
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Thu Mar 26 04:28:02 2015 -0500
+
+    added correct favicon image
+
+commit cfa15070a9ca24a4c5abc97779067d5eaf5db1ed
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Thu Mar 26 04:19:57 2015 -0500
+
+    moved favicon into images folder
+
+commit 14c0d3151b46a9dbd9f7c53d60f34a41aeeb5a71
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Mar 26 09:01:18 2015 +0000
+
+    correct listing for directory page
+
+commit f2e940594b4a61c58fa48cfd8692df1cfa7683b0
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Mar 26 08:45:58 2015 +0000
+
+    Revert "added listing for directory"
+    
+    This reverts commit 01e2205a03c5e44eff8b5dffabdef88fbe118358.
+
+commit 01e2205a03c5e44eff8b5dffabdef88fbe118358
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Thu Mar 26 03:37:40 2015 -0500
+
+    added listing for directory
+
+commit 15edfc056a520aeeadfce3c0ff50f5c2a01f1895
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Thu Mar 26 03:33:00 2015 -0500
+
+    changes to directory page
+
+commit b732b9c7193806c97627e602ce2df4535779c7f5
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Thu Mar 26 02:54:08 2015 -0500
+
+    adding initial directory code
+
+commit ec82df7a90821a496d0e1985721b4eff8b8bb5f6
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Thu Mar 26 02:02:40 2015 -0500
+
+    updated favicon
+
+commit 6e503c42901879aa3515c48870946a42b2b95cc4
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Mar 26 01:10:52 2015 -0500
+
+    Fixed search bar to not be an email input
+    
+    changed search bar on home page to be type="text" instead of email
+
+commit 90987e9e4d0f01e0f3bd6371523b4fba18fbb1db
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Mar 26 00:23:11 2015 -0500
+
+    Made a small change to the API
+
+commit 8a04d4dd8454de7d99945073e8bb47a57a1f1529
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Wed Mar 25 23:20:37 2015 -0500
+
+    Added comic and show pages
+    
+    Added the HTML for the comic and show page
+
+commit dffbd286dfe78f730c8cba552c9a4645788705e9
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Wed Mar 25 20:04:34 2015 -0500
+
+    cleaning up homepage
+
+commit 2456f27e3588e6e9dde64f2d75b8507b16fbb34d
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Mar 26 00:23:52 2015 +0000
+
+    worked on unit tests. fixed errors in models.py
+
+commit b2cc51703a6fcb1766acd72bc91a60094c1d1ddf
+Author: matthew2 <matthew2@cs.utexas.edu>
+Date:   Wed Mar 25 01:18:08 2015 -0500
+
+    add documentation to models
+
+commit 2c64576efbc1de32dd9d972a89e8bacf249f5df5
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Wed Mar 25 00:18:41 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 84a34efdf8e6237eb4ebcb8be13c73267411ce24
+Author: server <server@104.239.137.220>
+Date:   Tue Mar 24 20:17:48 2015 +0000
+
+    started writing unit tests
+
+commit 4790b7844efdb8ffd25489ed86af0981763859c6
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Mon Mar 23 15:09:47 2015 -0500
+
+    Added the relationships
+
+commit 736e8a4c2647fdcf4add375c6f30662ef45daaf7
+Merge: 1139f50 d39d8d5
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Mon Mar 23 15:06:31 2015 -0500
+
+    Merge branch 'master' of https://github.com/stmayne/cs373-idb
+
+commit 1139f50dfa624ed4a778842a6803a41e0ea7535b
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Mon Mar 23 15:06:09 2015 -0500
+
+    Added a m-m relationship
+
+commit d39d8d5a33da69073db2758c62013edc6e1b638b
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Sun Mar 22 23:35:31 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 119cbdb020bb750c830656e2409f9be89e809947
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Sun Mar 22 23:32:40 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 6d154549821ad0086e915770742aeb134611330e
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Sun Mar 22 20:59:24 2015 -0500
+
+    Added character page
+    
+    Added the HTML file for the character page
+
+commit 0cc017899c138ec205224ae9a02fe4c335079456
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Mar 19 16:44:15 2015 -0500
+
+    Added the models.py, might require changes
+
+commit a9548340682cfe16d023d434c96769da9a563267
+Author: server <server@104.239.137.220>
+Date:   Thu Mar 19 20:40:28 2015 +0000
+
+    Added the skeleton of the API.
+
+commit 097ce0838659a242ca566a49315ddd69b2f0d7ae
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Wed Mar 18 20:49:49 2015 -0500
+
+    Initial Commit (home page)
+    
+    This includes the html for the home page (initial version). This also
+    includes the css/js/images resources along w/ app.py which routes
+    requests to html right now.
