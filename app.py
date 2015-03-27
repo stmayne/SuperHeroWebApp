@@ -26,7 +26,7 @@ def getDirectory():
 
 @app.route('/about/')
 def getAbout():
-	return render_template('about.html')
+	return render_template('AboutUs.html')
 
 @app.route('/comic/<comic_id>')
 def getComic(comic_id):
