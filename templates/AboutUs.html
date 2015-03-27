@@ -1,0 +1,485 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Super Hero Database</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="/static/favicon.ico">
+	
+    <!-- Custom CSS -->
+	<style type="text/css">
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    text-align: center;
+    color: #000000;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+</style>
+    <!-- Custom Fonts -->
+    <link href="/static/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<meta name="description" content="Automatically sync and backup all your Photos and Videos from social networks!">
+	<meta name="keywords" content="socialbucket, social bucket, social media, social network, photo, video, backup, back up, sync">
+	<meta property="og:site_name" content="SocialBucket">
+	<meta property="og:url" name="og:url" content="http://socialbucket.co" data-app="">
+	<meta property="og:type" name="og:type" content="website" data-app="">
+	<meta property="og:description" name="og:description" content="Automatically sync and backup all your Photos and Videos from social networks!" data-app="">
+	<meta property="og:title" name="og:title" content="SocialBucket" data-app="">
+	<meta property="og:image" name="og:image" content="http://socialbucket.co/images/sbPromo.png" data-app="">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Super Hero Database</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+					<li>
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">Search</button>
+						</form>
+					</li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header -->
+    <div class="intro-header" style="
+    /* background-color: blue; */
+">
+
+        <div class="container" style="width: 100%; height: 100%; background: url('/static/images/home_bg.png');">
+
+<div id="wrapper" style="font-weight: normal; max-width: 800px; margin: 0 auto; padding: 10px;background: white;border-radius: 10px;margin-top: 100px;/* border: 1px solid black; */box-shadow: 0 0 5px 5px #888;min-height: 510px;">
+  <div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#stephen" aria-controls="stephen" role="tab" data-toggle="tab">Stephen Mayne</a></li>
+    <li role="presentation"><a href="#connor" aria-controls="connor" role="tab" data-toggle="tab">Connor Lirot</a></li>
+    <li role="presentation"><a href="#joe" aria-controls="joe" role="tab" data-toggle="tab">Joe Van Loon</a></li>
+    <li role="presentation"><a href="#rory" aria-controls="rory" role="tab" data-toggle="tab">Rory Trankler</a></li>
+    <li role="presentation"><a href="#oscar" aria-controls="oscar" role="tab" data-toggle="tab">Oscar Muller</a></li>
+    <li role="presentation"><a href="#matt" aria-controls="matt" role="tab" data-toggle="tab">Matthew Stromberg</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content" align="left" style="margin-top:10px">
+    <div role="tabpanel" class="tab-pane active" id="stephen">
+        <h2>Stephen Mayne - stm732</h2>
+        <div style="display: inline-block; width: 100%; color: #333;">
+            <img src="https://lh4.googleusercontent.com/blOIsQsWHodd8iQMXGaoQnxPbqYW5CYt2Die22Og_-z8pH2YRxIYaivmYzm2SUcZgPD4U1MnUGY5gSI=w1884-h774" style="width: 250px; float: left;">
+            <div style="
+            color: #333;
+            text-align: left;
+            margin-left: 20px;
+            float: left;
+            max-width: 490px;
+            width: 100%;
+            ">
+                <ul><h3>Stats</h3>
+                    <li>Commits: 9</li>
+                    <li>Issues: 3</li>
+                    <li>Unit Tests: 0</li>
+                </ul>
+                <ul><h3>Responsibilities</h3>
+                    <li>Front End Development</li>
+                    <li>Technical Writing/Documentation</li>
+                    <li>Handle Logistics/Organize teams</li>
+                </ul>
+            
+            <h3>About me:</h3>
+            <p><t/>I am currently a third year computer science student at the university of Texas scheduled to graduate this summer. I have done
+            a lot of web development over my short time including learning the ins and outs of ecommerce through internships with The Container Store.
+            Following my Graduation at the University of Texas I will be moving to Columbus, Ohio to work at Dynamit as a software architect.</p>
+            </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="connor">
+    <h2>Connor Lirot - ccl676</h2>
+        <div style="display: inline-block; width: 100%; color: #333;">
+            <img src="https://scontent.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10404377_10204709083514319_5969915375169059023_n.jpg?oh=abb99d529c84b37ea579aa024363e828&oe=55765206" style="width: 250px; float: left;">
+            <div style="
+            color: #333;
+            text-align: left;
+            margin-left: 20px;
+            float: left;
+            max-width: 490px;
+            width: 100%;
+            ">
+                <ul><h3>Stats</h3>
+                    <li>Commits: 7</li>
+                    <li>Issues: 3</li>
+                    <li>Unit Tests: 9</li>
+                </ul>
+                <ul><h3>Responsibilities</h3>
+                    <li>Set Up Environment</li>
+                    <li>Wrote Flask Models</li>
+                    <li>Wrote Unit tests</li>
+                </ul>
+            
+            <h3>About me:</h3>
+            <p><t/>I'm a senior. I am from Plano. I live in West Campus, which I don't particularaly like. I'm excited to move back to Plano after I graduate. I worked at a startup for about a year, and learned a lot about what it takes to succeed in the real world.
+Major Responsibilities: Set up database environnment and wrote flask models with unit tests.</p>
+            </div>
+        </div>
+    
+    </div>
+    <div role="tabpanel" class="tab-pane" id="joe">
+        <h2>Joe Van Loon - jcv643</h2>
+        <div style="display: inline-block; width: 100%; color: #333;">
+            <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpa1/v/t34.0-12/11082811_916257661767390_15242718_n.jpg?oh=9ffa9453d1d32d2323e07a3036393446&oe=551704FA&__gda__=1427569185_48e2e4f01a1a66a5bb834cf69921968f" style="width: 250px; float: left;">
+            <div style="
+            color: #333;
+            text-align: left;
+            margin-left: 20px;
+            float: left;
+            max-width: 490px;
+            width: 100%;
+            ">
+                <ul><h3>Stats</h3>
+                    <li>Commits: 16</li>
+                    <li>Issues: 0</li>
+                    <li>Unit Tests: 0</li>
+                </ul>
+                <ul><h3>Responsibilities</h3>
+                    <li>Flask Templating</li>
+                    <li>Back end routing</li>
+                    <li>API implementation</li>
+                </ul>
+            
+            <h3>About me:</h3>
+            <p><t/>I am a 5th year CS major at the University of Texas at Austin, graduating this may. My concentration is in Information Security, and Web Development.
+I enjoy doing application security and working on personal projects. Upon graduating I will start as a Security Engineer.
+My interests include: snowboarding, playing piano, and video games.</p>
+            </div>
+        </div>
+    
+    </div>
+    <div role="tabpanel" class="tab-pane" id="rory">
+    <h2>Rory Trankler - crt685</h2>
+        <div style="display: inline-block; width: 100%; color: #333;">
+            <img src="https://scontent-dfw.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1469909_10201683488263707_1871591205_n.jpg?oh=ce8db809a6784a2b7092a83ae5b5d934&oe=55BC6125" style="width: 250px; float: left;">
+            <div style="
+            color: #333;
+            text-align: left;
+            margin-left: 20px;
+            float: left;
+            max-width: 490px;
+            width: 100%;
+            ">
+                <ul><h3>Stats</h3>
+                    <li>Commits: 10</li>
+                    <li>Issues: 0</li>
+                    <li>Unit Tests: 0</li>
+                </ul>
+                <ul><h3>Responsibilities</h3>
+                    <li>Designing Front End</li>
+                    <li>Rendering Flask Models</li>
+                    <li>Developing front end functionality</li>
+                </ul>
+            
+            <h3>About me:</h3>
+            <p><t/>I am a Computer Science student here at the University of Texas who will be graduating in May. Throughout my time
+            studying computer science I have developed several web apps. After I graduate I will persue my own startup that comes from
+            one of the apps I have made, which is a social media sight targeted towards artists.</p>
+            </div>
+        </div>
+    
+    </div>
+    <div role="tabpanel" class="tab-pane" id="oscar">
+        <h2>Oscar Muller - om3799</h2>
+        <div style="display: inline-block; width: 100%; color: #333;">
+            <img src="https://scontent.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/522340_5000985789067_51944027_n.jpg?oh=f00b463f5ac9265ea77de71b42bcd637&oe=5579402C" style="width: 250px; float: left;">
+            <div style="
+            color: #333;
+            text-align: left;
+            margin-left: 20px;
+            float: left;
+            max-width: 490px;
+            width: 100%;
+            ">
+                <ul><h3>Stats</h3>
+                    <li>Commits: 4</li>
+                    <li>Issues: 0</li>
+                    <li>Unit Tests: 8</li>
+                </ul>
+                <ul><h3>Responsibilities</h3>
+                    <li>Set up database environment</li>
+                    <li>Wrote Flask Models</li>
+                    <li>Created Json object containing database data</li>
+                </ul>
+            
+            <h3>About me:</h3>
+            <p><t/>I am originally from Mexico ,but I have lived in the USA for the last 5 years. I am currently a student at the University of Texas at Austin, pursuing a BS in Computer Science and a BA in Mathematics expecting to graduate on Spring of 2015. My plans are to stay here in the US if I can find a good job, that sponsors me, otherwise I plan on going back to Mexico to work on the relatively new market for programmers that has been growing this past few years.</p>
+            </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="matt">
+    <h2>Matthew Stromberg - ms52895</h2>
+        <div style="display: inline-block; width: 100%; color: #333;">
+            <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/11009203_10203788948903805_1887573593859495820_n.jpg?oh=c59812554c46b1848a421b73c647586f&oe=5517D126&__gda__=1427563145_7b1a890e1b8119a62b82a6530f612e62" style="width: 250px; float: left;">
+            <div style="
+            color: #333;
+            text-align: left;
+            margin-left: 20px;
+            float: left;
+            max-width: 490px;
+            width: 100%;
+            ">
+                <ul><h3>Stats</h3>
+                    <li>Commits: 8</li>
+                    <li>Issues: 10</li>
+                    <li>Unit Tests: 0</li>
+                </ul>
+                <ul><h3>Responsibilities</h3>
+                    <li>Setting up environment</li>
+                    <li>Creating the API on Apiary</li>
+                    <li>Documenting the models and adding to the wiki</li>
+                </ul>
+            
+            <h3>About me:</h3>
+            <p><t/>I am a third year Computer Science and Mathematics student at The University of Texas at Austin. I worked on the API side of things during the project, helping to set up the server, creating the API on Apiary, documenting the models and adding to the wiki.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+  </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- jQuery Version 1.11.0 -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/static/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.mousewheel-3.0.4.pack.js"></script>	
+
+    <script type="text/javascript">
+		$('#emailBanner').click(function () {
+			$("html, body").animate({ scrollTop: 0 }, "slow");
+		    return false;
+		});
+
+		$(function () {
+			$("#viewDemo").click(function() {
+				$.fancybox({
+					'padding'		: 0,
+					'autoScale'		: false,
+					'transitionIn'	: 'none',
+					'transitionOut'	: 'none',
+					'title'			: this.title,
+					'width'		: 640,
+					'height'		: 495,
+					'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+					'type'			: 'swf',
+					'swf'			: {
+					   	'wmode'		: 'transparent',
+						'allowfullscreen'	: 'true'
+					},
+					autoSize : true
+		        });
+				
+				$('#fancybox-wrap').css('display', 'inline-table');
+				return false;
+			});
+	});
+	</script>
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>
