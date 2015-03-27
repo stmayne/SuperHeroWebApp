@@ -1,3 +1,21 @@
+commit 72fa23a3fc31cf52acb2b8a627f4a4ed7f21d551
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Thu Mar 26 21:50:36 2015 -0500
+
+    adding UML
+
+commit 23d6a111edae7149dbb9daeeea255c170116308f
+Author: User <drconnoramerica@utexas.edu>
+Date:   Fri Mar 27 02:49:24 2015 +0000
+
+    added tests.out
+
+commit 93a343e5660cef3ced32b72d032a439e3d41db2f
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Thu Mar 26 21:34:21 2015 -0500
+
+    adding logfile
+
 commit f290392e76884543eccce67dbe9bd0cf227038cd
 Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
 Date:   Thu Mar 26 21:32:59 2015 -0500
