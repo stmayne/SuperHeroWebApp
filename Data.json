@@ -359,15 +359,29 @@
 		}
 	},
 	"CharactersXComics" :
-	{
-		"character_id" : "1",
-		"comic_id" : "2",
-		"description" : "a description of the relationship"
-	},
+	[
+		{
+			"character_id" : "1",
+			"comic_id" : "2",
+			"description" : "a description of the relationship"
+		},
+		{
+			"character_id" : "1",
+			"comic_id" : "4",
+			"description" : "a description of the relationship"
+		}
+	],
 	"CharactersXTvShows" :
-	{
-		"character_id" : "2",
-		"tvshow_id" : "4",
-		"description" : "a description of the relationship"
-	}
+	[
+		{
+			"character_id" : "2",
+			"tvshow_id" : "4",
+			"description" : "a description of the relationship"
+		},
+		{
+			"character_id" : "3",
+			"tvshow_id" : "1",
+			"description" : "a description of the relationship"
+		}
+	]
 }
