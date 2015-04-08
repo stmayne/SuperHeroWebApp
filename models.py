@@ -1,20 +1,47 @@
 from config import db
+"""
+How to create a an association
+http://docs.sqlalchemy.org/en/latest/orm/basic_relationships.html#many-to-many
 
-comics_association_table = db.Table('comics_association',
-		db.Column('Character_id', db.Integer, db.ForeignKey('Characters.id')),
-		db.Column('Comics_id', db.Integer, db.ForeignKey('Comics.id'))
-	)
+# create parent, append a child via association
+p = Characters()
+a = comicsAssociation(description = <data>)
+a.child() = Comics()
+p.comics.append(a)
 
-tvshows_association_table = db.Table('tvshows_association',
-		db.Column('Character_id', db.Integer, db.ForeignKey('Characters.id')),
-		db.Column('TvShows_id', db.Integer, db.ForeignKey('TvShows.id'))
-	)
+# iterate through child objects via association, including association
+# attributes
+for assoc in p.comics:
+    print assoc.description
+    print assoc.comic
+"""
 
-class Characters(db.Model):
+class CharacterTvShowXRef(db.Model):
+	"""
+	Association object for tvshows to characters
+	"""
+	__tablename__ = "CHARACTERS_TVSHOWS_XREF"
+	character_id = db.Column(db.Integer,db.ForeignKey('CHARACTERS.id'),primary_key = True)
+	tvshows_id = db.Column(db.Integer,db.ForeignKey('TVSHOWS.id'),primary_key = True)
+	description = db.Column(db.String(200))
+	tvshow = db.relationship("TvShow", backref = "CharacterTvShowXRef")
+
+class CharacterComicXRef(db.Model):
+	"""
+	Association object for tvshows to characters
+	"""
+	__tablename__ = "CHARACTERS_COMICS_XREF"
+	character_id = db.Column(db.Integer,db.ForeignKey('CHARACTERS.id'),primary_key = True)
+	comics_id = db.Column(db.Integer,db.ForeignKey('COMICS.id'),primary_key = True)
+	description = db.Column(db.String(200))
+	comic = db.relationship("Comic", backref = "CharacterComicXRef")
+
+
+class Character(db.Model):
 	"""
 	A model representing a superhero, villain, or other character
 	"""
-	__tablename__ = "Characters"
+	__tablename__ = "CHARACTERS"
 
 	id = db.Column(db.Integer,primary_key = True)
 	name = db.Column(db.String(80), unique=True)
@@ -23,12 +50,10 @@ class Characters(db.Model):
 	alignment = db.Column(db.String(10))
 	gender = db.Column(db.String(10))
 	powers = db.Column(db.String(200))
-	description = db.Column(db.String(500))
+	description = db.Column(db.String(10000))
 	picture = db.Column(db.String(100)) #Location?
-	comics = db.relationship("Comics", secondary = comics_association_table,
-									backref= db.backref("Characters"))
-	tvshows = db.relationship("TvShows", secondary = tvshows_association_table,
-									backref= db.backref("Characters"))
+	tvshows = db.relationship("CharacterTvShowXRef", backref = db.backref("Characters"))
+	comics = db.relationship("CharacterComicXRef", backref = db.backref("Characters"))
 
 	def __init__(self, name, universe, aliases, alignment, gender, powers, description, picture):
 		"""
@@ -56,18 +81,18 @@ class Characters(db.Model):
 		"""
 		return '<user %r>' % self.name
 
-class Comics(db.Model):
+class Comic(db.Model):
 	"""
 	A model representing a comic
 	"""
-	__tablename__ = "Comics"
+	__tablename__ = "COMICS"
 
 	id = db.Column(db.Integer,primary_key = True)
 	name = db.Column(db.String(80), unique=True)
 	volume = db.Column(db.Integer)
 	pubdate = db.Column(db.Date)
 	universe = db.Column(db.String(30))
-	description = db.Column(db.String(500))
+	description = db.Column(db.String(10000))
 	nuissues = db.Column(db.Integer)
 	
 
@@ -93,17 +118,17 @@ class Comics(db.Model):
 		"""
 		return '<user %r>' % self.name
 
-class TvShows(db.Model):
+class TvShow(db.Model):
 	"""
 	A model representing a TV show
 	"""
-	__tablename__ = "TvShows"
+	__tablename__ = "TVSHOWS"
 
 	id = db.Column(db.Integer,primary_key = True)
 	name = db.Column(db.String(80), unique=True)
 	date = db.Column(db.String(100))
 	universe = db.Column(db.String(30))
-	description = db.Column(db.String(500))
+	description = db.Column(db.String(10000))
 	nuseasons = db.Column(db.Integer)
 	nuepisodes = db.Column(db.Integer)
 	broadcast = db.Column(db.String(40))
