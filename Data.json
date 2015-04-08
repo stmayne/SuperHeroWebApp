@@ -356,6 +356,18 @@
 			"issues" : "12",
 			"picture" : "http://i.imgur.com/41sI7O3.jpg",
 			"relations" : [{"type":"show", "id":"0", "name":"Agents of S.H.I.E.L.D"}, {"type":"character", "id":"0", "name":"Captain America"}]
+		},
+		"CharactersXComics" :
+		{
+			"character_id" : "1",
+			"comic_id" : "2",
+			"description" : "a description of the relationship"
+		},
+		"CharactersXTvShows" :
+		{
+			"character_id" : "2",
+			"tvshow_id" : "4",
+			"description" : "a description of the relationship"
 		}
 	}
 }
