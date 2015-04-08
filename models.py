@@ -24,7 +24,7 @@ class CharacterTvShowXRef(db.Model):
 	character_id = db.Column(db.Integer,db.ForeignKey('CHARACTERS.id'),primary_key = True)
 	tvshow_id = db.Column(db.Integer,db.ForeignKey('TVSHOWS.id'),primary_key = True)
 	description = db.Column(db.String(200))
-	tvshow = db.relationship("TvShow", backref = "CharacterTvShowXRef")
+	tvshow = db.relationship("TvShow", backref = "characters")
 
 	def __init__ (self, character_id, tvshow_id, description) :
 		self.character_id = character_id
@@ -39,7 +39,7 @@ class CharacterComicXRef(db.Model):
 	character_id = db.Column(db.Integer,db.ForeignKey('CHARACTERS.id'),primary_key = True)
 	comic_id = db.Column(db.Integer,db.ForeignKey('COMICS.id'),primary_key = True)
 	description = db.Column(db.String(200))
-	comic = db.relationship("Comic", backref = "CharacterComicXRef")
+	comic = db.relationship("Comic", backref = "characters")
 
 	def __init__ (self, character_id, comic_id, description) :
 		self.character_id = character_id
