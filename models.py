@@ -22,9 +22,14 @@ class CharacterTvShowXRef(db.Model):
 	"""
 	__tablename__ = "CHARACTERS_TVSHOWS_XREF"
 	character_id = db.Column(db.Integer,db.ForeignKey('CHARACTERS.id'),primary_key = True)
-	tvshows_id = db.Column(db.Integer,db.ForeignKey('TVSHOWS.id'),primary_key = True)
+	tvshow_id = db.Column(db.Integer,db.ForeignKey('TVSHOWS.id'),primary_key = True)
 	description = db.Column(db.String(200))
 	tvshow = db.relationship("TvShow", backref = "CharacterTvShowXRef")
+
+	def __init__ (self, character_id, tvshow_id, description) :
+		self.character_id = character_id
+		self.tvshow_id = tvshow_id
+		self.description = description
 
 class CharacterComicXRef(db.Model):
 	"""
@@ -32,10 +37,14 @@ class CharacterComicXRef(db.Model):
 	"""
 	__tablename__ = "CHARACTERS_COMICS_XREF"
 	character_id = db.Column(db.Integer,db.ForeignKey('CHARACTERS.id'),primary_key = True)
-	comics_id = db.Column(db.Integer,db.ForeignKey('COMICS.id'),primary_key = True)
+	comic_id = db.Column(db.Integer,db.ForeignKey('COMICS.id'),primary_key = True)
 	description = db.Column(db.String(200))
 	comic = db.relationship("Comic", backref = "CharacterComicXRef")
 
+	def __init__ (self, character_id, comic_id, description) :
+		self.character_id = character_id
+		self.comic_id = comic_id
+		self.description = description
 
 class Character(db.Model):
 	"""
@@ -75,6 +84,7 @@ class Character(db.Model):
 		self.powers = powers
 		self.description = description
 		self.picture = picture
+
 	def __repr__(self):
 		"""
 		returns a string containing a printable representation of the character (i.e. it's name)
