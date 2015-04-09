@@ -253,21 +253,21 @@ p.copyright {
     <div role="tabpanel" class="tab-pane active" id="characters">
     <ul>
     {% for item in Characters %}
-      <li><a href="/character/{{ item }}">{{ Characters[item]['name'] }}</a></li>
+      <li><a href="/character/{{ item['id'] }}">{{ item['name'] }}</a></li>
     {% endfor %}
     </ul>
     </div>
     <div role="tabpanel" class="tab-pane" id="comics">
     <ul>
     {% for item in Comics %}
-      <li><a href="/comic/{{ item }}">{{ Comics[item]['name'] }}</a></li>
+      <li><a href="/comic/{{ item['id'] }}">{{ item['name'] }}</a></li>
     {% endfor %}
     </ul>
     </div>
     <div role="tabpanel" class="tab-pane" id="shows">
     <ul>
     {% for item in Shows %}
-      <li><a href="/show/{{ item }}">{{ Shows[item]['name'] }}</a></li>
+      <li><a href="/show/{{ item['id'] }}">{{ item['name'] }}</a></li>
     {% endfor %}
     </ul>
     </div>
