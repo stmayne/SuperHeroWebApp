@@ -1,4 +1,5 @@
 from config import db
+
 """
 How to create a an association
 http://docs.sqlalchemy.org/en/latest/orm/basic_relationships.html#many-to-many
@@ -55,10 +56,10 @@ class Character(db.Model):
 	id = db.Column(db.Integer,primary_key = True)
 	name = db.Column(db.String(80), unique=True)
 	universe = db.Column(db.String(30))
-	aliases = db.Column(db.String(150))
+	aliases = db.Column(db.PickleType)
 	alignment = db.Column(db.String(10))
 	gender = db.Column(db.String(10))
-	powers = db.Column(db.String(200))
+	powers = db.Column(db.PickleType)
 	description = db.Column(db.String(10000))
 	picture = db.Column(db.String(100)) #Location?
 	tvshows = db.relationship("CharacterTvShowXRef", backref = db.backref("Characters"))
