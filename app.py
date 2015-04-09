@@ -81,11 +81,14 @@ def getComicData(comic_id=None):
 	if comic_id == None :
 		comics = models.Comic.query.all()
 		comicsData = {'Comics':tuple(modelToDict(comic) for comic in comics)}
+		#remove stuff
 		return jsonify(**comicsData)
 
 	comic = models.Comic.query.get(int(comic_id))
 	if comic != None :
 		comicData = modelToDict(comic)
+		characters = [{ "id":str(relation.character_id), "name":relation.Characters.name } for relation in comic.characters]
+		comicData["characters"] = characters
 		return jsonify(**comicData)
 
 	else :
@@ -97,11 +100,14 @@ def getShowData(show_id=None):
 	if show_id == None :
 		shows = models.TvShow.query.all()
 		showsData = {'Shows':tuple(modelToDict(show) for show in shows)}
+		#remove stuff
 		return jsonify(*showsData)
 
 	show = models.TvShow.query.get(int(show_id))
 	if show != None :
 		showData = modelToDict(show)
+		characters = [{"type":"character", "id":str(relation.character_id), "name":relation.Characters.name} for relation in show.characters]
+		showData["characters"] = characters
 		return jsonify(**showData)
 
 	else :
@@ -113,11 +119,16 @@ def getCharacterData(character_id=None):
 	if character_id == None :
 		characters = models.Character.query.all()
 		charactersData = {'Characters':tuple(modelToDict(character) for character in characters)}
+		#remove stuff
 		return jsonify(*charactersData)
 
 	character = models.Character.query.get(int(character_id))
 	if character != None :
 		characterData = modelToDict(character)
+		tvshows  = [{"id":str(relation.tvshow_id), "name":relation.tvshow.name} for relation in character.tvshows]
+		comics = [{"id":str(relation.comic_id), "name":relation.comic.name} for relation in character.comics]
+		characterData["shows"] = tvshows
+		characterData['comics'] = comics
 		return jsonify(**characterData)
 
 	else :
