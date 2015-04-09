@@ -52,25 +52,26 @@ def getAbout():
 def getComic(comic_id):
 	comic = models.Comic.query.get(int(comic_id))
 	comicData = modelToDict(comic)
-	relations = [{"type":"character", "id":str(relation.character_id), "name":relation.Characters.name} for relation in comic.characters]
-	comicData["relations"] = relations
+	characters = [{ "id":str(relation.character_id), "name":relation.Characters.name } for relation in comic.characters]
+	comicData["characters"] = characters
 	return render_template('comic.html', **comicData)
 
 @app.route('/show/<show_id>')
 def getShow(show_id):
 	show = models.TvShow.query.get(int(show_id))
 	showData = modelToDict(show)
-	relations = [{"type":"character", "id":str(relation.character_id), "name":relation.Characters.name} for relation in show.characters]
-	showData["relations"] = relations
+	characters = [{"type":"character", "id":str(relation.character_id), "name":relation.Characters.name} for relation in show.characters]
+	showData["characters"] = characters
 	return render_template('show.html', **showData)
 
 @app.route('/character/<character_id>')
 def getCharacter(character_id):
 	character = models.Character.query.get(int(character_id))
 	characterData = modelToDict(character)
-	relations  = [{"type":"show", "id":str(relation.tvshow_id), "name":relation.tvshow.name} for relation in character.tvshows]
-	relations += [{"type":"comic", "id":str(relation.comic_id), "name":relation.comic.name} for relation in character.comics]
-	characterData["relations"] = relations
+	tvshows  = [{"id":str(relation.tvshow_id), "name":relation.tvshow.name} for relation in character.tvshows]
+	comics = [{"id":str(relation.comic_id), "name":relation.comic.name} for relation in character.comics]
+	characterData["shows"] = tvshows
+	characterData['comics'] = comics
 	return render_template('character.html', **characterData)
 
 #json (public API)
