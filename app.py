@@ -9,11 +9,6 @@ from config import app
 import models
 import create_models
 
-import json
-
-with open('Data.json') as json_data:
-	data = json.load(json_data)
-
 imageNotFound = "https://browshot.com/static/images/not-found.png"
 
 #html
@@ -23,7 +18,31 @@ def get():
 
 @app.route('/directory/')
 def getDirectory():
+	comics = models.Comic.query.all()
+	comicsData = tuple(modelToDict(comic) for comic in comics)
+
+	shows = models.TvShow.query.all()
+	showsData = tuple(modelToDict(show) for show in shows)
+
+	characters = models.Character.query.all()
+	charactersData = tuple(modelToDict(character) for character in characters)
+
+	data = {"Characters":charactersData, "Shows":showsData, "Comics":comicsData}
 	return render_template('directory.html', **data)
+
+@app.route('/testDirectory/')
+def getTestDirectory():
+	comics = models.Comic.query.all()
+	comicsData = tuple(modelToDict(comic) for comic in comics)
+
+	shows = models.TvShow.query.all()
+	showsData = tuple(modelToDict(show) for show in shows)
+
+	characters = models.Character.query.all()
+	charactersData = tuple(modelToDict(character) for character in characters)
+
+	data = {"Characters":charactersData, "Shows":showsData, "Comics":comicsData}
+	return jsonify(**data)
 
 @app.route('/about/')
 def getAbout():
@@ -31,30 +50,36 @@ def getAbout():
 
 @app.route('/comic/<comic_id>')
 def getComic(comic_id):
-	if data['Comics'][str(comic_id)]['picture'] == "" :
-		data['Comics'][str(comic_id)]['picture'] = imageNotFound
-	return render_template('comic.html', **data['Comics'][str(comic_id)])
+	comic = models.Comic.query.get(int(comic_id))
+	comicData = modelToDict(comic)
+	return render_template('comic.html', **comicData)
 
 @app.route('/show/<show_id>')
 def getShow(show_id):
-	if data['Shows'][str(show_id)]['picture'] == "" :
-		data['Shows'][str(show_id)]['picture'] = imageNotFound
-	return render_template('show.html', **data['Shows'][str(show_id)])
+	show = models.TvShow.query.get(int(show_id))
+	showData = modelToDict(show)
+	return render_template('show.html', **showData)
 
 @app.route('/character/<character_id>')
 def getCharacter(character_id):
-	if data['Characters'][str(character_id)]['picture'] == "" :
-		data['Characters'][str(character_id)]['picture'] = imageNotFound
-	return render_template('character.html', **data['Characters'][str(character_id)])
+	character = models.Character.query.get(int(character_id))
+	characterData = modelToDict(character)
+	return render_template('character.html', **characterData)
 
-#json
+#json (public API)
 @app.route('/comics/')
 @app.route('/comics/<comic_id>')
 def getComicData(comic_id=None):
 	if comic_id == None :
-		return jsonify(**data['Comics'])
-	elif comic_id in data['Comics'] :
-		return jsonify(**data['Comics'][comic_id])
+		comics = models.Comic.query.all()
+		comicsData = {'Comics':tuple(modelToDict(comic) for comic in comics)}
+		return jsonify(**comicsData)
+
+	comic = models.Comic.query.get(int(comic_id))
+	if comic != None :
+		comicData = modelToDict(comic)
+		return jsonify(**comicData)
+
 	else :
 		return ""
 
@@ -62,9 +87,15 @@ def getComicData(comic_id=None):
 @app.route('/shows/<show_id>')
 def getShowData(show_id=None):
 	if show_id == None :
-		return jsonify(**data['Shows'])
-	elif show_id in data['Shows'] :
-		return jsonify(**data['Shows'][show_id])
+		shows = models.TvShow.query.all()
+		showsData = {'Shows':tuple(modelToDict(show) for show in shows)}
+		return jsonify(*showsData)
+
+	show = models.TvShow.query.get(int(show_id))
+	if show != None :
+		showData = modelToDict(show)
+		return jsonify(**showData)
+
 	else :
 		return ""
 
@@ -72,11 +103,25 @@ def getShowData(show_id=None):
 @app.route('/characters/<character_id>')
 def getCharacterData(character_id=None):
 	if character_id == None :
-		return jsonify(**data['Characters'])
-	elif character_id in data['Characters'] :
-		return jsonify(**data['Characters'][character_id])
+		characters = models.Character.query.all()
+		charactersData = {'Characters':tuple(modelToDict(character) for character in characters)}
+		return jsonify(*charactersData)
+
+	character = models.Character.query.get(int(character_id))
+	if character != None :
+		characterData = modelToDict(character)
+		return jsonify(**characterData)
+
 	else :
 		return ""
+
+def modelToDict(model):
+	res = {key:value for key, value in model.__dict__.items() if not key.startswith('_') and not callable(key)}
+
+	if 'picture' not in res or res['picture'] == "" :
+		res['picture'] = imageNotFound
+
+	return res
 
 #run Flask open to all IPs on port 80(requires root access)
 if __name__ == '__main__':
