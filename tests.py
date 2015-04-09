@@ -132,6 +132,7 @@ class TestCase (unittest.TestCase) :
 		tvshow = TvShow ("name", "start <-> end", "universe", "description", 1, 10, "broadcast")
 		db.session.add (character)
 		db.session.add (tvshow)
+		db.session.commit ()
 		
 		character = Character.query.filter_by (name=character.name).first ()
 		tvshow = TvShow.query.filter_by (name=tvshow.name).first ()
@@ -140,6 +141,7 @@ class TestCase (unittest.TestCase) :
 
 		xref = CharacterTvShowXRef (character.id, tvshow.id, "")
 		db.session.add (xref)
+		db.session.commit ()
 
 		xref = CharacterTvShowXRef.query.filter_by (character_id=xref.character_id, tvshow_id=xref.tvshow_id)
 		assert (xref != None)
@@ -151,12 +153,14 @@ class TestCase (unittest.TestCase) :
 		tvshow = TvShow ("name", "start <-> end", "universe", "description", 1, 10, "broadcast")
 		db.session.add (character)
 		db.session.add (tvshow)
+		db.session.commit ()
 		
 		character = Character.query.filter_by (name=character.name).first ()
 		tvshow = TvShow.query.filter_by (name=tvshow.name).first ()
 
 		xref = CharacterTvShowXRef (character.id, tvshow.id, "")
 		db.session.add (xref)
+		db.session.commit ()
 
 		character = Character.query.filter_by (name=character.name).first ()
 		tvshow = TvShow.query.filter_by (name=tvshow.name).first ()
@@ -173,6 +177,7 @@ class TestCase (unittest.TestCase) :
 		db.session.add (character)
 		db.session.add (tvshow1)
 		db.session.add (tvshow2)
+		db.session.commit ()
 		
 		character = Character.query.filter_by (name=character.name).first ()
 		tvshow1 = TvShow.query.filter_by (name=tvshow1.name).first ()
@@ -182,6 +187,7 @@ class TestCase (unittest.TestCase) :
 		xref2 = CharacterTvShowXRef (character.id, tvshow2.id, "")
 		db.session.add (xref1)
 		db.session.add (xref2)
+		db.session.commit ()
 
 		character = Character.query.filter_by (name=character.name).first ()
 		tvshow1 = TvShow.query.filter_by (name=tvshow1.name).first ()
@@ -202,6 +208,7 @@ class TestCase (unittest.TestCase) :
 		comic = Comic ("name", 1, date (1,1,1), "universe", "description", 10)
 		db.session.add (character)
 		db.session.add (comic)
+		db.session.commit ()
 		
 		character = Character.query.filter_by (name=character.name).first ()
 		comic = Comic.query.filter_by (name=comic.name).first ()
@@ -210,6 +217,7 @@ class TestCase (unittest.TestCase) :
 
 		xref = CharacterComicXRef (character.id, comic.id, "")
 		db.session.add (xref)
+		db.session.commit ()
 
 		xref = CharacterComicXRef.query.filter_by (character_id=xref.character_id, comic_id=xref.comic_id)
 		assert (xref != None)
@@ -221,12 +229,14 @@ class TestCase (unittest.TestCase) :
 		comic = Comic ("name", 1, date (1,1,1), "universe", "description", 10)
 		db.session.add (character)
 		db.session.add (comic)
+		db.session.commit ()
 		
 		character = Character.query.filter_by (name=character.name).first ()
 		comic = Comic.query.filter_by (name=comic.name).first ()
 
 		xref = CharacterComicXRef (character.id, comic.id, "")
 		db.session.add (xref)
+		db.session.commit ()
 
 		character = Character.query.filter_by (name=character.name).first ()
 		comic = Comic.query.filter_by (name=comic.name).first ()
@@ -244,7 +254,8 @@ class TestCase (unittest.TestCase) :
 		db.session.add (character)
 		db.session.add (comic1)
 		db.session.add (comic2)
-		
+		db.session.commit ()
+
 		character = Character.query.filter_by (name=character.name).first ()
 		comic1 = Comic.query.filter_by (name=comic1.name).first ()
 		comic2 = Comic.query.filter_by (name=comic2.name).first ()
@@ -253,6 +264,7 @@ class TestCase (unittest.TestCase) :
 		xref2 = CharacterComicXRef (character.id, comic2.id, "")
 		db.session.add (xref1)
 		db.session.add (xref2)
+		db.session.commit ()
 
 		character = Character.query.filter_by (name=character.name).first ()
 		comic1 = Comic.query.filter_by (name=comic1.name).first ()

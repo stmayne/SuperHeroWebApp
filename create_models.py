@@ -11,7 +11,7 @@ def create_models (data, creators) :
 			for obj in data_type_objects :
 				entry = creator (obj)
 				db.session.add (entry)
-	db.session.commit ()
+				db.session.commit ()
 
 # name, universe, aliases, alignment, gender, powers, description, picture
 def create_character (data) :
