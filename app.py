@@ -80,8 +80,7 @@ def getCharacter(character_id):
 def getComicData(comic_id=None):
 	if comic_id == None :
 		comics = models.Comic.query.all()
-		comicsData = {'Comics':tuple(modelToDict(comic) for comic in comics)}
-		#remove stuff
+		comicsData = {'Comics':tuple(modelToListDict(comic) for comic in comics)}
 		return jsonify(**comicsData)
 
 	comic = models.Comic.query.get(int(comic_id))
@@ -99,8 +98,7 @@ def getComicData(comic_id=None):
 def getShowData(show_id=None):
 	if show_id == None :
 		shows = models.TvShow.query.all()
-		showsData = {'Shows':tuple(modelToDict(show) for show in shows)}
-		#remove stuff
+		showsData = {'Shows':tuple(modelToListDict(show) for show in shows)}
 		return jsonify(**showsData)
 
 	show = models.TvShow.query.get(int(show_id))
@@ -118,8 +116,7 @@ def getShowData(show_id=None):
 def getCharacterData(character_id=None):
 	if character_id == None :
 		characters = models.Character.query.all()
-		charactersData = {'Characters':tuple(modelToDict(character) for character in characters)}
-		#remove stuff
+		charactersData = {'Characters':tuple(modelToListDict(character) for character in characters)}
 		return jsonify(**charactersData)
 
 	character = models.Character.query.get(int(character_id))
@@ -141,6 +138,9 @@ def modelToDict(model):
 		res['picture'] = imageNotFound
 
 	return res
+
+def modelToListDict(model):
+	return {"name":model.name, "id":str(model.id)}
 
 #run Flask open to all IPs on port 80(requires root access)
 if __name__ == '__main__':
