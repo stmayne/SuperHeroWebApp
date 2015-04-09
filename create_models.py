@@ -31,7 +31,8 @@ def create_comic (data) :
 	return Comic (
 		data['name'],
 		int (data['volumes']),
-		datetime.date.today (),
+		data['pubstart'],
+		data['pubend'],
 		data['universe'],
 		data['description'],
 		int (data['issues'])
@@ -41,7 +42,8 @@ def create_comic (data) :
 def create_tvshow (data) :
 	return TvShow (
 		data['name'],
-		data['date'],
+		data['startdate'],
+		data['enddate'],
 		data['universe'],
 		data['description'],
 		int (data['seasons']),
