@@ -101,7 +101,7 @@ def getShowData(show_id=None):
 		shows = models.TvShow.query.all()
 		showsData = {'Shows':tuple(modelToDict(show) for show in shows)}
 		#remove stuff
-		return jsonify(*showsData)
+		return jsonify(**showsData)
 
 	show = models.TvShow.query.get(int(show_id))
 	if show != None :
@@ -120,7 +120,7 @@ def getCharacterData(character_id=None):
 		characters = models.Character.query.all()
 		charactersData = {'Characters':tuple(modelToDict(character) for character in characters)}
 		#remove stuff
-		return jsonify(*charactersData)
+		return jsonify(**charactersData)
 
 	character = models.Character.query.get(int(character_id))
 	if character != None :
