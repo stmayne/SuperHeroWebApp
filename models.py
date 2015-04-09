@@ -100,14 +100,13 @@ class Comic(db.Model):
 	id = db.Column(db.Integer,primary_key = True)
 	name = db.Column(db.String(80), unique=True)
 	volume = db.Column(db.Integer)
-	pubstart = db.Column(db.String(30))
-	pubend = db.Column(db.String(30))
+	pubdate = db.Column(db.Date)
 	universe = db.Column(db.String(30))
 	description = db.Column(db.String(10000))
 	nuissues = db.Column(db.Integer)
 	
 
-	def __init__(self, name, volume, pubstart, pubend, universe, description, nuissues):
+	def __init__(self, name, volume, pubdate, universe, description, nuissues):
 		"""
 		Initializes a comic model with the following arguments
 		name the name of the comic
@@ -119,8 +118,7 @@ class Comic(db.Model):
 		"""
 		self.name = name
 		self.volume = volume
-		self.pubstart = pubstart
-		self.pubend = pubend
+		self.pubdate = pubdate
 		self.universe = universe
 		self.description = description
 		self.nuissues = nuissues
@@ -138,8 +136,7 @@ class TvShow(db.Model):
 
 	id = db.Column(db.Integer,primary_key = True)
 	name = db.Column(db.String(80), unique=True)
-	startdate = db.Column(db.String(30))
-	enddate = db.Column(db.String(30))
+	date = db.Column(db.String(100))
 	universe = db.Column(db.String(30))
 	description = db.Column(db.String(10000))
 	nuseasons = db.Column(db.Integer)
@@ -147,7 +144,7 @@ class TvShow(db.Model):
 	broadcast = db.Column(db.String(40))
 	
 
-	def __init__(self, name, startdate, enddate, universe, description, nuseasons, nuepisodes, broadcast):
+	def __init__(self, name, date, universe, description, nuseasons, nuepisodes, broadcast):
 		"""
 		Initializes a TV show model with the following arguments
 		name the name of the show
@@ -159,8 +156,7 @@ class TvShow(db.Model):
 		broadcast when the show was broadcast
 		"""
 		self.name = name
-		self.startdate = startdate
-		self.enddate = enddate
+		self.date = date
 		self.universe = universe
 		self.description = description
 		self.nuseasons = nuseasons

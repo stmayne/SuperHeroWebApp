@@ -116,8 +116,7 @@
 	[
 		{
 			"name" : "Agents of S.H.I.E.L.D.",
-			"startdate" : "9/24/2013",
-			"enddate" : "present",
+			"date" : "9/24/2013-present",
 			"universe" : "Earth-616",
 			"description" : "The series revolves around the character of Phil Coulson, with Clark Gregg reprising his role from the film series, and his team of S.H.I.E.L.D. agents, who must deal with various unusual cases and enemies.",
 			"seasons" : "2",
@@ -128,8 +127,7 @@
 		},
 		{
 			"name" : "Ultimate Spider-Man",
-			"startdate" : "4/1/2012",
-			"enddate" : "present",
+			"date" : "4/1/2012-present",
 			"universe" : "Earth-616",
 			"description" : "The show is an American animated television series based on the Spider-Man comics published by Marvel Comics, including some elements of Marvel's Ultimate line of books.",
 			"seasons" : "3",
@@ -140,8 +138,7 @@
 		},
 		{
 			"name" : "Mutant X",
-			"startdate" : "10/6/2001",
-			"enddate" : "5/17/2004",
+			"date" : "10/6/2001-5/17/2004",
 			"universe" : "Earth-616",
 			"description" : "Mutant X is a science fiction television series that debuted on October 6, 2001. The show was created by Avi Arad, and it centers on Mutant X, a team of New Mutants who possess extraordinary powers as a result of genetic engineering.",
 			"seasons" : "3",
@@ -152,8 +149,7 @@
 		},
 		{
 			"name" : "Fantastic Four",
-			"startdate" : "9/24/1994",
-			"enddate" : "2/24/1996",
+			"date" : "9/24/1994-2/24/1996",
 			"universe" : "Earth-616",
 			"description" : "Fantastic Four, also known as Fantastic Four: The Animated Series, is the third animated television series based on Marvel's comic book series of the same name.[2] Airing began on September 24, 1994, until ending on February 24, 1996. ",
 			"seasons" : "2",
@@ -164,8 +160,7 @@
 		},
 		{
 			"name" : "Iron Man",
-			"startdate" : "2/24/1996",
-			"enddate" : "2/24/1996",
+			"date" : "9/24/1994-2/24/1996",
 			"universe" : "Earth-616",
 			"description" : "Iron Man, also known as Iron Man: The Animated Series, is an American animated television series based on Marvel Comics' superhero Iron Man.",
 			"seasons" : "2",
@@ -176,8 +171,7 @@
 		},
 		{
 			"name" : "The Incredible Hulk",
-			"startdate" : "9/8/1996",
-			"enddate" : "11/23/1991",
+			"date" : "9/8/1996-11/23/1991",
 			"universe" : "Earth-616",
 			"description" : "The Incredible Hulk is an American animated television series starring the Marvel Comics character the Hulk. It ran two seasons, for 21 episodes, on the television network UPN from 1996 to 1997. Lou Ferrigno, who portrayed Universal's version of the Hulk on the live-action TV series from 1978 to 1982, provided the Hulk's voice for the true version from Marvel.",
 			"seasons" : "2",
@@ -188,8 +182,7 @@
 		},
 		{
 			"name" : "Silver Surfer",
-			"startdate" : "2/7/1998",
-			"enddate" : "5/16/1998",
+			"date" : "2/7/1998-5/16/1998",
 			"universe" : "Earth-616",
 			"description" : "Silver Surfer, also known as Silver Surfer: The Animated Series, is an animated television series based on the Marvel Comics superhero created by Jack Kirby. The series aired for one season on the Fox Kids Network in 1998.",
 			"seasons" : "1",
@@ -200,8 +193,7 @@
 		},
 		{
 			"name" : "Black Panther",
-			"startdate" : "1/16/2010",
-			"enddate" : "1/30/2010",
+			"date" : "1/16/2010-1/30/2010",
 			"universe" : "Earth-616",
 			"description" : "Black Panther is an American cartoon series by Marvel Knights Animation, Titmouse, inc. in partnership with Hudlin Entertainment and BET, based on the popular Marvel Comics superhero of the same name.",
 			"seasons" : "1",
@@ -212,8 +204,7 @@
 		},
 		{
 			"name" : "X-Men",
-			"startdate" : "10/31/1992",
-			"enddate" : "9/20/1997",
+			"date" : "10/31/1992-9/20/1997",
 			"universe" : "Earth-616",
 			"description" : "X-Men, also known as X-Men: The Animated Series, is an American-Canadian animated television series which debuted on October 31, 1992 in the United States on the Fox Network as part of its Fox Kids Saturday morning lineup.",
 			"seasons" : "5",
@@ -224,8 +215,7 @@
 		},
 		{
 			"name" : "X-Men: Evolution",
-			"startdate" : "11/4/2000",
-			"enddate" : "10/25/2003",
+			"date" : "11/4/2000 - 10/25/2003 ",
 			"universe" : "Earth-616",
 			"description" : "X-Men: Evolution is a Canadian-American animated television series about the Marvel Comics superhero team X-Men.[1] In this incarnation, many of the characters are teenagers rather than adults.",
 			"seasons" : "4",
@@ -240,8 +230,7 @@
 		{
 			"name" : "Fantastic Four",
 			"volumes" : "1",
-			"pubstart" : "1961",
-			"pubend" : "1966",
+			"publish_date" : "1961-1966",
 			"universe" : "Earth-616",
 			"description" : "The Fantastic Four is a fictional superhero team appearing in comic books published by Marvel Comics. The group debuted in The Fantastic Four #1 (cover dated Nov. 1961), which helped to usher in a new level of realism in the medium.",
 			"issues" : "50",
@@ -251,8 +240,7 @@
 		{
 			"name" : "Amazing Spider-Man",
 			"volumes" : "3",
-			"pubstart" : "2014",
-			"pubend" : "2015",
+			"publish_date" : "2014-2015",
 			"universe" : "Earth-616",
 			"description" : "The Ghost has invaded Parker Industries!",
 			"issues" : "18",
@@ -262,8 +250,7 @@
 		{
 			"name" : "Avengers",
 			"volumes" : "5",
-			"pubstart" : "2013",
-			"pubend" : "2015",
+			"publish_date" : "2013-2015",
 			"universe" : "Earth-616",
 			"description" : "A long time ago, there was nothing. Then there was everything. Many bits of creation swirled around the stars - planets that support life. And then one group of heroes raced into the light - the Avengers. ",
 			"issues" : "44",
@@ -273,8 +260,7 @@
 		{
 			"name" : "Kick-Ass",
 			"volumes" : "1",
-			"pubstart" : "2008",
-			"pubend" : "2010",
+			"publish_date" : "2008-2010",
 			"universe" : "Earth-616",
 			"description" : "Dave Lizewski, regular high school kid being raised by a widower father, takes it upon himself to become a real life superhero. After getting together a suit and doing some training he confronts his first criminals, which doesn't go well for him",
 			"issues" : "8",
@@ -284,8 +270,7 @@
 		{
 			"name" : "Incredible Hulk",
 			"volumes" : "1",
-			"pubstart" : "1962",
-			"pubend" : "2011",
+			"publish_date" : "1962-2011",
 			"universe" : "Earth-616",
 			"description" : "The Hulk is a fictional superhero that appears in comic books published by Marvel Comics. The character was created by Stan Lee and Jack Kirby, and first appeared in The Incredible Hulk #1 (May 1962). Throughout his comic book appearances, the Hulk is portrayed as a large green humanoid that possesses near limitless superhuman strength and great invulnerability, attributes that grow more potent the angrier he becomes.",
 			"issues" : "635",
@@ -295,8 +280,7 @@
 		{
 			"name" : "S.H.I.E.L.D.",
 			"volumes" : "1",
-			"pubstart" : "2010",
-			"pubend" : "2011",
+			"publish_date" : "2010-2011",
 			"universe" : "Earth-616",
 			"description" : "One of the most complex and ambitious series ever published, S.H.I.E.L.D. explores the secret history of the world's premiere peacekeeping organization, featuring classic Marvel characters as well as real world figures like Leonardo da Vinci and Isaac Newton. It's like nothing you've ever seen!",
 			"issues" : "6",
@@ -306,8 +290,7 @@
 		{
 			"name" : "Daredevil",
 			"volumes" : "1",
-			"pubstart" : "1964",
-			"pubend" : "2011",
+			"publish_date" : "1964-2011",
 			"universe" : "Earth-616",
 			"description" : "Daredevil is a fictional superhero that appears in American comic books published by Marvel Comics. The character was created by writer-editor Stan Lee and artist Bill Everett, with an unspecified amount of input from Jack Kirby,[1] and first appeared in Daredevil #1 (April 1964).",
 			"issues" : "512",
@@ -317,8 +300,7 @@
 		{
 			"name" : "Legendary Star-Lord",
 			"volumes" : "1",
-			"pubstart" : "2014",
-			"pubend" : "2015",
+			"publish_date" : "2014-2015",
 			"universe" : "Earth-616",
 			"description" : "From the pages of GUARDIANS OF THE GALAXY! A brand new series from SAM HUMPHRIES and PACO MEDINA! In this exciting first issue, Peter Quill battles the Badoon, fights to save an orphanage, and still finds time for some flirting with Kitty Pryde--but it’s all in a day’s work for the STAR-LORD! ",
 			"issues" : "12",
@@ -328,8 +310,7 @@
 		{
 			"name" : "Raiders of the Lost Ark",
 			"volumes" : "1",
-			"pubstart" : "1981",
-			"pubend" : "1981",
+			"publish_date" : "1981-1981",
 			"universe" : "Earth-616",
 			"description" : "The Raiders of the Lost Ark comic adaptation was published by Marvel Comics from September through November 1981.",
 			"issues" : "3",
@@ -339,8 +320,7 @@
 		{
 			"name" : "James Bond, Jr",
 			"volumes" : "1",
-			"pubstart" : "1992",
-			"pubend" : "1992",
+			"publish_date" : "1992-1992",
 			"universe" : "Earth-616",
 			"description" : "James Bond Jr. had a limited 12 issue run with Marvel Comics spanning from January 1992 to December 1992. The first five stories were lifted directly from the TV series, but the other seven were original stories. The writers were Cal Hamilton and Dan Abnett, and the artists were Mario Capaldi, Colin Fawcett, Adolfo Buylla, and Bambos Georgioli.",
 			"issues" : "12",

@@ -57,11 +57,11 @@ class TestCase (unittest.TestCase) :
 	# COMICS
 	##########
 	def test_Comics_1 (self) :
-		comic = Comic ("name", 1, "1/1/1","1/1/1", "universe", "description", 10)
+		comic = Comic ("name", 1, date (1,1,1), "universe", "description", 10)
 		assert (type(comic) == Comic)
 
 	def test_Comics_2 (self) :
-		comic = Comic ("name", 1, "1/1/1","1/1/1", "universe", "description", 10)
+		comic = Comic ("name", 1, date (1,1,1), "universe", "description", 10)
 		db.session.add (comic)
 		db.session.commit ()
 		comics = Comic.query.all ()
@@ -73,8 +73,8 @@ class TestCase (unittest.TestCase) :
 		assert (len(comics) == 0)
 
 	def test_Comics_3 (self) :
-		comic1 = Comic ("name", 1, "1/1/1","1/1/1", "universe", "description", 10)
-		comic2 = Comic ("name", 1, "1/1/1","1/1/1", "universe", "description", 10)
+		comic1 = Comic ("name", 1, date (1,1,1), "universe", "description", 10)
+		comic2 = Comic ("name", 1, date (1,1,1), "universe", "description", 10)
 
 		try :
 			db.session.add (comic1)
@@ -93,11 +93,11 @@ class TestCase (unittest.TestCase) :
 	# TV Shows
 	############
 	def test_TvShows_1 (self) :
-		tvShow = TvShow ("name", "start","end", "universe", "description", 1, 10, "broadcast")
+		tvShow = TvShow ("name", "start <-> end", "universe", "description", 1, 10, "broadcast")
 		assert (type(tvShow) == TvShow)
 
 	def test_TvShows_2 (self) :
-		tvShow = TvShow ("name", "start","end", "universe", "description", 1, 10, "broadcast")
+		tvShow = TvShow ("name", "start <-> end", "universe", "description", 1, 10, "broadcast")
 		db.session.add (tvShow)
 		db.session.commit ()
 		tvShows = TvShow.query.all ()
@@ -109,8 +109,8 @@ class TestCase (unittest.TestCase) :
 		assert (len(tvShows) == 0)
 
 	def test_TvShows_3 (self) :
-		tvShow1 = TvShow ("name", "start","end", "universe", "description", 1, 10, "broadcast")
-		tvShow2 = TvShow ("name", "start","end", "universe", "description", 1, 10, "broadcast")
+		tvShow1 = TvShow ("name", "start <-> end", "universe", "description", 1, 10, "broadcast")
+		tvShow2 = TvShow ("name", "start <-> end", "universe", "description", 1, 10, "broadcast")
 
 		try :
 			db.session.add (tvShow1)
@@ -129,7 +129,7 @@ class TestCase (unittest.TestCase) :
 	#######################
 	def test_CharactersXTvShows_1 (self) :
 		character = Character ("name", "universe", "aliases", "alignment", "gender", "powers", "description", "picture")
-		tvshow = TvShow ("name", "start","end", "universe", "description", 1, 10, "broadcast")
+		tvshow = TvShow ("name", "start <-> end", "universe", "description", 1, 10, "broadcast")
 		db.session.add (character)
 		db.session.add (tvshow)
 		db.session.commit ()
@@ -150,7 +150,7 @@ class TestCase (unittest.TestCase) :
 
 	def test_CharactersXTvShows_2 (self) :
 		character = Character ("name", "universe", "aliases", "alignment", "gender", "powers", "description", "picture")
-		tvshow = TvShow ("name", "start","end", "universe", "description", 1, 10, "broadcast")
+		tvshow = TvShow ("name", "start <-> end", "universe", "description", 1, 10, "broadcast")
 		db.session.add (character)
 		db.session.add (tvshow)
 		db.session.commit ()
@@ -172,8 +172,8 @@ class TestCase (unittest.TestCase) :
 
 	def test_CharactersXTvShows_3 (self) :
 		character = Character ("name", "universe", "aliases", "alignment", "gender", "powers", "description", "picture")
-		tvshow1 = TvShow ("name", "start","end", "universe", "description", 1, 10, "broadcast")
-		tvshow2 = TvShow ("another_name", "start","end", "universe", "description", 1, 10, "broadcast")
+		tvshow1 = TvShow ("name", "start <-> end", "universe", "description", 1, 10, "broadcast")
+		tvshow2 = TvShow ("another_name", "start <-> end", "universe", "description", 1, 10, "broadcast")
 		db.session.add (character)
 		db.session.add (tvshow1)
 		db.session.add (tvshow2)
@@ -205,7 +205,7 @@ class TestCase (unittest.TestCase) :
 	#####################
 	def test_CharactersXComics_1 (self) :
 		character = Character ("name", "universe", "aliases", "alignment", "gender", "powers", "description", "picture")
-		comic = Comic ("name", 1, "1/1/1","1/1/1", "universe", "description", 10)
+		comic = Comic ("name", 1, date (1,1,1), "universe", "description", 10)
 		db.session.add (character)
 		db.session.add (comic)
 		db.session.commit ()
@@ -226,7 +226,7 @@ class TestCase (unittest.TestCase) :
 
 	def test_CharactersXTvComics_2 (self) :
 		character = Character ("name", "universe", "aliases", "alignment", "gender", "powers", "description", "picture")
-		comic = Comic ("name", 1, "1/1/1","1/1/1", "universe", "description", 10)
+		comic = Comic ("name", 1, date (1,1,1), "universe", "description", 10)
 		db.session.add (character)
 		db.session.add (comic)
 		db.session.commit ()
@@ -248,8 +248,8 @@ class TestCase (unittest.TestCase) :
 
 	def test_CharactersXTvComics_3 (self) :
 		character = Character ("name", "universe", "aliases", "alignment", "gender", "powers", "description", "picture")
-		comic1 = Comic ("name", 1, "1/1/1","1/1/1", "universe", "description", 10)
-		comic2 = Comic ("another_name", 1, "1/1/1","1/1/1", "universe", "description", 10)
+		comic1 = Comic ("name", 1, date (1,1,1), "universe", "description", 10)
+		comic2 = Comic ("another_name", 1, date (1,1,1), "universe", "description", 10)
 
 		db.session.add (character)
 		db.session.add (comic1)
