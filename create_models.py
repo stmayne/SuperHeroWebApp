@@ -35,7 +35,8 @@ def create_comic (data) :
 		data['pubend'],
 		data['universe'],
 		data['description'],
-		int (data['issues'])
+		int (data['issues']),
+		data['picture']
 	)
 
 # name, date, universe, description, nuseasons, nuepisodes, broadcast
@@ -48,7 +49,8 @@ def create_tvshow (data) :
 		data['description'],
 		int (data['seasons']),
 		int (data['episodes']),
-		data['broadcaster']
+		data['broadcaster'],
+		data['picture']
 	)
 
 def create_character_x_comic (data) :

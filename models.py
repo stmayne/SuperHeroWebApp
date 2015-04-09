@@ -99,15 +99,16 @@ class Comic(db.Model):
 
 	id = db.Column(db.Integer,primary_key = True)
 	name = db.Column(db.String(80), unique=True)
-	volume = db.Column(db.Integer)
+	volumes = db.Column(db.Integer)
 	pubstart = db.Column(db.String(30))
 	pubend = db.Column(db.String(30))
 	universe = db.Column(db.String(30))
 	description = db.Column(db.String(10000))
-	nuissues = db.Column(db.Integer)
+	issues = db.Column(db.Integer)
+	picture = db.Column(db.String(100))
 	
 
-	def __init__(self, name, volume, pubstart, pubend, universe, description, nuissues):
+	def __init__(self, name, volumes, pubstart, pubend, universe, description, issues, picture):
 		"""
 		Initializes a comic model with the following arguments
 		name the name of the comic
@@ -118,12 +119,13 @@ class Comic(db.Model):
 		nuissues the number of issues
 		"""
 		self.name = name
-		self.volume = volume
+		self.volumes = volumes
 		self.pubstart = pubstart
 		self.pubend = pubend
 		self.universe = universe
 		self.description = description
-		self.nuissues = nuissues
+		self.issues = issues
+		self.picture = picture
 	def __repr__(self):
 		"""
 		returns a string containing a printable representation of the comic (i.e. it's name)
@@ -142,12 +144,14 @@ class TvShow(db.Model):
 	enddate = db.Column(db.String(30))
 	universe = db.Column(db.String(30))
 	description = db.Column(db.String(10000))
-	nuseasons = db.Column(db.Integer)
-	nuepisodes = db.Column(db.Integer)
-	broadcast = db.Column(db.String(40))
+	seasons = db.Column(db.Integer)
+	episodes = db.Column(db.Integer)
+	broadcaster = db.Column(db.String(40))
+	picture = db.Column(db.String(100))
+
 	
 
-	def __init__(self, name, startdate, enddate, universe, description, nuseasons, nuepisodes, broadcast):
+	def __init__(self, name, startdate, enddate, universe, description, seasons, episodes, broadcaster, picture):
 		"""
 		Initializes a TV show model with the following arguments
 		name the name of the show
@@ -163,9 +167,10 @@ class TvShow(db.Model):
 		self.enddate = enddate
 		self.universe = universe
 		self.description = description
-		self.nuseasons = nuseasons
-		self.nuepisodes = nuepisodes
-		self.broadcast = broadcast
+		self.seasons = seasons
+		self.episodes = episodes
+		self.broadcaster = broadcaster
+		self.picture = picture
 		
 	def __repr__(self):
 		"""
