@@ -277,23 +277,23 @@ p.copyright {
         <br><strong style="float: left;">Aliases: </strong>
         <span style="float: left; text-align: left;">{{ ", ".join(aliases) }}</span>
         <br><strong style="float: left;">Powers:</strong>
-        <span style="float: left; margin-left: 5px;">
+        <span style="float: left; margin-left: 5px; text-align: left;">
         {{ ", ".join(powers) }}
         </span>
         <br>
         <div style="width: 100%; display: inline-block;">
         {% if shows != [] %}
           <strong style="float: left;">TV Shows:</strong>
-          {% for item in shows %}
-            <span style="float: left; margin-left: 5px;"><a href="/show/{{ item['id'] }}">{{ item['name'] }}</a></span>
+          {% for i in range(shows|length) %}
+            <span style="float: left; margin-left: 5px;"><a href="/show/{{ shows[i]['id'] }}">{{ shows[i]['name'] }}{% if i < shows|length - 1 %},{% endif %}</a></span>
           {% endfor %}
         {% endif %}
         </div>
         <div style="width: 100%; display: inline-block;">
         {% if comics != [] %}
           <strong style="float: left;">Comics:</strong>
-          {% for item in comics %}
-            <span style="float: left; margin-left: 5px;"><a href="/comic/{{ item['id'] }}">{{ item['name'] }}</a></span>
+          {% for i in range(comics|length) %}
+            <span style="float: left; margin-left: 5px;"><a href="/comic/{{ comics[i]['id'] }}">{{ comics[i]['name'] }}{% if i < comics|length - 1 %},{% endif %}</a></span>
           {% endfor %}
         {% endif %}
         </div>

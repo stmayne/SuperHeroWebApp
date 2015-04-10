@@ -284,8 +284,8 @@ p.copyright {
         <div style="width: 100%; display: inline-block;">
         {% if characters != [] %}
           <strong style="float: left;">Characters:</strong>
-          {% for item in characters %}
-            <span style="float: left; margin-left: 5px;"><a href="/character/{{ item['id'] }}">{{ item['name'] }}</a></span>
+          {% for i in range(characters|length) %}
+            <span style="float: left; margin-left: 5px;"><a href="/character/{{ characters[i]['id'] }}">{{ characters[i]['name'] }}{% if i < characters|length - 1 %},{% endif %}</a></span>
           {% endfor %}
         {% endif %}
         </div>
