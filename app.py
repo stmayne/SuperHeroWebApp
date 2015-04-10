@@ -4,6 +4,8 @@ from flask import request
 from flask import jsonify
 import traceback
 
+import json
+
 from config import app
 
 import models
@@ -18,31 +20,8 @@ def get():
 
 @app.route('/directory/')
 def getDirectory():
-	comics = models.Comic.query.all()
-	comicsData = tuple(modelToDict(comic) for comic in comics)
-
-	shows = models.TvShow.query.all()
-	showsData = tuple(modelToDict(show) for show in shows)
-
-	characters = models.Character.query.all()
-	charactersData = tuple(modelToDict(character) for character in characters)
-
-	data = {"Characters":charactersData, "Shows":showsData, "Comics":comicsData}
+	data = dict(dict(json.loads(getComicData().data), **json.loads(getShowData().data)), **json.loads(getCharacterData().data))
 	return render_template('directory.html', **data)
-
-@app.route('/testDirectory/')
-def getTestDirectory():
-	comics = models.Comic.query.all()
-	comicsData = tuple(modelToDict(comic) for comic in comics)
-
-	shows = models.TvShow.query.all()
-	showsData = tuple(modelToDict(show) for show in shows)
-
-	characters = models.Character.query.all()
-	charactersData = tuple(modelToDict(character) for character in characters)
-
-	data = {"Characters":charactersData, "Shows":showsData, "Comics":comicsData}
-	return jsonify(**data)
 
 @app.route('/about/')
 def getAbout():
@@ -50,29 +29,15 @@ def getAbout():
 
 @app.route('/comic/<comic_id>')
 def getComic(comic_id):
-	comic = models.Comic.query.get(int(comic_id))
-	comicData = modelToDict(comic)
-	characters = [{ "id":str(relation.character_id), "name":relation.Characters.name } for relation in comic.characters]
-	comicData["characters"] = characters
-	return render_template('comic.html', **comicData)
+	return render_template('comic.html', **json.loads(getComicData(comic_id).data))
 
 @app.route('/show/<show_id>')
 def getShow(show_id):
-	show = models.TvShow.query.get(int(show_id))
-	showData = modelToDict(show)
-	characters = [{"type":"character", "id":str(relation.character_id), "name":relation.Characters.name} for relation in show.characters]
-	showData["characters"] = characters
-	return render_template('show.html', **showData)
+	return render_template('show.html', **json.loads(getShowData(show_id).data))
 
 @app.route('/character/<character_id>')
 def getCharacter(character_id):
-	character = models.Character.query.get(int(character_id))
-	characterData = modelToDict(character)
-	tvshows  = [{"id":str(relation.tvshow_id), "name":relation.tvshow.name} for relation in character.tvshows]
-	comics = [{"id":str(relation.comic_id), "name":relation.comic.name} for relation in character.comics]
-	characterData["shows"] = tvshows
-	characterData['comics'] = comics
-	return render_template('character.html', **characterData)
+	return render_template('character.html', **json.loads(getCharacterData(character_id).data))
 
 #json (public API)
 @app.route('/comics/')
