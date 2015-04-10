@@ -1,3 +1,383 @@
+commit 6dc2ee3dd019fa21e8a7767ea2d3a7a701c6f59f
+Author: User <drconnoramerica@utexas.edu>
+Date:   Fri Apr 10 02:58:06 2015 +0000
+
+    update tests
+
+commit 7ec67338343e6735ac86c708a3912b3f7c67a0ef
+Merge: 721ad54 c68f59d
+Author: User <drconnoramerica@utexas.edu>
+Date:   Fri Apr 10 02:51:27 2015 +0000
+
+    Merge branch 'master' of https://github.com/stmayne/cs373-idb
+
+commit 721ad54dc7fa1b0ade570b1905a5fe41030c5bce
+Author: User <drconnoramerica@utexas.edu>
+Date:   Fri Apr 10 02:50:56 2015 +0000
+
+    Reran tests
+
+commit c68f59df1561b16673b794e28a7694ad951e3097
+Author: Stephen Mayne <smayne@wireless-10-147-35-156.public.utexas.edu>
+Date:   Thu Apr 9 21:50:41 2015 -0500
+
+    new statistics added
+
+commit 2408ae48dac9ca1561b26892dc87b2bcd74c6d90
+Author: User <drconnoramerica@utexas.edu>
+Date:   Fri Apr 10 02:42:36 2015 +0000
+
+    add API unit tests
+
+commit 2b4c80dbf51c7a558fa6488dff1f69a20aa44095
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 9 21:29:26 2015 -0500
+
+    Fixes page background to not tile (repeat)
+    
+    using background size and no repeat, the background image no longer
+    repeats for large screen sizes.
+
+commit 318e9d7acfbd88f18948cddd4a6f9d6e090f5f3d
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 9 21:18:47 2015 -0500
+
+    Adds search bar to header
+    
+    search bar now works on header pages
+
+commit b5f7cca6c273ddf81433f157b2361072eaf2c95d
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 9 21:13:22 2015 -0500
+
+    Implements search bar on homepage
+    
+    Search bar submit now sends to directory
+
+commit 0caa133da854d48ce7fd0f96532cb8d3fc09f322
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Thu Apr 9 21:00:16 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit d4a897b91cf2ae732912c5bb4e5a751c655b7a74
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 9 20:48:31 2015 -0500
+
+    Adds commas between relationships
+    
+    Adds commas between related shows, comics, characters
+
+commit 9de267ab1bd56ac8d0ff8bf9b6c64303acea3344
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 9 20:12:22 2015 -0500
+
+    Fixes text from going under image on left
+    
+    Image now has div wrapper which fixes it to the left side of the outer
+    div.
+
+commit ee2be26c89388d9179619452bdad4a2caedb7400
+Author: User <drconnoramerica@utexas.edu>
+Date:   Fri Apr 10 00:57:46 2015 +0000
+
+    Reran pydoc
+
+commit 6e1ea69330a926fb03d43f596c239d473e705e2f
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Thu Apr 9 19:51:13 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 198c6dfc90b1d59f73fe9672255e9df1d66dbd7f
+Author: ccl2of4 <ccl2of4@tx.rr.com>
+Date:   Thu Apr 9 19:31:43 2015 -0500
+
+    added 404 page
+
+commit d2d8ec392bbcdc3b555cea6af9382f7bac31a479
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Apr 9 19:16:54 2015 -0500
+
+    Changed API calls
+
+commit 205f47cf9ecd8c80f453b7d661fe77be451801ec
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Thu Apr 9 19:09:13 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit c06b9c4f64136dd719270010558fd84c3659ef3d
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Thu Apr 9 19:05:31 2015 -0500
+
+    update documentation
+
+commit c7e57735d99d524b186c5fa30adeee9836817655
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 9 18:39:57 2015 -0500
+
+    Adds navbar links to every page
+    
+    Navbar links: Directory, About Us, Contact is now on every page.
+
+commit 11174eeadc99614343923a718bb049739494ad96
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Thu Apr 9 18:27:33 2015 -0500
+
+    remove extra data from API list all calls
+
+commit eb4fe64d457bc416c168d2351d7cd149aa4bafa0
+Merge: 1f4747b 88ab955
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 9 23:26:39 2015 +0000
+
+    Merge branch 'master' of https://github.com/stmayne/cs373-idb
+
+commit 1f4747be48f6aa6ffed3d723163f09494c256504
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 9 23:26:13 2015 +0000
+
+    changed 'present' to '' for undefined end dates
+
+commit 88ab95537c6d2fef14807eb1bb6e6191cda2a3a3
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 9 18:19:57 2015 -0500
+
+    Added start and end times to show
+    
+    Show page now shows start and end time.
+
+commit 1a4a1897e2c500d80ee98b1a7dfbc344107b7d04
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 9 18:19:37 2015 -0500
+
+    Added pub dates to comic page
+    
+    Comic page now displays the start and end publish date
+
+commit c4ee36a2d680e03a3e234826a2e37a1a6613638f
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Thu Apr 9 18:15:57 2015 -0500
+
+    Fix bug in unpacking dictionaries
+
+commit ed295d048bcb83eb1505f9a8854203fdf98ac7cd
+Author: Matthew Stromberg <mcmcmatthew@gmail.com>
+Date:   Thu Apr 9 18:08:17 2015 -0500
+
+    add relations to API
+
+commit 861c43fd4469ffda9c93d6e9e187f107accf943f
+Merge: c59f8a3 a936bfe
+Author: ccl2of4 <ccl2of4@tx.rr.com>
+Date:   Thu Apr 9 18:01:01 2015 -0500
+
+    Merge branch 'master' of https://github.com/stmayne/cs373-idb
+
+commit c59f8a36f9ce591891bb7526950466761ba96c1b
+Author: ccl2of4 <ccl2of4@tx.rr.com>
+Date:   Thu Apr 9 18:00:54 2015 -0500
+
+    changed comma separated values String to PickleType
+
+commit a936bfe7e0070feb14761c88bbc5fbbc5b5b033d
+Author: Stephen Mayne <smayne@wireless-10-147-35-156.public.utexas.edu>
+Date:   Thu Apr 9 17:56:04 2015 -0500
+
+    fixing about us images
+
+commit 3de26acf975b9f99de55bac2b2add776e17425ab
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 9 17:47:01 2015 -0500
+
+    Added related characters to show page
+    
+    The show page now includes related characters
+
+commit 531253a2cefdc00471e1f04aa5d8d4b455371f21
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 9 17:46:33 2015 -0500
+
+    Added related characters to comic page
+    
+    Comic page now has related characters
+
+commit 7278aaa9d81b4a8fa9019b065a0affc93fc0cbf0
+Merge: 38ec8cc 0e2f0ad
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 9 22:37:33 2015 +0000
+
+    Merge branch 'master' of https://github.com/stmayne/cs373-idb
+
+commit 38ec8cc08183423deba4ad41c690cb4c605cbaef
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 9 22:37:24 2015 +0000
+
+    changed app.py dictionary setup
+
+commit 0e2f0adf18fba85eb4e9c6d852125d366aa89488
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 9 17:32:05 2015 -0500
+
+    Adds related shows and comics to character page
+    
+    Using the template python dictionary. We insert related shows and
+    comics.
+
+commit aeaf0e5952d6e5dce7175b2e2d947454e0aba8f3
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Apr 9 16:16:35 2015 -0500
+
+    Updated UML.pdf
+
+commit 24060d62630bffaa1ff5e8005711e484f3f187d1
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 9 21:03:50 2015 +0000
+
+    query relationship data from database
+
+commit b0a1cfce0fb09750d7036cbee44105774655f9ab
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Apr 9 15:36:30 2015 -0500
+
+    Added , report.pdf
+
+commit 27f4008b9ee4b7ef10442b6f2056699ed1bb76fb
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 9 20:26:14 2015 +0000
+
+    add to gitignore
+
+commit 01ea83de0808652a186d928bb04f7e60247e3e89
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Apr 9 14:56:49 2015 -0500
+
+    Moved app.py
+
+commit 21416687f96536304dff809b0f09337d3b1d9998
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Apr 9 14:27:46 2015 -0500
+
+    Changed the models column fields to match the data.json
+
+commit 7d23ea565068c6470f877afac2257400dfea3bb0
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 9 05:54:30 2015 +0000
+
+    start making app work with models
+
+commit b6f3c3d08cf862e5a0172134e1c18984f88cd0f0
+Merge: b289061 fc2c977
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 9 03:23:10 2015 +0000
+
+    Merge branch 'master' of https://github.com/stmayne/cs373-idb
+
+commit b2890611ab00b5c883133a623a89ef7799f6d1f4
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 9 03:21:28 2015 +0000
+
+    No longer recreating db at beginging
+
+commit fc2c9777c9e5485778da7765d3c73767027bf3eb
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Wed Apr 8 21:59:56 2015 -0500
+
+    Delete models.pyc
+
+commit 0c3e0346e63f18fd183e8696598cfbf919830427
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Wed Apr 8 21:59:43 2015 -0500
+
+    Delete config.pyc
+
+commit 5a3d9e25cb4f24c60852f5e16e6bdcb7e462be62
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Wed Apr 8 21:53:55 2015 -0500
+
+    Fixed issues with the changed models , tests and parser. Work correctly on local machine
+
+commit 8f292fbe02e7b941caba4ff25c8b479d03b52717
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Wed Apr 8 21:14:55 2015 -0500
+
+    Fixing a bug on models
+
+commit 30c6f04a615d3595b505c039f43c7974425778c4
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Wed Apr 8 20:52:45 2015 -0500
+
+    Changed the date format on the models aswell as the json and the unit test to reflect the change
+
+commit d3d64619bd54717d45034011d27c5fa7e0331b69
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 9 01:12:28 2015 +0000
+
+    fixed create_models, tests to work on vm
+
+commit 013735538d40b99e983783038d25aa1f3c3cde8b
+Author: ccl2of4 <ccl2of4@tx.rr.com>
+Date:   Wed Apr 8 18:18:26 2015 -0500
+
+    added unit tests for association tables
+
+commit 90d63910b864c2e6ef016e3dba18d42e1214c51a
+Author: ccl2of4 <ccl2of4@tx.rr.com>
+Date:   Wed Apr 8 17:59:24 2015 -0500
+
+    updated Data.json, finished model parser
+
+commit 204f129123e26d88ed9fccc95936865630704b30
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Wed Apr 8 15:27:21 2015 -0500
+
+    Fixes search bar going off screen
+    
+    Search bar now dynamically resizes. This closes #24
+
+commit 3c7240433888fc91a770c652b8b855fa30f76ac0
+Author: ccl2of4 <ccl2of4@tx.rr.com>
+Date:   Tue Apr 7 22:21:38 2015 -0500
+
+    fixed another issue with Data.json
+
+commit f6686f51352b8984225d1655d3b26d0dc395679c
+Author: ccl2of4 <ccl2of4@tx.rr.com>
+Date:   Tue Apr 7 22:20:03 2015 -0500
+
+    fixed issue with data
+
+commit d1f426394999d4d298f3d934c929b6dce8bff07c
+Author: ccl2of4 <ccl2of4@tx.rr.com>
+Date:   Tue Apr 7 22:19:06 2015 -0500
+
+    updated Data.json with example relationships
+
+commit 54f2e2143f3a01b0fb85058a444d87daf24602da
+Author: ccl2of4 <ccl2of4@tx.rr.com>
+Date:   Tue Apr 7 22:14:35 2015 -0500
+
+    added script to create models
+
+commit 22ae81fd100fbcfe71ea67c2d1936b631f4955e1
+Author: ccl2of4 <ccl2of4@tx.rr.com>
+Date:   Tue Apr 7 22:13:50 2015 -0500
+
+    finished adding xref tables. added script to create models
+
+commit 7785ecc41fcba69324c17fce7e0241c069f98c43
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Mon Apr 6 22:43:50 2015 -0500
+
+    Created a different models.py that implements association objects instead of association tables
+
+commit 6149cd5e3f40fbc2469f9d4d433ca3934c89fd97
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Thu Mar 26 21:51:01 2015 -0500
+
+    adding updated log
+
 commit 72fa23a3fc31cf52acb2b8a627f4a4ed7f21d551
 Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
 Date:   Thu Mar 26 21:50:36 2015 -0500
