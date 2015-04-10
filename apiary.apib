@@ -9,7 +9,9 @@ comic books, and TV shows.
 Character related resources of the **Superheroes API**
 
 ##Character Collection [/characters/]
-A list of all characters in the database.
+A list of all characters in the database. The list is inside a dictionary and can be accesssed using the
+"Characters" key. The list contains the names and ids of each character in the database. The id can be
+used to look up a character or in a link to a page, for example.
 ### List all Characters [GET]
 + Response 200 (application/json)
 
@@ -61,7 +63,9 @@ A list of all characters in the database.
                 }
 
 ##Character [/characters/{id}]
-Info on a given character in the Marvel universe.
+Info on a given character in the Marvel universe. The info is in a dictionary with keys such as
+"aliases" and "name." Also contains a list of relaled comics at the key "comics" and related shows
+at the key "shows."
 
 + Parameters
     + id (required, number, `1`) ... Unique integer ID for the character.
@@ -140,7 +144,9 @@ Info on a given character in the Marvel universe.
 Comic book related resources of the **Superheroes API**
 
 ##Comic Book Collection [/comics/]
-A list of all comic books in the database.
+A list of all comic books in the database. The list is inside a dictionary and can be accesssed using the
+"Comics" key. The list contains the names and ids of each comic in the database. The id can be
+used to look up a comic or in a link to a page, for example.
 ### List all Comic Books [GET]
 + Response 200 (application/json)
 
@@ -192,7 +198,8 @@ A list of all comic books in the database.
                 }
 
 ##Comic Book [/comics/{id}]
-Info on a given Marvel comic book.
+Info on a given Marvel comic book. The info is in a dictionary with keys such as
+"issues" and "name." Also contains a list of related characters at the key "characters."
 
 + Parameters
     + id (required, number, `1`) ... Unique integer ID for the comic book.
@@ -229,7 +236,10 @@ Info on a given Marvel comic book.
 TV Show related resources of the **Superheroes API**
 
 ##TV Show Collection [/shows/]
-A list of all TV shows in the database.
+A list of all TV shows in the database. The list is inside a dictionary and can be accesssed using the
+"Shows" key. The list contains the names and ids of each show in the database. The id can be
+used to look up a show or in a link to a page, for example.
+
 ### List all TV Shows [GET]
 + Response 200 (application/json)
 
@@ -281,7 +291,8 @@ A list of all TV shows in the database.
                 }
 
 ##TV show [/shows/{id}]
-Info on a given Marvel TV show.
+Info on a given Marvel TV show. The info is in a dictionary with keys such as
+"broadcaster" and "name." Also contains a list of related characters at the key "characters."
 
 + Parameters
     + id (required, number, `1`) ... Unique integer ID for the TV show.
