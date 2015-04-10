@@ -28,6 +28,12 @@ class CharacterTvShowXRef(db.Model):
 	tvshow = db.relationship("TvShow", backref = "characters")
 
 	def __init__ (self, character_id, tvshow_id, description) :
+		"""
+		Initializes a CharacterTvShowXRef model with the following arguments
+		character_id the id of the character
+		tvshow_id the id of the show
+		description an explaination of the relationship between the two
+		"""
 		self.character_id = character_id
 		self.tvshow_id = tvshow_id
 		self.description = description
@@ -43,6 +49,12 @@ class CharacterComicXRef(db.Model):
 	comic = db.relationship("Comic", backref = "characters")
 
 	def __init__ (self, character_id, comic_id, description) :
+		"""
+		Initializes a CharacterComicXRef model with the following arguments
+		character_id the id of the character
+		comic_id the id of the comic
+		description an explaination of the relationship between the two
+		"""
 		self.character_id = character_id
 		self.comic_id = comic_id
 		self.description = description
@@ -114,10 +126,12 @@ class Comic(db.Model):
 		Initializes a comic model with the following arguments
 		name the name of the comic
 		volume the comic's volume number
-		pubdate the date the comic was published
+		pubstart the date the comic was published
+		pubend the date the comic stopped being published
 		universe the universe the comic takes place in
 		description a description of the comic
-		nuissues the number of issues
+		issues the number of issues
+		picture a URL to a picture of the comic
 		"""
 		self.name = name
 		self.volumes = volumes
@@ -156,12 +170,14 @@ class TvShow(db.Model):
 		"""
 		Initializes a TV show model with the following arguments
 		name the name of the show
-		date when the show aired
+		startdate when the show aired
+		enddate when the show stopped airing
 		universe the universe the show takes place in
 		description a description of the show
-		nuseasons the number of seasons of the show
-		nuepisodes the number of episodes of the show
-		broadcast when the show was broadcast
+		seasons the number of seasons of the show
+		episodes the number of episodes of the show
+		broadcaster the network the show was broadcast on
+		picture a URL to a picture of the show
 		"""
 		self.name = name
 		self.startdate = startdate
