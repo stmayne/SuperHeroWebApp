@@ -96,6 +96,10 @@ def getCharacterData(character_id=None):
 	else :
 		return ""
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 def modelToDict(model):
 	res = {key:value for key, value in model.__dict__.items() if not key.startswith('_') and not callable(key)}
 
