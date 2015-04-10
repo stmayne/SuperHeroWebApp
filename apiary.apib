@@ -16,28 +16,48 @@ A list of all characters in the database.
     + Body
 
                 {
-                    "0" :
+                  "Characters": [
                     {
-                        "name" : "Captain America",
-                        "universe" : "Earth-616",
-                        "aliases" : ["Steven Grant Rodgers","Winghead", "Shield-Slinger", "The First Avenger", "Sentinel of Liberty", "The Living Legend", "Star-Spangled Avenger"],
-                        "alignment" : "Good",
-                        "gender" : "Male",
-                        "powers" : ["Superhuman", "Boxing", "Judo"],
-                        "description" : "In World War II patriotic solider Steve Rogers recipient of the \"Super Soldier Serum\" became the living symbol of freedom, Captain America. Left for dead while frozen in ice, the star-spangled hero with an indestructible shield awoke years later to continue his never-ending battle for liberty.",
-                        "picture" : "http://i.imgur.com/hPsu2lH.png"
-                    },
-                    "1" :
+                      "id": "1", 
+                      "name": "Captain America"
+                    }, 
                     {
-                        "name" : "Spider Man",
-                        "universe" : "Earth-616",
-                        "aliases" : ["Peter Benjamin Parker"],
-                        "alignment" : "Good",
-                        "gender" : "Male",
-                        "powers" : ["Superhuman strength and agility", "Can generate spiderwebs"],
-                        "description" : "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.",
-                        "picture" : "http://i.imgur.com/NxgbFoy.jpg"
+                      "id": "2", 
+                      "name": "Spider Man"
+                    }, 
+                    {
+                      "id": "3", 
+                      "name": "Thor"
+                    }, 
+                    {
+                      "id": "4", 
+                      "name": "Storm"
+                    }, 
+                    {
+                      "id": "5", 
+                      "name": "Invisible Woman"
+                    }, 
+                    {
+                      "id": "6", 
+                      "name": "Ultron"
+                    }, 
+                    {
+                      "id": "7", 
+                      "name": "Loki"
+                    }, 
+                    {
+                      "id": "8", 
+                      "name": "Magneto"
+                    }, 
+                    {
+                      "id": "9", 
+                      "name": "Mystique"
+                    }, 
+                    {
+                      "id": "10", 
+                      "name": "Ronan"
                     }
+                  ]
                 }
 
 ##Character [/characters/{id}]
@@ -52,14 +72,67 @@ Info on a given character in the Marvel universe.
     + Body
     
                 {
-                    "name" : "Spider Man",
-                    "universe" : "Earth-616",
-                    "aliases" : ["Peter Benjamin Parker"],
-                    "alignment" : "Good",
-                    "gender" : "Male",
-                    "powers" : ["Superhuman strength and agility", "Can generate spiderwebs"],
-                    "description" : "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.",
-                    "picture" : "http://i.imgur.com/NxgbFoy.jpg"
+                  "aliases": [
+                    "Steven Grant Rodgers", 
+                    "Winghead", 
+                    "Shield-Slinger", 
+                    "The First Avenger", 
+                    "Sentinel of Liberty", 
+                    "The Living Legend", 
+                    "Star-Spangled Avenger"
+                  ], 
+                  "alignment": "Good", 
+                  "comics": [
+                    {
+                      "id": "2", 
+                      "name": "Amazing Spider-Man"
+                    }, 
+                    {
+                      "id": "3", 
+                      "name": "Avengers"
+                    }, 
+                    {
+                      "id": "5", 
+                      "name": "Incredible Hulk"
+                    }, 
+                    {
+                      "id": "6", 
+                      "name": "S.H.I.E.L.D."
+                    }
+                  ], 
+                  "description": "In World War II patriotic solider Steve Rogers recipient of the \"Super Soldier Serum\" became the living symbol of freedom, Captain America. Left for dead while frozen in ice, the star-spangled hero with an indestructible shield awoke years later to continue his never-ending battle for liberty.", 
+                  "gender": "Male", 
+                  "id": 1, 
+                  "name": "Captain America", 
+                  "picture": "http://i.imgur.com/hPsu2lH.png", 
+                  "powers": [
+                    "Superhuman", 
+                    "Boxing", 
+                    "Judo"
+                  ], 
+                  "shows": [
+                    {
+                      "id": "1", 
+                      "name": "Agents of S.H.I.E.L.D."
+                    }, 
+                    {
+                      "id": "2", 
+                      "name": "Ultimate Spider-Man"
+                    }, 
+                    {
+                      "id": "4", 
+                      "name": "Fantastic Four"
+                    }, 
+                    {
+                      "id": "5", 
+                      "name": "Iron Man"
+                    }, 
+                    {
+                      "id": "6", 
+                      "name": "The Incredible Hulk"
+                    }
+                  ], 
+                  "universe": "Earth-616"
                 }
 
 
@@ -74,26 +147,48 @@ A list of all comic books in the database.
     + Body
 
                 {
-                    "0" :
+                  "Comics": [
                     {
-                        "name" : "Fantastic Four",
-                        "volumes" : "1",
-                        "publish_date" : "1961-1966",
-                        "universe" : "Earth-616",
-                        "description" : "The Fantastic Four is a fictional superhero team appearing in comic books published by Marvel Comics. The group debuted in The Fantastic Four #1 (cover dated Nov. 1961), which helped to usher in a new level of realism in the medium.",
-                        "issues" : "50",
-                        "picture" : "http://i.imgur.com/psn8PsY.jpg"
-                    },
-                    "1" :
+                      "id": "1", 
+                      "name": "Fantastic Four"
+                    }, 
                     {
-                        "name" : "Amazing Spider-Man",
-                        "volumes" : "3",
-                        "publish_date" : "2014-2015",
-                        "universe" : "Earth-616",
-                        "description" : "The Ghost has invaded Parker Industries!",
-                        "issues" : "18",
-                        "picture" : "http://i.imgur.com/0sguyB6.jpg"
+                      "id": "2", 
+                      "name": "Amazing Spider-Man"
+                    }, 
+                    {
+                      "id": "3", 
+                      "name": "Avengers"
+                    }, 
+                    {
+                      "id": "4", 
+                      "name": "Kick-Ass"
+                    }, 
+                    {
+                      "id": "5", 
+                      "name": "Incredible Hulk"
+                    }, 
+                    {
+                      "id": "6", 
+                      "name": "S.H.I.E.L.D."
+                    }, 
+                    {
+                      "id": "7", 
+                      "name": "Daredevil"
+                    }, 
+                    {
+                      "id": "8", 
+                      "name": "Legendary Star-Lord"
+                    }, 
+                    {
+                      "id": "9", 
+                      "name": "Raiders of the Lost Ark"
+                    }, 
+                    {
+                      "id": "10", 
+                      "name": "James Bond, Jr"
                     }
+                  ]
                 }
 
 ##Comic Book [/comics/{id}]
@@ -108,13 +203,25 @@ Info on a given Marvel comic book.
     + Body
     
                 {
-                    "name" : "Amazing Spider-Man",
-                    "volumes" : "3",
-                    "publish_date" : "2014-2015",
-                    "universe" : "Earth-616",
-                    "description" : "The Ghost has invaded Parker Industries!",
-                    "issues" : "18",
-                    "picture" : "http://i.imgur.com/0sguyB6.jpg"
+                  "characters": [
+                    {
+                      "id": "2", 
+                      "name": "Spider Man"
+                    }, 
+                    {
+                      "id": "5", 
+                      "name": "Invisible Woman"
+                    }
+                  ], 
+                  "description": "The Fantastic Four is a fictional superhero team appearing in comic books published by Marvel Comics. The group debuted in The Fantastic Four #1 (cover dated Nov. 1961), which helped to usher in a new level of realism in the medium.", 
+                  "id": 1, 
+                  "issues": 50, 
+                  "name": "Fantastic Four", 
+                  "picture": "http://i.imgur.com/psn8PsY.jpg", 
+                  "pubend": "1966", 
+                  "pubstart": "1961", 
+                  "universe": "Earth-616", 
+                  "volumes": 1
                 }
         
         
@@ -129,28 +236,48 @@ A list of all TV shows in the database.
     + Body
 
                 {
-                    "0" :
+                  "Shows": [
                     {
-                        "name" : "Agents of S.H.I.E.L.D",
-                        "date" : "9/24/2013-present",
-                        "universe" : "Earth-616",
-                        "description" : "The series revolves around the character of Phil Coulson, with Clark Gregg reprising his role from the film series, and his team of S.H.I.E.L.D. agents, who must deal with various unusual cases and enemies.",
-                        "seasons" : "2",
-                        "episodes" : "35",
-                        "broadcaster" : "ABC",
-                        "picture" : "http://i.imgur.com/NCP2DvC.jpg"
-                    },
-                    "1" :
+                      "id": "1", 
+                      "name": "Agents of S.H.I.E.L.D."
+                    }, 
                     {
-                        "name" : "Ultimate Spider-Man",
-                        "date" : "4/1/2012-present",
-                        "universe" : "Earth-616",
-                        "description" : "The show is an American animated television series based on the Spider-Man comics published by Marvel Comics, including some elements of Marvel's Ultimate line of books.",
-                        "seasons" : "3",
-                        "episodes" : "78",
-                        "broadcaster" : "Disney XD",
-                        "picture" : "http://i.imgur.com/g2BtBDi.png"
+                      "id": "2", 
+                      "name": "Ultimate Spider-Man"
+                    }, 
+                    {
+                      "id": "3", 
+                      "name": "Mutant X"
+                    }, 
+                    {
+                      "id": "4", 
+                      "name": "Fantastic Four"
+                    }, 
+                    {
+                      "id": "5", 
+                      "name": "Iron Man"
+                    }, 
+                    {
+                      "id": "6", 
+                      "name": "The Incredible Hulk"
+                    }, 
+                    {
+                      "id": "7", 
+                      "name": "Silver Surfer"
+                    }, 
+                    {
+                      "id": "8", 
+                      "name": "Black Panther"
+                    }, 
+                    {
+                      "id": "9", 
+                      "name": "X-Men"
+                    }, 
+                    {
+                      "id": "10", 
+                      "name": "X-Men: Evolution"
                     }
+                  ]
                 }
 
 ##TV show [/shows/{id}]
@@ -165,12 +292,26 @@ Info on a given Marvel TV show.
     + Body
     
                 {
-                    "name" : "Ultimate Spider-Man",
-                    "date" : "4/1/2012-present",
-                    "universe" : "Earth-616",
-                    "description" : "The show is an American animated television series based on the Spider-Man comics published by Marvel Comics, including some elements of Marvel's Ultimate line of books.",
-                    "seasons" : "3",
-                    "episodes" : "78",
-                    "broadcaster" : "Disney XD",
-                    "picture" : "http://i.imgur.com/g2BtBDi.png"
+                  "broadcaster": "ABC", 
+                  "characters": [
+                    {
+                      "id": "1", 
+                      "name": "Captain America", 
+                      "type": "character"
+                    }, 
+                    {
+                      "id": "4", 
+                      "name": "Storm", 
+                      "type": "character"
+                    }
+                  ], 
+                  "description": "The series revolves around the character of Phil Coulson, with Clark Gregg reprising his role from the film series, and his team of S.H.I.E.L.D. agents, who must deal with various unusual cases and enemies.", 
+                  "enddate": "", 
+                  "episodes": 35, 
+                  "id": 1, 
+                  "name": "Agents of S.H.I.E.L.D.", 
+                  "picture": "http://i.imgur.com/NCP2DvC.jpg", 
+                  "seasons": 2, 
+                  "startdate": "9/24/2013", 
+                  "universe": "Earth-616"
                 }
