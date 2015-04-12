@@ -3,6 +3,7 @@ from flask import render_template
 from flask import request
 from flask import jsonify
 import traceback
+import subprocess
 
 import json
 
@@ -26,6 +27,11 @@ def getDirectory():
 @app.route('/about/')
 def getAbout():
 	return render_template('AboutUs.html')
+
+@app.route('/test/')
+def getTestOutput():
+	proc = subprocess.Popen(['python', 'tests.py'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+	return proc.communicate()[0]
 
 @app.route('/comic/<comic_id>')
 def getComic(comic_id):
