@@ -30,8 +30,8 @@ def getAbout():
 
 @app.route('/test/')
 def getTestOutput():
-	proc = subprocess.Popen(['python', 'tests.py'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-	return proc.communicate()[0]
+	proc = subprocess.Popen(['python', 'tests.py', '-v'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+	return proc.communicate()[0].replace("\n", "<br>")
 
 @app.route('/comic/<comic_id>')
 def getComic(comic_id):
