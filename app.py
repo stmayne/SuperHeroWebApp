@@ -6,6 +6,8 @@ import traceback
 import subprocess
 
 import json
+import urllib
+from difflib import SequenceMatcher
 
 from config import app
 
@@ -32,6 +34,37 @@ def getAbout():
 def getTestOutput():
 	proc = subprocess.Popen(['python', 'tests.py', '-v'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 	return proc.communicate()[0].replace("\n", "<br>")
+
+@app.route('/search/<search_string>')
+def getSearch(search_string):
+	#get the search data
+	#results = *some list of dicts*
+	return render_template('Search.html')#, results)
+
+@app.route('/banana-fish/')
+def getBananaFish():
+	#get the list of characters
+	characters = json.loads(getCharacterData().data)
+
+	#get the list of video games
+	response = urllib.urlopen("http://23.253.89.46:5000/api/v1/games/");
+	videoGames = json.loads(response.read())
+
+	#for each character, map to the most related video game
+	for c in characters :
+		character = json.loads(getCharacterData(c['id']).data)
+		maxRelated = 0
+		for videoGame in videoGames['games'] :
+			cDescription = character['description']
+			vgDescription = videoGame['description']
+
+			relation = SequenceMatcher(None, a, b).ratio()
+
+			if relation > maxRelated :
+				maxRelated = relation
+				mapping[character.name] = videoGame
+
+	return render_template('BananaFish.html', mapping=mapping)
 
 @app.route('/comic/<comic_id>')
 def getComic(comic_id):
