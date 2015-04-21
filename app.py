@@ -39,7 +39,7 @@ def getTestOutput():
 def getSearch(search_string):
 	#get the search data
 	#results = *some list of dicts*
-	return render_template('Search.html')#, results)
+	return render_template('search.html')#, results)
 
 @app.route('/banana-fish/')
 def getBananaFish():
@@ -50,21 +50,26 @@ def getBananaFish():
 	response = urllib.urlopen("http://23.253.89.46:5000/api/v1/games/");
 	videoGames = json.loads(response.read())
 
+	mapping = {}
+
 	#for each character, map to the most related video game
-	for c in characters :
+	for c in characters['Characters'] :
 		character = json.loads(getCharacterData(c['id']).data)
 		maxRelated = 0
 		for videoGame in videoGames['games'] :
+			if not videoGame.get('description') :
+				continue
+
 			cDescription = character['description']
 			vgDescription = videoGame['description']
 
-			relation = SequenceMatcher(None, a, b).ratio()
+			relation = SequenceMatcher(None, cDescription, vgDescription).ratio()
 
 			if relation > maxRelated :
 				maxRelated = relation
-				mapping[character.name] = videoGame
+				mapping[character['name']] = videoGame
 
-	return render_template('BananaFish.html', mapping=mapping)
+	return render_template('banana-fish.html', mapping=mapping)
 
 @app.route('/comic/<comic_id>')
 def getComic(comic_id):
