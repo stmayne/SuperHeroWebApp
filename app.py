@@ -35,11 +35,16 @@ def getTestOutput():
 	proc = subprocess.Popen(['python', 'tests.py', '-v'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 	return proc.communicate()[0].replace("\n", "<br>")
 
-@app.route('/search/<search_string>')
-def getSearch(search_string):
+@app.route('/search')
+def getSearch():
+	searchString = request.args.get('search')
+
 	#get the search data
-	#results = *some list of dicts*
-	return render_template('search.html')#, results)
+
+	#andResults = *some list of dicts*
+	#orResults = *some list of dicts*
+
+	return render_template('search.html', andResults="nothing yet", orResults="nothing yet")#, andResults=andResults, orResults=orResults)
 
 @app.route('/banana-fish/')
 def getBananaFish():
