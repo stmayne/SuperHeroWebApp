@@ -8,6 +8,7 @@ import subprocess
 import json
 import urllib
 from difflib import SequenceMatcher
+import re
 
 from config import app
 
@@ -38,13 +39,26 @@ def getTestOutput():
 @app.route('/search')
 def getSearch():
 	searchString = request.args.get('search')
+	if searchString is None:
+		return
+	searchWords = re.split('\W+', searchString)
 
-	#get the search data
+	results = {'andResults':andSearch(models.TvShow, searchWords), 'orResults':orSearch(models.TvShow, searchWords)}
 
-	#andResults = *some list of dicts*
-	#orResults = *some list of dicts*
+	return render_template('search.html', results=results)
 
-	return render_template('search.html', andResults="nothing yet", orResults="nothing yet")#, andResults=andResults, orResults=orResults)
+def andSearch(model, searchWords):
+	andQuery = model.query
+	for s in searchWords:
+		andQuery = andQuery.filter(model.name.ilike('%'+s+'%'))
+	return [modelToListDict(andResult) for andResult in andQuery.all()]
+
+def orSearch(model, searchWords):
+	orQuery = model.query
+	orResultSet = set()
+	for s in searchWords:
+		orResultSet.update(orQuery.filter(model.name.ilike('%'+s+'%')).all())
+	return [modelToListDict(orResult) for orResult in orResultSet]
 
 @app.route('/banana-fish/')
 def getBananaFish():
