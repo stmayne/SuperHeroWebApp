@@ -73,7 +73,7 @@ def getBananaFish():
 
 			if relation > maxRelated :
 				maxRelated = relation
-				mapping[character['name']] = {'name':videoGame['name'], 'image':videoGame['image'], 'link':"http://23.253.89.46:3000/#/games/profile/"+str(videoGame['game_id'])}
+				mapping[character['name']] = {'videoGameName':videoGame['name'], 'videoGameImage':videoGame['image'], 'videoGameLink':"http://23.253.89.46:3000/#/games/profile/"+str(videoGame['game_id']), 'characterImage':character['picture'], 'characterLink':"http://superheroes-idb.tk/character/"+str(character['id'])}
 
 	return render_template('banana-fish.html', mapping=mapping)
 
