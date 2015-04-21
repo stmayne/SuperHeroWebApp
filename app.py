@@ -43,7 +43,9 @@ def getSearch():
 		return
 	searchWords = re.split('\W+', searchString)
 
-	results = {'andResults':andSearch(models.TvShow, searchWords), 'orResults':orSearch(models.TvShow, searchWords)}
+	andResults = {'Characters':andSearch(models.Character, searchWords), 'TvShows':andSearch(models.TvShow, searchWords), 'Comics':andSearch(models.Comic, searchWords)}
+	orResults = {'Characters':orSearch(models.Character, searchWords), 'TvShows':orSearch(models.TvShow, searchWords), 'Comics':orSearch(models.Comic, searchWords)}
+	results = {'andResults':andResults, 'orResults':orResults}
 
 	return render_template('search.html', results=results)
 
