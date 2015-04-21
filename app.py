@@ -43,9 +43,13 @@ def getSearch():
 		return
 	searchWords = re.split('\W+', searchString)
 
-	andResults = {'Characters':andSearch(models.Character, searchWords), 'TvShows':andSearch(models.TvShow, searchWords), 'Comics':andSearch(models.Comic, searchWords)}
-	orResults = {'Characters':orSearch(models.Character, searchWords), 'TvShows':orSearch(models.TvShow, searchWords), 'Comics':orSearch(models.Comic, searchWords)}
-	results = {'andResults':andResults, 'orResults':orResults}
+	if len(searchWords) > 1:
+		andResults = {'Characters':andSearch(models.Character, searchWords), 'TvShows':andSearch(models.TvShow, searchWords), 'Comics':andSearch(models.Comic, searchWords)}
+		orResults = {'Characters':orSearch(models.Character, searchWords), 'TvShows':orSearch(models.TvShow, searchWords), 'Comics':orSearch(models.Comic, searchWords)}
+		results = {'isMultiword':True, 'andResults':andResults, 'orResults':orResults}
+	else:
+		results = {'Characters':andSearch(models.Character, searchWords), 'TvShows':andSearch(models.TvShow, searchWords), 'Comics':andSearch(models.Comic, searchWords)}
+		results = {'isMultiword':False, 'results':results}
 
 	return render_template('search.html', results=results)
 
