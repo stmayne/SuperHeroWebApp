@@ -57,17 +57,18 @@ def getBananaFish():
 		character = json.loads(getCharacterData(c['id']).data)
 		maxRelated = 0
 		for videoGame in videoGames['games'] :
-			if not videoGame.get('description') :
+			if not videoGame.get('name') or not videoGame.get('image') or videoGame['game_id'] == 1:
 				continue
 
-			cDescription = character['description']
-			vgDescription = videoGame['description']
+			cName = character['name']
+			vgName = videoGame['name']
 
-			relation = SequenceMatcher(None, cDescription, vgDescription).ratio()
+			#get the similarity
+			relation = SequenceMatcher(None, cName, vgName).ratio()
 
 			if relation > maxRelated :
 				maxRelated = relation
-				mapping[character['name']] = videoGame
+				mapping[character['name']] = {'name':videoGame['name'], 'image':videoGame['image'], 'link':"http://23.253.89.46:3000/#/games/profile/"+str(videoGame['game_id'])}
 
 	return render_template('banana-fish.html', mapping=mapping)
 
