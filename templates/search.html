@@ -307,7 +307,7 @@ p.copyright {
     <div role="tabpanel" class="tab-pane" id="shows">
     <ul style="list-style: none;">
     {% if results.isMultiword %}
-        <li><b style="color: #333;">AND TvShows:</b></li>
+        <li><b style="color: #333;">AND Results:</b></li>
         {% for item in results.andResults.Comics %}
             <li><a href="/show/{{ item['id'] }}">{{ item['name'] }}</a></li>
         {% endfor %}
