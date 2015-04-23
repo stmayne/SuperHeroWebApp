@@ -13,7 +13,7 @@ before_script:
 
 
 script:
-    - bash checkfile.bash
+    - bash checkfiles.bash
 
 # ignore push events to this branch
 branches:
