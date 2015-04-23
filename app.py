@@ -64,6 +64,13 @@ def orSearch(model, searchWords):
 	orResultSet = set()
 	for s in searchWords:
 		orResultSet.update(orQuery.filter(model.name.ilike('%'+s+'%')).all())
+
+	andQuery = model.query
+	for s in searchWords:
+		andQuery = andQuery.filter(model.name.ilike('%'+s+'%'))
+
+	orResultSet.difference(set(andQuery.all()))
+
 	return [modelToListDict(orResult) for orResult in orResultSet]
 
 @app.route('/banana-fish/')
@@ -75,11 +82,12 @@ def getBananaFish():
 	response = urllib.urlopen("http://23.253.89.46:5000/api/v1/games/");
 	videoGames = json.loads(response.read())
 
-	mapping = {}
+	mapping = []
 
 	#for each character, map to the most related video game
 	for c in characters['Characters'] :
 		character = json.loads(getCharacterData(c['id']).data)
+		related = None
 		maxRelated = 0
 		for videoGame in videoGames['games'] :
 			if not videoGame.get('name') or not videoGame.get('image') or videoGame['game_id'] == 1:
@@ -93,7 +101,8 @@ def getBananaFish():
 
 			if relation > maxRelated :
 				maxRelated = relation
-				mapping[character['name']] = {'videoGameName':videoGame['name'], 'videoGameImage':videoGame['image'], 'videoGameLink':"http://23.253.89.46:3000/#/games/profile/"+str(videoGame['game_id']), 'characterImage':character['picture'], 'characterLink':"http://superheroes-idb.tk/character/"+str(character['id'])}
+				related = {'videoGameName':videoGame['name'], 'videoGameImage':videoGame['image'], 'videoGameLink':"http://23.253.89.46:3000/#/games/profile/"+str(videoGame['game_id']), 'characterName':character['name'], 'characterImage':character['picture'], 'characterLink':"http://superheroes-idb.tk/character/"+str(character['id'])}
+		mapping.append(related)
 
 	return render_template('banana-fish.html', mapping=mapping)
 
