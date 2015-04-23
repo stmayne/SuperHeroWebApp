@@ -280,7 +280,7 @@ p.copyright {
           <li><a href="/character/{{ item['id'] }}">{{ item['name'] }}</a></li>
         {% endfor %}
     {% else %}
-        {% for item in results.Characters %}
+        {% for item in results.results.Characters %}
           <li><a href="/character/{{ item['id'] }}">{{ item['name'] }}</a></li>
         {% endfor %}
     {% endif %}
@@ -298,7 +298,7 @@ p.copyright {
           <li><a href="/comic/{{ item['id'] }}">{{ item['name'] }}</a></li>
         {% endfor %}
     {% else %}
-        {% for item in results.Comics %}
+        {% for item in results.results.Comics %}
             <li><a href="/comic/{{ item['id'] }}">{{ item['name'] }}</a></li>
         {% endfor %}
     {% endif %}
@@ -316,7 +316,7 @@ p.copyright {
             <li><a href="/show/{{ item['id'] }}">{{ item['name'] }}</a></li>
         {% endfor %}
     {% else %}
-        {% for item in results.TvShows %}
+        {% for item in results.results.TvShows %}
             <li><a href="/show/{{ item['id'] }}">{{ item['name'] }}</a></li>
         {% endfor %}
     {% endif %}

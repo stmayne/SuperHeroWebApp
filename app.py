@@ -42,6 +42,7 @@ def getSearch():
 	if searchString is None:
 		return
 	searchWords = re.split('\W+', searchString)
+	searchWords = filter(None, searchWords)
 
 	if len(searchWords) > 1:
 		andResults = {'Characters':andSearch(models.Character, searchWords), 'TvShows':andSearch(models.TvShow, searchWords), 'Comics':andSearch(models.Comic, searchWords)}
@@ -69,7 +70,7 @@ def orSearch(model, searchWords):
 	for s in searchWords:
 		andQuery = andQuery.filter(model.name.ilike('%'+s+'%'))
 
-	orResultSet.difference(set(andQuery.all()))
+	orResultSet = orResultSet.difference(set(andQuery.all()))
 
 	return [modelToListDict(orResult) for orResult in orResultSet]
 
