@@ -10,7 +10,7 @@ from models import Character, Comic, TvShow, CharacterTvShowXRef, CharacterComic
 from sqlalchemy.exc import IntegrityError
 
 import json
-from app import getCharacterData, getComicData, getShowData
+from app import getCharacterData, getComicData, getShowData, andSearch, orSearch
 
 create_models.run ()
 
@@ -21,131 +21,173 @@ class APITestCase (unittest.TestCase) :
 	def tearDown(self):
 		pass
 
+
+	############
+	# SEARCH
+	############
+	def test_andSearch_1 (self) :
+		model = Character
+		searchWords = ['Captain']
+		results = andSearch(model, searchWords)
+		assert (type(results) == list)
+		assert (type(results[0]) == dict)
+
+	def test_andSearch_2 (self) :
+		model = Character
+		searchWords = ['Captain', 'Amer']
+		results = andSearch(model, searchWords)
+		assert (results[0]['name'] == 'Captain America')
+
+	def test_andSearch_3 (self) :
+		model = Comic
+		searchWords = ['Avenge']
+		results = andSearch(model, searchWords)
+		assert (results[0]['name'] == 'Avengers')
+
+	def test_andSearch_4 (self) :
+		model = Character
+		searchWords = ['Avengers','Captain']
+		results = orSearch(model, searchWords)
+		assert (type(results) == list)
+		assert (type(results[0]) == dict)
+
+	def test_andSearch_5 (self) :
+		model = Comic
+		searchWords = ['Avengers','Captain']
+		results = orSearch(model, searchWords)
+		assert (results[0]['name'] == "Avengers")
+
+	def test_andSearch_6 (self) :
+		model = Character
+		searchWords = ['Avengers','Captain']
+		results = orSearch(model, searchWords)
+		assert (results[0]['name'] == "Captain America")
+		
 	################
-        # API CHARACTERS
-        ################
-        def test_apiCharacters_1 (self) :
+	# API CHARACTERS
+	################
+	def test_apiCharacters_1 (self) :
 		tester = app.test_client(self)
 		response = tester.get('/characters/1', content_type='application/json')
 		self.assertEqual(response.status_code, 200)
-		
-                character = json.loads(response.data)
-                assert(character["name"] == "Captain America")
-                assert(character["id"] == 1)
-                assert(character["universe"] == "Earth-616")
-                assert(len(character) == 11)
-                assert("aliases" in character)
 
-        def test_apiCharacters_2 (self) :
-                tester = app.test_client(self)
-                response1 = tester.get('/characters/1', content_type='application/json')
-                self.assertEqual(response1.status_code, 200)
-                tester = app.test_client(self)
-                response2 = tester.get('/characters/2', content_type='application/json')
-                self.assertEqual(response2.status_code, 200)
+		character = json.loads(response.data)
+		assert(character["name"] == "Captain America")
+		assert(character["id"] == 1)
+		assert(character["universe"] == "Earth-616")
+		assert(len(character) == 11)
+		assert("aliases" in character)
 
-                character1 = json.loads(response1.data)
-                character2 = json.loads(response2.data)
-                for key1 in character1:
-                        assert(key1 in character2)
-                for key2 in character2:
-                        assert(key2 in character1)
+	def test_apiCharacters_2 (self) :
+		tester = app.test_client(self)
+		response1 = tester.get('/characters/1', content_type='application/json')
+		self.assertEqual(response1.status_code, 200)
+		tester = app.test_client(self)
+		response2 = tester.get('/characters/2', content_type='application/json')
+		self.assertEqual(response2.status_code, 200)
 
-        def test_apiCharacters_3 (self) :
-                tester = app.test_client(self)
-                response = tester.get('/characters/', content_type='application/json')
-                self.assertEqual(response.status_code, 200)
+		character1 = json.loads(response1.data)
+		character2 = json.loads(response2.data)
+		for key1 in character1:
+			assert(key1 in character2)
+		for key2 in character2:
+			assert(key2 in character1)
 
-                cDict = json.loads(response.data)
-                assert(len(cDict) == 1)
-                assert("Characters" in cDict)
-                characters = cDict["Characters"]
+	def test_apiCharacters_3 (self) :
+		tester = app.test_client(self)
+		response = tester.get('/characters/', content_type='application/json')
+		self.assertEqual(response.status_code, 200)
+
+		cDict = json.loads(response.data)
+		assert(len(cDict) == 1)
+		assert("Characters" in cDict)
+		characters = cDict["Characters"]
 		assert(len(characters)==10)
 		assert(len(characters[0])==2)
 		assert(characters[0]["name"] == "Captain America")
 
 
 	############
-        # API COMICS
-        ############
-        def test_apiComics_1 (self) :
-                tester = app.test_client(self)
-                response = tester.get('/comics/1', content_type='application/json')
-                self.assertEqual(response.status_code, 200)
+	# API COMICS
+	############
+	def test_apiComics_1 (self) :
+		tester = app.test_client(self)
+		response = tester.get('/comics/1', content_type='application/json')
+		self.assertEqual(response.status_code, 200)
 
-                comic = json.loads(response.data)
-                assert(comic["name"] == "Fantastic Four")
-                assert(comic["id"] == 1)
-                assert(comic["universe"] == "Earth-616")
-                assert(len(comic) == 10)
-                assert("issues" in comic)
+		comic = json.loads(response.data)
+		assert(comic["name"] == "Fantastic Four")
+		assert(comic["id"] == 1)
+		assert(comic["universe"] == "Earth-616")
+		assert(len(comic) == 10)
+		assert("issues" in comic)
 
-        def test_apiComics_2 (self) :
-                tester = app.test_client(self)
-                response1 = tester.get('/comics/1', content_type='application/json')
-                self.assertEqual(response1.status_code, 200)
-                response2 = tester.get('/comics/2', content_type='application/json')
-                self.assertEqual(response2.status_code, 200)
+	def test_apiComics_2 (self) :
+		tester = app.test_client(self)
+		response1 = tester.get('/comics/1', content_type='application/json')
+		self.assertEqual(response1.status_code, 200)
+		response2 = tester.get('/comics/2', content_type='application/json')
+		self.assertEqual(response2.status_code, 200)
 
-                comic1 = json.loads(response1.data)
-                comic2 = json.loads(response2.data)
-                for key1 in comic1:
-                        assert(key1 in comic2)
-                for key2 in comic2:
-                        assert(key2 in comic1)
+		comic1 = json.loads(response1.data)
+		comic2 = json.loads(response2.data)
+		for key1 in comic1:
+			assert(key1 in comic2)
+		for key2 in comic2:
+			assert(key2 in comic1)
 
-        def test_apiComics_3 (self) :
-                tester = app.test_client(self)
-                response = tester.get('/comics/', content_type='application/json')
-                self.assertEqual(response.status_code, 200)
+	def test_apiComics_3 (self) :
+		tester = app.test_client(self)
+		response = tester.get('/comics/', content_type='application/json')
+		self.assertEqual(response.status_code, 200)
 
-                cDict = json.loads(response.data)
-                assert(len(cDict) == 1)
-                assert("Comics" in cDict)
-                comics = cDict["Comics"]
+		cDict = json.loads(response.data)
+		assert(len(cDict) == 1)
+		assert("Comics" in cDict)
+		comics = cDict["Comics"]
 		assert(len(comics)==10)
 		assert(len(comics[0])==2)
 		assert(comics[0]["name"] == "Fantastic Four")
 
 
 	###########
-        # API SHOWS
-        ###########
-        def test_apiShows_1 (self) :
-                tester = app.test_client(self)
-                response = tester.get('/shows/1', content_type='application/json')
-                self.assertEqual(response.status_code, 200)
+	# API SHOWS
+	###########
+	def test_apiShows_1 (self) :
+		tester = app.test_client(self)
+		response = tester.get('/shows/1', content_type='application/json')
+		self.assertEqual(response.status_code, 200)
 
-                comic = json.loads(response.data)
-                assert(comic["name"] == "Agents of S.H.I.E.L.D.")
-                assert(comic["id"] == 1)
-                assert(comic["universe"] == "Earth-616")
-                assert(len(comic) == 11)
-                assert("episodes" in comic)
+		comic = json.loads(response.data)
+		assert(comic["name"] == "Agents of S.H.I.E.L.D.")
+		assert(comic["id"] == 1)
+		assert(comic["universe"] == "Earth-616")
+		assert(len(comic) == 11)
+		assert("episodes" in comic)
 
-        def test_apiShows_2 (self) :
-                tester = app.test_client(self)
-                response1 = tester.get('/shows/1', content_type='application/json')
-                self.assertEqual(response1.status_code, 200)
-                response2 = tester.get('/shows/2', content_type='application/json')
-                self.assertEqual(response2.status_code, 200)
+	def test_apiShows_2 (self) :
+		tester = app.test_client(self)
+		response1 = tester.get('/shows/1', content_type='application/json')
+		self.assertEqual(response1.status_code, 200)
+		response2 = tester.get('/shows/2', content_type='application/json')
+		self.assertEqual(response2.status_code, 200)
 
-                show1 = json.loads(response1.data)
-                show2 = json.loads(response2.data)
-                for key1 in show1:
-                        assert(key1 in show2)
-                for key2 in show2:
-                        assert(key2 in show1)
+		show1 = json.loads(response1.data)
+		show2 = json.loads(response2.data)
+		for key1 in show1:
+			assert(key1 in show2)
+		for key2 in show2:
+			assert(key2 in show1)
 
-        def test_apiShows_3 (self) :
-                tester = app.test_client(self)
-                response = tester.get('/shows/', content_type='application/json')
-                self.assertEqual(response.status_code, 200)
+	def test_apiShows_3 (self) :
+		tester = app.test_client(self)
+		response = tester.get('/shows/', content_type='application/json')
+		self.assertEqual(response.status_code, 200)
 
-                cDict = json.loads(response.data)
-                assert(len(cDict) == 1)
-                assert("Shows" in cDict)
-                shows = cDict["Shows"]
+		cDict = json.loads(response.data)
+		assert(len(cDict) == 1)
+		assert("Shows" in cDict)
+		shows = cDict["Shows"]
 		assert(len(shows)==10)
 		assert(len(shows[0])==2)
 		assert(shows[0]["name"] == "Agents of S.H.I.E.L.D.")
