@@ -1,3 +1,217 @@
+commit 8481ee8c61d7dca632e4f7af485985edc292ad96
+Author: Stephen Mayne <smayne@Stephens-MacBook-Pro.local>
+Date:   Thu Apr 23 20:59:54 2015 -0500
+
+    updated rory and stephens about pages
+
+commit 311ca8b62cc80dc4a6ca1d8b0f3f4361916c4326
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Apr 23 20:50:58 2015 -0500
+
+    Updated my about page
+
+commit cf4af5d72362733fc8a16502f781e01fc948160e
+Author: ccl2of4 <ccl2of4@tx.rr.com>
+Date:   Thu Apr 23 20:49:36 2015 -0500
+
+    updated about page
+
+commit e94c6699de574964bfb6c201bd4e340894db9220
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Thu Apr 23 20:38:27 2015 -0500
+
+    Added Joe's updated stats.
+
+commit b4285e9596fd35c7d1c20413f76939ca5001f7f8
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Apr 23 19:07:12 2015 -0500
+
+    .
+
+commit 0c7f39d971c5f7844cc5fe28457ffc5663f69b53
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Apr 23 19:03:52 2015 -0500
+
+    Testing auto log
+
+commit 749127537c469f5916cb5112e34372504db244d4
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Apr 23 19:01:32 2015 -0500
+
+    .
+
+commit 33e54b6fc1ed6e8ca4959377bce66e032fa4940e
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Apr 23 18:57:09 2015 -0500
+
+    Testing auto log
+
+commit 10a423272fa745356f08135198772bc6dadd91dd
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Apr 23 18:50:06 2015 -0500
+
+    Fixed typo
+
+commit 7af6a071c520c06e48faf1fa0df69acc0005de7f
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Apr 23 18:47:06 2015 -0500
+
+    Changed Travis to not run tests and check our files
+
+commit 89e4215d83eb3dbe46d0bea930f291ccba852fef
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Apr 23 17:59:55 2015 -0500
+
+    Added database.yml
+
+commit 0b2cfaff043d60c363b94df1a51e969dbda43386
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Apr 23 17:27:11 2015 -0500
+
+    Added Travis CI files
+
+commit ce7778d79fbd5383adad54327343d4e36715540d
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 23 21:56:09 2015 +0000
+
+    Reverted back to user
+
+commit 69217fd52c159bf552a57bf267367dd0b713753f
+Author: Oscar Muller <muller.oscar@gmail.com>
+Date:   Thu Apr 23 16:53:24 2015 -0500
+
+    Changed the username which connects to the db
+
+commit a416df41dbdaebd4811f797cad5a45f22764eec2
+Author: ccl2of4 <ccl2of4@tx.rr.com>
+Date:   Thu Apr 23 16:22:45 2015 -0500
+
+    resolved #53
+
+commit 25ab060bdcdf808609a862b5e2da38e7b690ccec
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 23 13:41:52 2015 -0500
+
+    Add unit tests link to header
+    
+    Link on header now goes to our unit tests page. This closes #59
+
+commit bd86e6ea5f8364934f2e7cabfcd3357fdcc8aef8
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 23 13:20:59 2015 -0500
+
+    Adds github and apiary links to about page
+    
+    Links to our github and apiary are now on the about page. This closes
+    #57
+
+commit dc0fe34300d096b07cceae66f3d544f6e16a2641
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 23 17:30:30 2015 +0000
+
+    Fixed a clerical html error.
+
+commit 67e9a9bcdcabbecabf2002a95cd0888042dd2e5d
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 23 17:28:08 2015 +0000
+
+    Fixed single-word search templating and empty strings in search criteria.
+
+commit 68999620ad72f58713189f349e63336854d906a4
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Thu Apr 23 01:59:57 2015 -0500
+
+    Implements bf api page and header links
+    
+    Implements front end for banana fish api page. Also adds links to header
+    that point to banana fish.
+
+commit 1ac3afdb3489c5182e08b57b50c23129b745f134
+Author: rorytrankler <rory.trankler@gmail.com>
+Date:   Wed Apr 22 22:52:40 2015 -0500
+
+    Implements search page
+    
+    Search page front end is now implemented. This closes #45
+
+commit 07f30c7d902fe3b0196e6621f4ed179300651f62
+Author: User <drconnoramerica@utexas.edu>
+Date:   Thu Apr 23 01:48:36 2015 +0000
+
+    Removed search duplicates and changed banana-fish data to a list.
+
+commit daa25fa6161e693577623943ceae21492761f77a
+Author: User <drconnoramerica@utexas.edu>
+Date:   Tue Apr 21 20:57:15 2015 +0000
+
+    Added multi-word search distinction.
+
+commit 7871d8e71eae4a169d13804afa1a9323645eb6ee
+Author: User <drconnoramerica@utexas.edu>
+Date:   Tue Apr 21 20:44:05 2015 +0000
+
+    Improved search results.
+
+commit d2d315e1adaad2365792a08d39bb1357aa06186c
+Author: User <drconnoramerica@utexas.edu>
+Date:   Tue Apr 21 20:31:47 2015 +0000
+
+    Working on search function.
+
+commit c8dc8f006be6a0a4fcbe59139ed5119ebb96868f
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Tue Apr 21 00:36:32 2015 -0500
+
+    Added more detail to the banana-fish template variables.
+
+commit cec19450f96063bf78bb85ac4627abecb743596f
+Author: User <drconnoramerica@utexas.edu>
+Date:   Tue Apr 21 05:14:12 2015 +0000
+
+    Updated search.html for basic implementation.
+
+commit d2bfc07991ff63efc8ccf96cf578b770b0cbd321
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Tue Apr 21 00:06:22 2015 -0500
+
+    Updated search mapping.
+
+commit d5042f4c2c83e1ccb8d20fda25736f2ec4c0f872
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Mon Apr 20 23:51:13 2015 -0500
+
+    Finished implementation of banana-fish API.
+
+commit cb912350b3240777eeae657c25867faa7a56eb64
+Author: User <drconnoramerica@utexas.edu>
+Date:   Tue Apr 21 04:11:34 2015 +0000
+
+    Working on banana-fish page.
+
+commit 0f7dfea4e95dda4ba82f4b4e234efed36b3e6b3e
+Author: Joe Van Loon <joevanloon@utexas.edu>
+Date:   Mon Apr 20 22:32:02 2015 -0500
+
+    Mapped search and banana fish. Working on banana fish output.
+
+commit 87575556e2e5efddf88a559cf059cc6f587e7cf5
+Author: User <drconnoramerica@utexas.edu>
+Date:   Sat Apr 18 21:58:26 2015 +0000
+
+    made the test output more verbose and cleaner
+
+commit 2ac3be3b818f6203710b88876438541c73cf4b18
+Author: User <drconnoramerica@utexas.edu>
+Date:   Sun Apr 12 03:20:07 2015 +0000
+
+    added a way to run the tests from the server
+
+commit 1853e051c3f61eab89b37028e45a67191154a2f7
+Author: User <drconnoramerica@utexas.edu>
+Date:   Fri Apr 10 02:58:47 2015 +0000
+
+    update log
+
 commit 6dc2ee3dd019fa21e8a7767ea2d3a7a701c6f59f
 Author: User <drconnoramerica@utexas.edu>
 Date:   Fri Apr 10 02:58:06 2015 +0000
